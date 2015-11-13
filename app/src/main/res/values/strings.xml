@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project_Test</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Lights">Lights</string>
+    <string name="Doors">Doors</string>
+    <string name="Televisions">Televisions</string>
+    <string name="Motor_Controls">Motor Controls</string>
+    <string name="Settings">Settings</string>
+    <string name="title_activity_lights">Lights</string>
+    <string name="lightSwitch1">Light One:</string>
+    <string name="lightSwitch2">Light Two:</string>
+    <string name="lightSwitch3">Light Three:</string>
+    <string name="lightSwitch4">Light Four:</string>
+    <string name="lightSwitch5">Light Five:</string>
+    <string name="mainEntranceDoor">Main Door</string>
+    <string name="open">Open</string>
+    <string name="televisionMessage">Please connect compatible hardware to control televisions</string>
+    <string name="curtain">Curtain</string>
+    <string name="others">Others</string>
+    <string name="altium">Altium</string>
+    <string name="chrome">Chrome</string>
+    <string name="showDesktop">Show Desktop</string>
+    <string name="ipAddressSettings">Enter Server IP-Address</string>
+    <string name="defaultIp">192.168.x.x</string>
+    <string name="settingsButton1">Apply (OK)</string>
+    <string name="title_activity_doors">Doors</string>
+    <string name="title_activity_televisions">Televisions</string>
+    <string name="title_activity_motor__controls">Motor Controls</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_motor_controls">Motor_controls</string>
+    <string name="title_activity_others">Others</string>
+
+</resources>

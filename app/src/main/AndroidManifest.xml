@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rohsins.project_test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Lights"
+            android:icon="@drawable/lights"
+            android:label="@string/title_activity_lights"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Doors"
+            android:icon="@drawable/doors"
+            android:label="@string/title_activity_doors"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Televisions"
+            android:icon="@drawable/televisions"
+            android:label="@string/title_activity_televisions"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Motor_Controls"
+            android:icon="@drawable/motor_controls"
+            android:label="@string/title_activity_motor_controls"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:icon="@drawable/settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Others"
+            android:label="@string/title_activity_others"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

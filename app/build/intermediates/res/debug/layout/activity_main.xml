@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rohsins.project_test.MainActivity" >
+
+    <ScrollView
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
+       
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+           
+           <Button 
+               android:id="@+id/mainButton1"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="22dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/Lights"
+               android:textSize="22sp"
+               android:drawableRight="@drawable/lights"
+               android:onClick="Lights"
+               android:ems="5" />
+           
+           <Button 
+               android:id="@+id/mainButton2"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/Doors"
+               android:textSize="22sp"
+               android:drawableRight="@drawable/doors"
+               android:onClick="Doors"
+               android:ems="5" />
+           
+           <Button 
+               android:id="@+id/mainButton3"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/Televisions"
+               android:textSize="22sp"
+               android:drawableRight="@drawable/televisions"
+               android:onClick="Televisions"
+               android:ems="5" />
+           
+           <Button 
+               android:id="@+id/mainButton4"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/Motor_Controls"
+               android:textSize="22sp"
+               android:drawableRight="@drawable/motor_controls"
+               android:onClick="Motor_Controls"
+               android:ems="5" />
+           
+           <Button 
+               android:id="@+id/mainButton5"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/others"
+               android:textSize="22sp"
+               android:onClick="Others"
+               android:ems="5" />
+
+           <Button
+               android:id="@+id/mainButton6"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/Settings"
+               android:textSize="22sp"
+               android:drawableRight="@drawable/settings"
+               android:onClick="Settings"
+               android:ems="5" />
+           
+           
+       </LinearLayout>
+       
+   </ScrollView>
+
+</RelativeLayout>
+<!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_main.xml -->

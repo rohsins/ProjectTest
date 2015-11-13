@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rohsins.project_test.Settings" >
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Settings"
+        android:textSize="22sp" />  -->
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipAddressSettings"
+        android:textSize="22sp"
+        android:layout_marginTop="6dp" />  <!-- 70 -->
+    
+    <EditText
+        android:id="@+id/settingsEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/defaultIp"
+        android:layout_marginTop="36dp" />  <!-- 100 -->
+    
+    <Button 
+        android:id="@+id/settingsButton1"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/settingsButton1"
+        android:layout_marginTop="76dp"
+        android:onClick="Apply" />  <!-- 140 -->
+    
+    <TextView 
+        android:id="@+id/settingsTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true" />  <!-- 300 -->
+
+</RelativeLayout>
+<!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_settings.xml -->

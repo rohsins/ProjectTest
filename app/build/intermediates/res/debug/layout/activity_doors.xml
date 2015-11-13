@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rohsins.project_test.Doors" >
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Doors"
+        android:textSize="22sp" />  -->
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mainEntranceDoor"
+        android:textSize="20sp" 
+        android:layout_marginTop="0dp" /> <!-- 50 -->
+    
+    <Button 
+        android:id="@+id/doorButton1"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/open"
+        android:textSize="18sp"
+        android:onClick="doorOpen"
+        android:layout_marginTop="30dp" /> <!-- 80 -->
+
+</RelativeLayout>
+<!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_doors.xml -->
