@@ -43,6 +43,16 @@
         android:onClick="othersFunction03"
         android:layout_marginTop="10dp" /> <!-- 80 -->
 
+    <Button
+        android:id="@+id/othersButton4"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/shutDown"
+        android:textSize="18sp"
+        android:onClick="othersFunction04"
+        android:layout_marginTop="10dp" /> <!-- 80 -->
+
 
 </LinearLayout>
 <!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_others.xml -->

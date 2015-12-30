@@ -1,5 +1,6 @@
 package com.rohsins.project_test;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +20,11 @@ public class Others extends socket {
 
     public void othersFunction03(View view) {
         exchangeData("ShowDesktop");
+    }
+
+    public void othersFunction04(View view) {
+        Intent intent = new Intent(this, ShutDown.class);
+        startActivity(intent);
     }
 
     @Override
