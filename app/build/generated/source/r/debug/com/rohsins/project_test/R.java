@@ -25,7 +25,7 @@ public final class R {
         public static final int televisions=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f080020;
+        public static final int action_settings=0x7f080021;
         public static final int doorButton1=0x7f080000;
         public static final int lightSeekBar1=0x7f080002;
         public static final int lightSeekBar2=0x7f080004;
@@ -56,6 +56,7 @@ public final class R {
         public static final int shutDownButton02=0x7f08001d;
         public static final int shutDownButton03=0x7f08001e;
         public static final int shutDownButton04=0x7f08001f;
+        public static final int shutDownButton05=0x7f080020;
         public static final int shutDownEditText01=0x7f08001b;
         public static final int shutDownTextView01=0x7f08001a;
     }
@@ -108,17 +109,18 @@ public final class R {
         public static final int shutDownButton02=0x7f050019;
         public static final int shutDownButton03=0x7f05001a;
         public static final int shutDownButton04=0x7f05001b;
-        public static final int shutDownEditText01=0x7f05001c;
-        public static final int shutDownTextView01=0x7f05001d;
-        public static final int televisionMessage=0x7f05001e;
-        public static final int title_activity_doors=0x7f05001f;
-        public static final int title_activity_lights=0x7f050020;
-        public static final int title_activity_motor__controls=0x7f050021;
-        public static final int title_activity_motor_controls=0x7f050022;
-        public static final int title_activity_others=0x7f050023;
-        public static final int title_activity_settings=0x7f050024;
-        public static final int title_activity_shut_down=0x7f050025;
-        public static final int title_activity_televisions=0x7f050026;
+        public static final int shutDownButton05=0x7f05001c;
+        public static final int shutDownEditText01=0x7f05001d;
+        public static final int shutDownTextView01=0x7f05001e;
+        public static final int televisionMessage=0x7f05001f;
+        public static final int title_activity_doors=0x7f050020;
+        public static final int title_activity_lights=0x7f050021;
+        public static final int title_activity_motor__controls=0x7f050022;
+        public static final int title_activity_motor_controls=0x7f050023;
+        public static final int title_activity_others=0x7f050024;
+        public static final int title_activity_settings=0x7f050025;
+        public static final int title_activity_shut_down=0x7f050026;
+        public static final int title_activity_televisions=0x7f050027;
     }
     public static final class style {
         /** 

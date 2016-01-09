@@ -32,8 +32,9 @@
     <string name="shutDown">Shut Down</string>
     <string name="shutDownButton01">ShutDown</string>
     <string name="shutDownButton02">ShutDown Abort</string>
-    <string name="shutDownButton03">Hibernate</string>
-    <string name="shutDownButton04">WakeUp</string>
+    <string name="shutDownButton03">Restart</string>
+    <string name="shutDownButton04">Hibernate</string>
+    <string name="shutDownButton05">WakeUp</string>
     <string name="shutDownEditText01"/>
     <string name="shutDownTextView01">Please Enter Your Password</string>
     <string name="televisionMessage">Please connect compatible hardware to control televisions</string>

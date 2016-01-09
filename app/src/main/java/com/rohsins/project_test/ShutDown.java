@@ -13,39 +13,46 @@ public class ShutDown extends socket {
     EditText editText01;
     String password = null;
 
-    public void shutDown(View view) {
+    public boolean passwordCheck() {
         password = editText01.getText().toString();
-        if(password.equals("0315")) {
-            exchangeData("ShutDown");
+        if (password.equals("")) {
+            Toast.makeText(ShutDown.this, "Please Enter the Password", Toast.LENGTH_SHORT).show();
+            return false;
+        } else if (password.equals("0315")) {
+            return true;
         } else {
             Toast.makeText(ShutDown.this, "Wrong Password", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    }
+
+    public void shutDown(View view) {
+        if (passwordCheck() == true) {
+            exchangeData("ShutDown");
         }
     }
 
     public void shutDownAbort(View view) {
-        password = editText01.getText().toString();
-        if(password.equals("0315")) {
+        if (passwordCheck() == true) {
             exchangeData("ShutDownAbort");
-        } else {
-            Toast.makeText(ShutDown.this, "Wrong Password", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void restart(View view) {
+        if (passwordCheck() == true) {
+            exchangeData("Restart");
         }
     }
 
     public void hibernate(View view) {
-        password = editText01.getText().toString();
-        if(password.equals("0315")) {
+        if (passwordCheck() == true) {
             exchangeData("Hibernate");
-        } else {
-            Toast.makeText(ShutDown.this, "Wrong Password", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void wakeUp(View view) {
-        password = editText01.getText().toString();
-        if(password.equals("0315")) {
+        if(passwordCheck() == true) {
             exchangeData("WakeUP");
-        } else {
-            Toast.makeText(ShutDown.this, "Wrong Password", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -54,6 +61,7 @@ public class ShutDown extends socket {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shut_down);
 
+        on_create_func();
         editText01 = (EditText) findViewById(R.id.shutDownEditText01);
     }
 

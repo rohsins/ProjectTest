@@ -45,7 +45,7 @@
         android:background="@drawable/button_style"
         android:layout_below="@id/shutDownButton02"
         android:layout_marginTop="10dp"
-        android:onClick="hibernate"/>
+        android:onClick="restart"/>
 
     <Button android:id="@+id/shutDownButton04"
         android:layout_width="match_parent"
@@ -53,6 +53,15 @@
         android:text="@string/shutDownButton04"
         android:background="@drawable/button_style"
         android:layout_below="@id/shutDownButton03"
+        android:layout_marginTop="10dp"
+        android:onClick="hibernate"/>
+
+    <Button android:id="@+id/shutDownButton05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shutDownButton05"
+        android:background="@drawable/button_style"
+        android:layout_below="@id/shutDownButton04"
         android:layout_marginTop="10dp"
         android:onClick="wakeUp"/>
 

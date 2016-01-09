@@ -28,8 +28,9 @@
     <string name="shutDownEditText01"></string>
     <string name="shutDownButton01">ShutDown</string>
     <string name="shutDownButton02">ShutDown Abort</string>
-    <string name="shutDownButton03">Hibernate</string>
-    <string name="shutDownButton04">WakeUp</string>
+    <string name="shutDownButton03">Restart</string>
+    <string name="shutDownButton04">Hibernate</string>
+    <string name="shutDownButton05">WakeUp</string>
     <string name="ipAddressSettings">Enter Server IP-Address</string>
     <string name="defaultIp">192.168.x.x</string>
     <string name="settingsButton1">Apply (OK)</string>
