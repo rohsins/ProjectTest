@@ -11,47 +11,70 @@
         android:layout_height="wrap_content"
         android:text="@string/others"
         android:textSize="20sp"
+        android:layout_column="0"
         android:layout_marginTop="0dp" /> <!-- 50 -->
 
-    <Button
-        android:id="@+id/othersButton1"
-        android:background="@drawable/button_style"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:text="@string/altium"
-        android:textSize="18sp"
-        android:onClick="othersFunction01"
-        android:layout_marginTop="30dp" /> <!-- 80 -->
+    <GridLayout android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layerType="software"
+        android:alignmentMode="alignBounds"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp">
 
-    <Button
-        android:id="@+id/othersButton2"
-        android:background="@drawable/button_style"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:text="@string/chrome"
-        android:textSize="18sp"
-        android:onClick="othersFunction02"
-        android:layout_marginTop="10dp" /> <!-- 80 -->
+        <Button
+            android:id="@+id/othersButton1"
+            android:background="@drawable/button_style"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/altium"
+            android:textSize="18sp"
+            android:onClick="othersFunction01"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_gravity="center_horizontal" /> <!-- 80 -->
 
-    <Button
-        android:id="@+id/othersButton3"
-        android:background="@drawable/button_style"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:text="@string/showDesktop"
-        android:textSize="18sp"
-        android:onClick="othersFunction03"
-        android:layout_marginTop="10dp" /> <!-- 80 -->
+        <Button
+            android:id="@+id/othersButton2"
+            android:background="@drawable/button_style"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/chrome"
+            android:textSize="18sp"
+            android:onClick="othersFunction02"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_gravity="center_horizontal" /> <!-- 80 -->
 
-    <Button
-        android:id="@+id/othersButton4"
-        android:background="@drawable/button_style"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:text="@string/shutDown"
-        android:textSize="18sp"
-        android:onClick="othersFunction04"
-        android:layout_marginTop="10dp" /> <!-- 80 -->
+        <Button
+            android:id="@+id/othersButton3"
+            android:background="@drawable/button_style"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/showDesktop"
+            android:textSize="18sp"
+            android:onClick="othersFunction03"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" /> <!-- 80 -->
 
+        <Button
+            android:id="@+id/othersButton4"
+            android:background="@drawable/button_style"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/shutDown"
+            android:textSize="18sp"
+            android:onClick="othersFunction04"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" /> <!-- 80 -->
+
+    </GridLayout>
 
 </LinearLayout>
