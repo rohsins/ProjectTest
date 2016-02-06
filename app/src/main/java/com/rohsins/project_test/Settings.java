@@ -39,10 +39,10 @@ public void Apply(View view) {
 
 	inputIpAddressPort = editText.getText().toString();
 		
-		if(!(inputIpAddressPort.equals(""))) {
-			if(inputIpAddressPort.contains(":")) {
+		if (!(inputIpAddressPort.equals(""))) {
+			if (inputIpAddressPort.contains(":")) {
 				ipAddressPort = inputIpAddressPort.split(":");
-				if(!(ipAddressPort[0].equals(""))) {
+				if (!(ipAddressPort[0].equals(""))) {
 					Address = ipAddressPort[0];
 				}
 				Port = Integer.parseInt(ipAddressPort[1]);
@@ -57,8 +57,8 @@ public void Apply(View view) {
 			textView.setText("Current Server IP:" + Address + ":" + Port);
 			Toast.makeText(Settings.this, "Server IP Address is set to " + Address + ":" + Port, Toast.LENGTH_SHORT).show();
 		}
-		else if(Address.equals("")) {
-			Toast.makeText(Settings.this, "Server IP Address is empty " + Address, Toast.LENGTH_SHORT).show();
+		else if (inputIpAddressPort.equals("")) {
+			Toast.makeText(Settings.this, "Server IP Address is empty", Toast.LENGTH_SHORT).show();
 		}
 	}
 

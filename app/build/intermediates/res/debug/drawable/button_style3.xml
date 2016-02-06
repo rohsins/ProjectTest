@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:context=".Lights">
   <item android:state_pressed="true" >
     <shape>
       <solid
@@ -80,4 +80,4 @@
 </selector>
 
 
- --><!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style.xml -->
+ --><!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style3.xml -->

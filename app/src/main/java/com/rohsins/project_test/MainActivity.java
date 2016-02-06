@@ -11,39 +11,37 @@ import android.view.View;
 public class MainActivity extends Activity {
 
     public void Lights(View view) {
-		
-		Intent intent = new Intent(this,Lights.class);
+		Intent intent = new Intent(this, Lights.class);
 		startActivity(intent);
-		
 	}
 	
 	public void Doors(View view) {
-		
-		Intent intent = new Intent(this,Doors.class);
+		Intent intent = new Intent(this, Doors.class);
 		startActivity(intent);
 	}
 	
 	public void Televisions(View view) {
-		
-		Intent intent = new Intent(this,Televisions.class);
+		Intent intent = new Intent(this, Televisions.class);
 		startActivity(intent);
 	}
 	
 	public void Motor_Controls(View view) {
-		
-		Intent intent = new Intent(this,Motor_Controls.class);
+		Intent intent = new Intent(this, Motor_Controls.class);
 		startActivity(intent);
 	}
 
     public void Others(View view) {
+        Intent intent = new Intent(this, Others.class);
+        startActivity(intent);
+    }
 
-        Intent intent = new Intent(this,Others.class);
+    public void SerialViewer(View view) {
+        Intent intent = new Intent(this, SerialViewer.class);
         startActivity(intent);
     }
 	
 	public void Settings(View view) {
-		
-		Intent intent = new Intent(this,Settings.class);
+		Intent intent = new Intent(this, Settings.class);
 		startActivity(intent);
 	}
 	

@@ -93,6 +93,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rohsins.project_test.MainActivity" />
         </activity>
+        <activity
+            android:name=".SerialViewer"
+            android:label="@string/title_activity_serial_viewer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rohsins.project_test.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

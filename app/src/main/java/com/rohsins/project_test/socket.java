@@ -9,6 +9,7 @@ import java.net.UnknownHostException;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class socket extends Activity {
@@ -17,6 +18,7 @@ public class socket extends Activity {
 	public volatile int Port;
     String ipAddressPort[];
     String inputIpAddressPort;
+    TextView serialViewerTextView;
 
     public void on_create_func() {
         SharedPreferences settings = getSharedPreferences("msettings",0);
@@ -42,6 +44,8 @@ public class socket extends Activity {
 			dstAddress = addr;
 			dstPort = port;
 			msgToServer = msgTo;
+
+            serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
 		}
 
 		@Override
@@ -67,11 +71,11 @@ public class socket extends Activity {
 			} catch (UnknownHostException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-				response = "UnknownHostException: " + e.toString();
+				response = "UnknownHostException: -@=" + e.toString();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-				response = "IOException: " + e.toString();
+				response = "IOException: -@=" + e.toString();
 			} finally {
 				if (socket != null) {
 					try {
@@ -106,12 +110,28 @@ public class socket extends Activity {
 		@Override
 		protected void onPostExecute(Void result) {
 //			editText.setText(response);
-            if(!response.equals( "IOException: java.io.EOFException")) {
-                Toast.makeText(socket.this, response, Toast.LENGTH_SHORT).show();
-            }
+//            if(!response.equals("IOException: java.io.EOFException")) {
+//                Toast.makeText(socket.this, response, Toast.LENGTH_SHORT).show();
+//            }
+
+			String switchCheck[] = null;
+			switchCheck = response.split("-@=");
+			switch (switchCheck[0]) {
+				case "0xA0":
+					serialViewerTextView.setText(switchCheck[1]);
+					break;
+                case "IOException: ":
+                    if(switchCheck[1].equals("java.io.EOFException")) {
+                        break;
+                    }
+                    Toast.makeText(socket.this, "Error: " + switchCheck[1], Toast.LENGTH_SHORT).show();
+                    break;
+                default:
+                    Toast.makeText(socket.this, switchCheck[1], Toast.LENGTH_SHORT).show();
+                    break;
+			}
 			super.onPostExecute(result);
 		}
-	
 	}
 	
 	
@@ -131,8 +151,6 @@ public class socket extends Activity {
 		myClientTask.execute();
 		
 	}
-	
-	
 
 }
 

@@ -9,6 +9,7 @@
     <string name="Televisions">Televisions</string>
     <string name="Motor_Controls">Motor Controls</string>
     <string name="Settings">Settings</string>
+    <string name="SerialViewer">Serial Viewer</string>
     <string name="title_activity_lights">Lights</string>
     <string name="lightSwitch1">Light One:</string>
     <string name="lightSwitch2">Light Two:</string>
@@ -31,6 +32,11 @@
     <string name="shutDownButton03">Restart</string>
     <string name="shutDownButton04">Hibernate</string>
     <string name="shutDownButton05">WakeUp</string>
+    <string name="serialViewerDefaultText">Sync to use Serial Viewer</string>
+    <string name="textViewSync">Sync</string>
+    <string name="updateRate">Update Rate</string>
+    <string name="editTextdefault">1000</string>
+    <string name="textViewUnit">mS</string>
     <string name="ipAddressSettings">Enter Server IP-Address</string>
     <string name="defaultIp">192.168.x.x</string>
     <string name="settingsButton1">Apply (OK)</string>
@@ -41,5 +47,6 @@
     <string name="title_activity_motor_controls">Motor_controls</string>
     <string name="title_activity_others">Others</string>
     <string name="title_activity_shut_down">ShutDown</string>
+    <string name="title_activity_serial_viewer">SerialViewer</string>
 
 </resources>

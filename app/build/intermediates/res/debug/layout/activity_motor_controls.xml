@@ -15,6 +15,7 @@
         android:textSize="22sp" />  -->
     
     <TextView
+        android:id="@+id/motor_controlsTextView1"
         android:background="@drawable/seekswitchprofile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +36,8 @@
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="260dp" />  <!-- 120 -->
+        android:layout_alignRight="@id/motor_controlsTextView1"
+        android:layout_marginRight="8dp" />  <!-- 120 -->
 
 </RelativeLayout>
 <!-- From: file:/Users/rohsins/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_motor_controls.xml -->

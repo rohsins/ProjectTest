@@ -143,3 +143,11 @@ ADDED from AndroidManifest.xml:88:9
 		ADDED from AndroidManifest.xml:91:13
 	android:name
 		ADDED from AndroidManifest.xml:89:13
+activity#com.rohsins.project_test.SerialViewer
+ADDED from AndroidManifest.xml:96:9
+	android:label
+		ADDED from AndroidManifest.xml:98:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:99:13
+	android:name
+		ADDED from AndroidManifest.xml:97:13

@@ -88,6 +88,18 @@
                android:layout_height="55dp"
                android:layout_marginTop="15dp"
                android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/SerialViewer"
+               android:textSize="22sp"
+               android:onClick="SerialViewer"
+               android:ems="5" />
+
+           <Button
+               android:id="@+id/mainButton7"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
                android:text="@string/Settings"
                android:textSize="22sp"
                android:drawableRight="@drawable/settings"
