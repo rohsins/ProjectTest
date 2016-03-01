@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/shutDownButton01"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style3"
         android:layout_below="@id/shutDownEditText01"
         android:layout_marginTop="10dp"
         android:onClick="shutDown"/>
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/shutDownButton02"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style3"
         android:layout_below="@id/shutDownButton01"
         android:layout_marginTop="10dp"
         android:onClick="shutDownAbort"/>
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/shutDownButton03"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style3"
         android:layout_below="@id/shutDownButton02"
         android:layout_marginTop="10dp"
         android:onClick="restart"/>
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/shutDownButton04"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style3"
         android:layout_below="@id/shutDownButton03"
         android:layout_marginTop="10dp"
         android:onClick="hibernate"/>
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/shutDownButton05"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style3"
         android:layout_below="@id/shutDownButton04"
         android:layout_marginTop="10dp"
         android:onClick="wakeUp"/>
