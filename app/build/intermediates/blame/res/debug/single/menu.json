@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/settings.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/settings.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/televisions.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/televisions.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/motor_controls.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/motor_controls.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/menu_serial_viewer.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/menu_serial_viewer.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/lights.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/lights.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/menu_others.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/menu_others.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/doors.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/doors.xml"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/menu_shut_down.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/menu_shut_down.xml"
+    }
+]

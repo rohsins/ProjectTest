@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/doors.png",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/doors.png"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/settings.png",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/settings.png"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/motor_controls.png",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/motor_controls.png"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/lights.png",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/lights.png"
+    },
+    {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/televisions.png",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/televisions.png"
+    }
+]

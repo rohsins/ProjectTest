@@ -83,6 +83,10 @@ public class ShutDown extends socket {
         if (id == R.id.action_settings) {
             return true;
         }
+        else if (id == R.id.action_password) {
+
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
