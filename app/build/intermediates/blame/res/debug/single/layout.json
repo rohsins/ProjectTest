@@ -12,6 +12,10 @@
         "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_shut_down.xml"
     },
     {
+        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_open_site_editor.xml",
+        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_open_site_editor.xml"
+    },
+    {
         "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_lights.xml",
         "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_lights.xml"
     },

@@ -27,6 +27,11 @@ public class Others extends socket {
         startActivity(intent);
     }
 
+    public void othersFunction05(View view) {
+        Intent intent = new Intent(this, OpenSiteEditor.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,14 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 89,
-                        "endColumn": 57,
-                        "endOffset": 142
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 147,
-                        "endColumn": 55,
-                        "endOffset": 198
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 225
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 203,
-                        "endColumn": 60,
-                        "endOffset": 259
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 284
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 264,
-                        "endColumn": 58,
-                        "endOffset": 318
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml"
                 }
             },
             {
@@ -87,14 +59,7 @@
                     "endOffset": 324
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 254,
-                        "endColumn": 39,
-                        "endOffset": 289
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -106,14 +71,7 @@
                     "endOffset": 366
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 212,
-                        "endColumn": 41,
-                        "endOffset": 249
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -125,14 +83,7 @@
                     "endOffset": 424
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 346,
-                        "endColumn": 57,
-                        "endOffset": 399
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -144,14 +95,7 @@
                     "endOffset": 479
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 450,
-                        "endColumn": 54,
-                        "endOffset": 500
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -163,14 +107,7 @@
                     "endOffset": 525
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 404,
-                        "endColumn": 45,
-                        "endOffset": 445
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -182,14 +119,7 @@
                     "endOffset": 577
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 294,
-                        "endColumn": 51,
-                        "endOffset": 341
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -203,11 +133,11 @@
                 "from": {
                     "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 51,
                         "startColumn": 4,
-                        "startOffset": 159,
+                        "startOffset": 2710,
                         "endColumn": 52,
-                        "endOffset": 207
+                        "endOffset": 2758
                     }
                 }
             },
@@ -216,132 +146,83 @@
                     "startLine": 13,
                     "startColumn": 4,
                     "startOffset": 635,
-                    "endColumn": 41,
-                    "endOffset": 672
+                    "endColumn": 52,
+                    "endOffset": 683
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 1109,
-                        "endColumn": 41,
-                        "endOffset": 1146
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 677,
-                    "endColumn": 49,
-                    "endOffset": 722
+                    "startOffset": 688,
+                    "endColumn": 41,
+                    "endOffset": 725
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 49,
-                        "endOffset": 101
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 727,
-                    "endColumn": 41,
-                    "endOffset": 764
+                    "startOffset": 730,
+                    "endColumn": 49,
+                    "endOffset": 775
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 1151,
-                        "endColumn": 41,
-                        "endOffset": 1188
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 769,
-                    "endColumn": 43,
-                    "endOffset": 808
+                    "startOffset": 780,
+                    "endColumn": 41,
+                    "endOffset": 817
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1023,
-                        "endColumn": 43,
-                        "endOffset": 1062
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 813,
-                    "endColumn": 49,
-                    "endOffset": 858
+                    "startOffset": 822,
+                    "endColumn": 43,
+                    "endOffset": 861
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 40,
-                        "startColumn": 4,
-                        "startOffset": 2027,
-                        "endColumn": 49,
-                        "endOffset": 2072
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 863,
-                    "endColumn": 48,
-                    "endOffset": 907
+                    "startOffset": 866,
+                    "endColumn": 49,
+                    "endOffset": 911
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 1864,
-                        "endColumn": 48,
-                        "endOffset": 1908
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 912,
-                    "endColumn": 52,
+                    "startOffset": 916,
+                    "endColumn": 48,
                     "endOffset": 960
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 106,
-                        "endColumn": 52,
-                        "endOffset": 154
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -349,94 +230,59 @@
                     "startLine": 20,
                     "startColumn": 4,
                     "startOffset": 965,
-                    "endColumn": 69,
-                    "endOffset": 1030
+                    "endColumn": 52,
+                    "endOffset": 1013
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 1957,
-                        "endColumn": 69,
-                        "endOffset": 2022
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1035,
-                    "endColumn": 51,
-                    "endOffset": 1082
+                    "startOffset": 1018,
+                    "endColumn": 69,
+                    "endOffset": 1083
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 562,
-                        "endColumn": 51,
-                        "endOffset": 609
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1087,
+                    "startOffset": 1088,
                     "endColumn": 51,
-                    "endOffset": 1134
+                    "endOffset": 1135
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 614,
-                        "endColumn": 51,
-                        "endOffset": 661
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1139,
-                    "endColumn": 53,
-                    "endOffset": 1188
+                    "startOffset": 1140,
+                    "endColumn": 51,
+                    "endOffset": 1187
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 666,
-                        "endColumn": 53,
-                        "endOffset": 715
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1193,
-                    "endColumn": 52,
+                    "startOffset": 1192,
+                    "endColumn": 53,
                     "endOffset": 1241
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 720,
-                        "endColumn": 52,
-                        "endOffset": 768
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -448,14 +294,7 @@
                     "endOffset": 1294
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 773,
-                        "endColumn": 52,
-                        "endOffset": 821
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -463,74 +302,53 @@
                     "startLine": 26,
                     "startColumn": 4,
                     "startOffset": 1299,
-                    "endColumn": 54,
-                    "endOffset": 1349
+                    "endColumn": 52,
+                    "endOffset": 1347
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 826,
-                        "endColumn": 54,
-                        "endOffset": 876
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1354,
-                    "endColumn": 37,
-                    "endOffset": 1387
+                    "startOffset": 1352,
+                    "endColumn": 54,
+                    "endOffset": 1402
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 881,
-                        "endColumn": 37,
-                        "endOffset": 914
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1392,
-                    "endColumn": 41,
-                    "endOffset": 1429
+                    "startOffset": 1407,
+                    "endColumn": 37,
+                    "endOffset": 1440
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 1067,
-                        "endColumn": 41,
-                        "endOffset": 1104
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1434,
-                    "endColumn": 77,
-                    "endOffset": 1507
+                    "startOffset": 1445,
+                    "endColumn": 58,
+                    "endOffset": 1499
                 },
                 "from": {
                     "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 34,
+                        "startLine": 50,
                         "startColumn": 4,
-                        "startOffset": 1689,
-                        "endColumn": 77,
-                        "endOffset": 1762
+                        "startOffset": 2651,
+                        "endColumn": 58,
+                        "endOffset": 2705
                     }
                 }
             },
@@ -538,18 +356,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1512,
-                    "endColumn": 54,
-                    "endOffset": 1562
+                    "startOffset": 1504,
+                    "endColumn": 59,
+                    "endOffset": 1559
                 },
                 "from": {
                     "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 41,
+                        "startLine": 52,
                         "startColumn": 4,
-                        "startOffset": 2077,
-                        "endColumn": 54,
-                        "endOffset": 2127
+                        "startOffset": 2763,
+                        "endColumn": 59,
+                        "endOffset": 2818
                     }
                 }
             },
@@ -557,379 +375,246 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1567,
-                    "endColumn": 52,
-                    "endOffset": 1615
+                    "startOffset": 1564,
+                    "endColumn": 41,
+                    "endOffset": 1601
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 1193,
-                        "endColumn": 52,
-                        "endOffset": 1241
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1620,
-                    "endColumn": 46,
-                    "endOffset": 1662
+                    "startOffset": 1606,
+                    "endColumn": 77,
+                    "endOffset": 1679
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 1320,
-                        "endColumn": 46,
-                        "endOffset": 1362
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1667,
-                    "endColumn": 53,
-                    "endOffset": 1716
+                    "startOffset": 1684,
+                    "endColumn": 54,
+                    "endOffset": 1734
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 1415,
-                        "endColumn": 53,
-                        "endOffset": 1464
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1721,
-                    "endColumn": 59,
-                    "endOffset": 1776
+                    "startOffset": 1739,
+                    "endColumn": 52,
+                    "endOffset": 1787
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 1469,
-                        "endColumn": 59,
-                        "endOffset": 1524
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1781,
-                    "endColumn": 52,
-                    "endOffset": 1829
+                    "startOffset": 1792,
+                    "endColumn": 46,
+                    "endOffset": 1834
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 1529,
-                        "endColumn": 52,
-                        "endOffset": 1577
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1834,
-                    "endColumn": 54,
-                    "endOffset": 1884
+                    "startOffset": 1839,
+                    "endColumn": 53,
+                    "endOffset": 1888
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 1582,
-                        "endColumn": 54,
-                        "endOffset": 1632
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1889,
-                    "endColumn": 51,
-                    "endOffset": 1936
+                    "startOffset": 1893,
+                    "endColumn": 59,
+                    "endOffset": 1948
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 33,
-                        "startColumn": 4,
-                        "startOffset": 1637,
-                        "endColumn": 51,
-                        "endOffset": 1684
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 1941,
-                    "endColumn": 39,
-                    "endOffset": 1976
+                    "startOffset": 1953,
+                    "endColumn": 52,
+                    "endOffset": 2001
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 1367,
-                        "endColumn": 47,
-                        "endOffset": 1410
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 1981,
-                    "endColumn": 73,
-                    "endOffset": 2050
+                    "startOffset": 2006,
+                    "endColumn": 54,
+                    "endOffset": 2056
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 1246,
-                        "endColumn": 73,
-                        "endOffset": 1315
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2055,
-                    "endColumn": 103,
-                    "endOffset": 2154
+                    "startOffset": 2061,
+                    "endColumn": 51,
+                    "endOffset": 2108
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 919,
-                        "endColumn": 103,
-                        "endOffset": 1018
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2159,
-                    "endColumn": 45,
-                    "endOffset": 2200
+                    "startOffset": 2113,
+                    "endColumn": 39,
+                    "endOffset": 2148
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 1767,
-                        "endColumn": 45,
-                        "endOffset": 1808
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2205,
-                    "endColumn": 43,
-                    "endOffset": 2244
+                    "startOffset": 2153,
+                    "endColumn": 73,
+                    "endOffset": 2222
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 1913,
-                        "endColumn": 43,
-                        "endOffset": 1952
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2249,
-                    "endColumn": 54,
-                    "endOffset": 2299
+                    "startOffset": 2227,
+                    "endColumn": 103,
+                    "endOffset": 2326
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 2132,
-                        "endColumn": 54,
-                        "endOffset": 2182
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2304,
-                    "endColumn": 56,
-                    "endOffset": 2356
+                    "startOffset": 2331,
+                    "endColumn": 45,
+                    "endOffset": 2372
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 505,
-                        "endColumn": 56,
-                        "endOffset": 557
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2361,
-                    "endColumn": 73,
-                    "endOffset": 2430
+                    "startOffset": 2377,
+                    "endColumn": 43,
+                    "endOffset": 2416
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 2254,
-                        "endColumn": 73,
-                        "endOffset": 2323
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2435,
-                    "endColumn": 72,
-                    "endOffset": 2503
+                    "startOffset": 2421,
+                    "endColumn": 54,
+                    "endOffset": 2471
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 46,
-                        "startColumn": 4,
-                        "startOffset": 2389,
-                        "endColumn": 72,
-                        "endOffset": 2457
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2508,
+                    "startOffset": 2476,
                     "endColumn": 56,
-                    "endOffset": 2560
+                    "endOffset": 2528
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 47,
-                        "startColumn": 4,
-                        "startOffset": 2462,
-                        "endColumn": 56,
-                        "endOffset": 2514
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2565,
-                    "endColumn": 69,
-                    "endOffset": 2630
+                    "startOffset": 2533,
+                    "endColumn": 73,
+                    "endOffset": 2602
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 49,
-                        "startColumn": 4,
-                        "startOffset": 2581,
-                        "endColumn": 69,
-                        "endOffset": 2646
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2635,
-                    "endColumn": 60,
-                    "endOffset": 2691
+                    "startOffset": 2607,
+                    "endColumn": 72,
+                    "endOffset": 2675
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 45,
-                        "startColumn": 4,
-                        "startOffset": 2328,
-                        "endColumn": 60,
-                        "endOffset": 2384
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2696,
-                    "endColumn": 61,
-                    "endOffset": 2753
+                    "startOffset": 2680,
+                    "endColumn": 74,
+                    "endOffset": 2750
                 },
                 "from": {
                     "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 48,
+                        "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 2519,
-                        "endColumn": 61,
-                        "endOffset": 2576
+                        "startOffset": 2823,
+                        "endColumn": 74,
+                        "endOffset": 2893
                     }
                 }
             },
@@ -937,80 +622,98 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2758,
-                    "endColumn": 66,
-                    "endOffset": 2820
+                    "startOffset": 2755,
+                    "endColumn": 56,
+                    "endOffset": 2807
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 43,
-                        "startColumn": 4,
-                        "startOffset": 2187,
-                        "endColumn": 66,
-                        "endOffset": 2249
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2825,
-                    "endColumn": 50,
-                    "endOffset": 2871
+                    "startOffset": 2812,
+                    "endColumn": 69,
+                    "endOffset": 2877
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 1813,
-                        "endColumn": 50,
-                        "endOffset": 1859
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2876,
-                    "endLine": 59,
-                    "endColumn": 12,
-                    "endOffset": 3167
+                    "startOffset": 2882,
+                    "endColumn": 60,
+                    "endOffset": 2938
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 186,
-                        "endLine": 12,
-                        "endColumn": 12,
-                        "endOffset": 477
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 3172,
-                    "endLine": 62,
-                    "endColumn": 12,
-                    "endOffset": 3339
+                    "startOffset": 2943,
+                    "endColumn": 61,
+                    "endOffset": 3000
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 515,
-                        "endLine": 17,
-                        "endColumn": 12,
-                        "endOffset": 682
-                    }
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 3005,
+                    "endColumn": 66,
+                    "endOffset": 3067
+                },
+                "from": {
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3072,
+                    "endColumn": 50,
+                    "endOffset": 3118
+                },
+                "from": {
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 3123,
+                    "endLine": 63,
+                    "endColumn": 12,
+                    "endOffset": 3414
+                },
+                "from": {
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 3419,
+                    "endLine": 66,
+                    "endColumn": 12,
+                    "endOffset": 3586
+                },
+                "from": {
+                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml"
                 }
             }
         ]

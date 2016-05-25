@@ -48,6 +48,9 @@
     <string name="title_activity_others">Others</string>
     <string name="title_activity_shut_down">ShutDown</string>
     <string name="title_activity_serial_viewer">SerialViewer</string>
+    <string name="openSiteEditor">Open SiteEditor</string>
     <string name="action_password">Password</string>
+    <string name="openSiteEditorButton01Text">Send</string>
+    <string name="title_activity_open_site_editor">OpenSiteEditor</string>
 
 </resources>

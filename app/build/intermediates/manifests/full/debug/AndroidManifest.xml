@@ -101,6 +101,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rohsins.project_test.MainActivity" />
         </activity>
+        <activity
+            android:name="com.rohsins.project_test.OpenSiteEditor"
+            android:label="@string/title_activity_open_site_editor" />
     </application>
 
 </manifest>
