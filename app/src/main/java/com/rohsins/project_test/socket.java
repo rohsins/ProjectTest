@@ -57,6 +57,8 @@ public class socket extends Activity {
 
 			try {
 				socket = new Socket(dstAddress, dstPort);
+				socket.setTcpNoDelay(true);
+				socket.setSoTimeout(1000);
 				dataOutputStream = new DataOutputStream(
 						socket.getOutputStream());
 				dataInputStream = new DataInputStream(socket.getInputStream());
