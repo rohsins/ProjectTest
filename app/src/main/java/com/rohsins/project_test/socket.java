@@ -9,16 +9,20 @@ import java.net.UnknownHostException;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class socket extends Activity {
-	
+
 	public volatile String Address;
 	public volatile int Port;
     String ipAddressPort[];
     String inputIpAddressPort;
     TextView serialViewerTextView;
+	public static boolean nagleFlag = true;
+//	public static boolean nagleReplyFlag = true;
 
     public void on_create_func() {
         SharedPreferences settings = getSharedPreferences("msettings",0);
@@ -30,6 +34,7 @@ public class socket extends Activity {
         else {
             Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
         }
+		nagleFlag = settings.getBoolean("ENABLENAGLE", true);
     }
 		
 	public class MyClientTask extends AsyncTask<Void, Void, Void> {
@@ -38,8 +43,7 @@ public class socket extends Activity {
 		int dstPort;
 		String response = "";
 		String msgToServer;
-		
-		
+
 		MyClientTask(String addr, int port, String msgTo) {
 			dstAddress = addr;
 			dstPort = port;
@@ -57,10 +61,11 @@ public class socket extends Activity {
 
 			try {
 				socket = new Socket(dstAddress, dstPort);
-				socket.setTcpNoDelay(true);
+				if (nagleFlag == false) socket.setTcpNoDelay(false);
+				else if (nagleFlag == true) socket.setTcpNoDelay(true);
 				socket.setSoTimeout(1000);
-				dataOutputStream = new DataOutputStream(
-						socket.getOutputStream());
+//				nagleReplyFlag = socket.getTcpNoDelay();
+				dataOutputStream = new DataOutputStream(socket.getOutputStream());
 				dataInputStream = new DataInputStream(socket.getInputStream());
 				
 				if(msgToServer != null){
@@ -71,11 +76,9 @@ public class socket extends Activity {
 //                response = msgToServer;
 
 			} catch (UnknownHostException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 				response = "UnknownHostException: -@=" + e.toString();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 				response = "IOException: -@=" + e.toString();
 			} finally {
@@ -83,7 +86,6 @@ public class socket extends Activity {
 					try {
 						socket.close();
 					} catch (IOException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
@@ -92,7 +94,6 @@ public class socket extends Activity {
 					try {
 						dataOutputStream.close();
 					} catch (IOException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
@@ -101,7 +102,6 @@ public class socket extends Activity {
 					try {
 						dataInputStream.close();
 					} catch (IOException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
@@ -135,24 +135,11 @@ public class socket extends Activity {
 			super.onPostExecute(result);
 		}
 	}
-	
-	
-	public void exchangeData(String tMsg) {
-		
-//		String tMsg = welcomeMsg.getText().toString();
-//		if(tMsg.equals("")){
-//			tMsg = null;
-//			Toast.makeText(MainActivity.this, "No Welcome Msg sent", Toast.LENGTH_SHORT).show();
-//		}
-//		SharedPreferences settings = getSharedPreferences("msettings",0);
-//		putAddress(settings.getString("SERVERIPADDRESS","192.168.1.9"));
-		
-		MyClientTask myClientTask = new MyClientTask(Address, Port,
-				tMsg);
-        //Toast.makeText(socket.this, tMsg, Toast.LENGTH_SHORT).show();
-		myClientTask.execute();
-		
-	}
 
+	public void exchangeData(String tMsg) {
+		MyClientTask myClientTask = new MyClientTask(Address, Port, tMsg);
+//        Toast.makeText(socket.this, String.valueOf(nagleReplyFlag), Toast.LENGTH_SHORT).show();
+		myClientTask.execute();
+	}
 }
 

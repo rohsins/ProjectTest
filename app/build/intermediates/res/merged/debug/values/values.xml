@@ -19,7 +19,7 @@
     <string name="defaultIp">192.168.x.x</string>
     <string name="editTextdefault">1000</string>
     <string name="hello_world">Hello world!</string>
-    <string name="ipAddressSettings">Enter Server IP-Address</string>
+    <string name="ipAddressSettings">Enter Server Socket</string>
     <string name="lightSwitch1">Light One:</string>
     <string name="lightSwitch2">Light Two:</string>
     <string name="lightSwitch3">Light Three:</string>
@@ -32,6 +32,7 @@
     <string name="others">Others</string>
     <string name="serialViewerDefaultText">Sync to use Serial Viewer</string>
     <string name="settingsButton1">Apply (OK)</string>
+    <string name="settingsSwitch1">Nagle Algorithm</string>
     <string name="showDesktop">Show Desktop</string>
     <string name="shutDown">Shut Down</string>
     <string name="shutDownButton01">ShutDown</string>

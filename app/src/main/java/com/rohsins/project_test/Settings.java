@@ -6,7 +6,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,30 +16,49 @@ public class Settings extends socket {
 	
 	EditText editText;
 	TextView textView;
+	Switch aSwitch;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
-		
+
+		aSwitch = (Switch) findViewById(R.id.settingsSwitch1);
 		textView = (TextView)findViewById(R.id.settingsTextView3);
+		editText = (EditText)findViewById(R.id.settingsEditText1);
 		SharedPreferences settings = getSharedPreferences("msettings",0);
 		if(settings.getString("SERVERIPADDRESS", "192,168.1.9:8080").contains(":")) {
 			ipAddressPort = settings.getString("SERVERIPADDRESS", "192.168.1.9:8080").split(":");
 			Address = ipAddressPort[0];
 			Port = Integer.parseInt(ipAddressPort[1]);
-		}
-		else {
+		} else {
 			Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
 		}
-		textView.setText("Current Server IP:" + Address + ":" + Port);
-		editText = (EditText)findViewById(R.id.settingsEditText1);
-		
+		textView.setText("Current Server Socket:" + Address + ":" + Port);
+
+		aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", true));
+
+		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				SharedPreferences settings = getSharedPreferences("msettings",0);
+				SharedPreferences.Editor editor = settings.edit();
+				editor.putBoolean("ENABLENAGLE", aSwitch.isChecked());
+				editor.commit();
+				aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", true));
+				if(!settings.getBoolean("ENABLENAGLE", true)) {
+					nagleFlag = false;
+				}
+				else if(settings.getBoolean("ENABLENAGLE", true)) {
+					nagleFlag = true;
+				}
+			}
+		});
 	}
 
-public void Apply(View view) {
+	public void Apply(View view) {
 
-	inputIpAddressPort = editText.getText().toString();
+		inputIpAddressPort = editText.getText().toString();
 		
 		if (!(inputIpAddressPort.equals(""))) {
 			if (inputIpAddressPort.contains(":")) {

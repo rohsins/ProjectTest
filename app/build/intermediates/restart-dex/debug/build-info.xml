@@ -3,7 +3,7 @@
     abi="armeabi-v7a,armeabi"
     api-level="15"
     format="7"
-    timestamp="2551052799049" >
+    timestamp="11183227888128" >
 
     <task
         name="javac"
@@ -18,6 +18,6 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="2551052799049" />
+    <build timestamp="11183227888128" />
 
 </instant-run>

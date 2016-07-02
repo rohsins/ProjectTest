@@ -18,15 +18,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ipAddressSettings"
-        android:textSize="22sp"
-        android:layout_marginTop="6dp" />  <!-- 70 -->
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="21sp"
+        android:layout_marginTop="2dp" />  <!-- 70 -->
     
     <EditText
         android:id="@+id/settingsEditText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/defaultIp"
-        android:layout_marginTop="36dp" />  <!-- 100 -->
+        android:layout_marginTop="28dp" />  <!-- 100 -->
     
     <Button 
         android:id="@+id/settingsButton1"
@@ -34,14 +36,24 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:text="@string/settingsButton1"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="83dp"
         android:onClick="Apply" />  <!-- 140 -->
     
     <TextView 
         android:id="@+id/settingsTextView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
+        android:textSize="18sp"
         android:layout_alignParentBottom="true" />  <!-- 300 -->
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsSwitch1"
+        android:layout_above="@id/settingsTextView3"
+        android:layout_marginBottom="14dp"
+        android:text="@string/settingsSwitch1"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"/>
 
 </RelativeLayout>

@@ -37,7 +37,7 @@
     <string name="updateRate">Update Rate</string>
     <string name="editTextdefault">1000</string>
     <string name="textViewUnit">mS</string>
-    <string name="ipAddressSettings">Enter Server IP-Address</string>
+    <string name="ipAddressSettings">Enter Server Socket</string>
     <string name="defaultIp">192.168.x.x</string>
     <string name="settingsButton1">Apply (OK)</string>
     <string name="title_activity_doors">Doors</string>
@@ -51,6 +51,7 @@
     <string name="openSiteEditor">Open SiteEditor</string>
     <string name="action_password">Password</string>
     <string name="openSiteEditorButton01Text">Send</string>
+    <string name="settingsSwitch1">Nagle Algorithm</string>
     <string name="title_activity_open_site_editor">OpenSiteEditor</string>
 
 </resources>

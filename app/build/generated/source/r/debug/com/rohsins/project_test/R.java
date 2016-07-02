@@ -29,8 +29,8 @@ public final class R {
         public static final int televisions=0x7f020009;
     }
     public static final class id {
-        public static final int action_password=0x7f08002d;
-        public static final int action_settings=0x7f08002c;
+        public static final int action_password=0x7f08002e;
+        public static final int action_settings=0x7f08002d;
         public static final int doorButton1=0x7f080000;
         public static final int editTextUpdateRate=0x7f080020;
         public static final int lightSeekBar1=0x7f080002;
@@ -63,14 +63,15 @@ public final class R {
         public static final int serialViewerTextView01=0x7f08001c;
         public static final int settingsButton1=0x7f080023;
         public static final int settingsEditText1=0x7f080022;
+        public static final int settingsSwitch1=0x7f080025;
         public static final int settingsTextView3=0x7f080024;
-        public static final int shutDownButton01=0x7f080027;
-        public static final int shutDownButton02=0x7f080028;
-        public static final int shutDownButton03=0x7f080029;
-        public static final int shutDownButton04=0x7f08002a;
-        public static final int shutDownButton05=0x7f08002b;
-        public static final int shutDownEditText01=0x7f080026;
-        public static final int shutDownTextView01=0x7f080025;
+        public static final int shutDownButton01=0x7f080028;
+        public static final int shutDownButton02=0x7f080029;
+        public static final int shutDownButton03=0x7f08002a;
+        public static final int shutDownButton04=0x7f08002b;
+        public static final int shutDownButton05=0x7f08002c;
+        public static final int shutDownEditText01=0x7f080027;
+        public static final int shutDownTextView01=0x7f080026;
         public static final int syncSwitch=0x7f08001e;
         public static final int textViewSync=0x7f08001d;
         public static final int textViewUnit=0x7f080021;
@@ -128,29 +129,30 @@ public final class R {
         public static final int others=0x7f060019;
         public static final int serialViewerDefaultText=0x7f06001a;
         public static final int settingsButton1=0x7f06001b;
-        public static final int showDesktop=0x7f06001c;
-        public static final int shutDown=0x7f06001d;
-        public static final int shutDownButton01=0x7f06001e;
-        public static final int shutDownButton02=0x7f06001f;
-        public static final int shutDownButton03=0x7f060020;
-        public static final int shutDownButton04=0x7f060021;
-        public static final int shutDownButton05=0x7f060022;
-        public static final int shutDownEditText01=0x7f060023;
-        public static final int shutDownTextView01=0x7f060024;
-        public static final int televisionMessage=0x7f060025;
-        public static final int textViewSync=0x7f060026;
-        public static final int textViewUnit=0x7f060027;
-        public static final int title_activity_doors=0x7f060028;
-        public static final int title_activity_lights=0x7f060029;
-        public static final int title_activity_motor__controls=0x7f06002a;
-        public static final int title_activity_motor_controls=0x7f06002b;
-        public static final int title_activity_open_site_editor=0x7f06002c;
-        public static final int title_activity_others=0x7f06002d;
-        public static final int title_activity_serial_viewer=0x7f06002e;
-        public static final int title_activity_settings=0x7f06002f;
-        public static final int title_activity_shut_down=0x7f060030;
-        public static final int title_activity_televisions=0x7f060031;
-        public static final int updateRate=0x7f060032;
+        public static final int settingsSwitch1=0x7f06001c;
+        public static final int showDesktop=0x7f06001d;
+        public static final int shutDown=0x7f06001e;
+        public static final int shutDownButton01=0x7f06001f;
+        public static final int shutDownButton02=0x7f060020;
+        public static final int shutDownButton03=0x7f060021;
+        public static final int shutDownButton04=0x7f060022;
+        public static final int shutDownButton05=0x7f060023;
+        public static final int shutDownEditText01=0x7f060024;
+        public static final int shutDownTextView01=0x7f060025;
+        public static final int televisionMessage=0x7f060026;
+        public static final int textViewSync=0x7f060027;
+        public static final int textViewUnit=0x7f060028;
+        public static final int title_activity_doors=0x7f060029;
+        public static final int title_activity_lights=0x7f06002a;
+        public static final int title_activity_motor__controls=0x7f06002b;
+        public static final int title_activity_motor_controls=0x7f06002c;
+        public static final int title_activity_open_site_editor=0x7f06002d;
+        public static final int title_activity_others=0x7f06002e;
+        public static final int title_activity_serial_viewer=0x7f06002f;
+        public static final int title_activity_settings=0x7f060030;
+        public static final int title_activity_shut_down=0x7f060031;
+        public static final int title_activity_televisions=0x7f060032;
+        public static final int updateRate=0x7f060033;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
