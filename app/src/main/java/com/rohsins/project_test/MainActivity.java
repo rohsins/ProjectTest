@@ -39,6 +39,11 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, SerialViewer.class);
         startActivity(intent);
     }
+
+    public void Mqtt(View view) {
+        Intent intent = new Intent(this, Mqtt.class);
+        startActivity(intent);
+    }
 	
 	public void Settings(View view) {
 		Intent intent = new Intent(this, Settings.class);

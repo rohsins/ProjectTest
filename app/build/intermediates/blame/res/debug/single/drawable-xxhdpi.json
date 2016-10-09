@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/televisions.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/televisions.png"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/motor_controls.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/motor_controls.png"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/doors.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/doors.png"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/lights.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/lights.png"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/settings.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/settings.png"
+    }
+]

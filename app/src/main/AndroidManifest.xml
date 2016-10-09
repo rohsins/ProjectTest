@@ -103,7 +103,10 @@
         </activity>
         <activity
             android:name=".OpenSiteEditor"
-            android:label="@string/title_activity_open_site_editor"></activity>
+            android:label="@string/title_activity_open_site_editor" />
+        <activity
+            android:name=".Mqtt"
+            android:label="@string/title_activity_mqtt"></activity>
     </application>
 
 </manifest>

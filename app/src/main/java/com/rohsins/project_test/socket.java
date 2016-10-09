@@ -21,8 +21,9 @@ public class socket extends Activity {
     String ipAddressPort[];
     String inputIpAddressPort;
     TextView serialViewerTextView;
-	public static boolean nagleFlag = true;
+	public static boolean nagleFlag = false;
 //	public static boolean nagleReplyFlag = true;
+	public static boolean reuseAddressFlag = false;
 
     public void on_create_func() {
         SharedPreferences settings = getSharedPreferences("msettings",0);
@@ -34,7 +35,8 @@ public class socket extends Activity {
         else {
             Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
         }
-		nagleFlag = settings.getBoolean("ENABLENAGLE", true);
+		nagleFlag = settings.getBoolean("ENABLENAGLE", false);
+		reuseAddressFlag = settings.getBoolean("ENABLEREUSEADDRESS", false);
     }
 		
 	public class MyClientTask extends AsyncTask<Void, Void, Void> {
@@ -61,9 +63,17 @@ public class socket extends Activity {
 
 			try {
 				socket = new Socket(dstAddress, dstPort);
-				if (nagleFlag == false) socket.setTcpNoDelay(false);
-				else if (nagleFlag == true) socket.setTcpNoDelay(true);
-				socket.setSoTimeout(1000);
+				if (nagleFlag == false) {
+					socket.setTcpNoDelay(true);
+				} else if (nagleFlag == true) {
+					socket.setTcpNoDelay(false);
+				}
+				if (reuseAddressFlag == false) {
+					socket.setReuseAddress(false);
+				} else if (reuseAddressFlag == true) {
+					socket.setReuseAddress(true);
+				}
+				socket.setSoTimeout(100);
 //				nagleReplyFlag = socket.getTcpNoDelay();
 				dataOutputStream = new DataOutputStream(socket.getOutputStream());
 				dataInputStream = new DataInputStream(socket.getInputStream());
@@ -126,6 +136,7 @@ public class socket extends Activity {
                     if(switchCheck[1].equals("java.io.EOFException")) {
                         break;
                     }
+					if (switchCheck[1].equals("java.net.SocketTimeoutException")) break;
                     Toast.makeText(socket.this, "Error: " + switchCheck[1], Toast.LENGTH_SHORT).show();
                     break;
                 default:

@@ -49,8 +49,18 @@
     <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/settingsSwitch1"
+        android:id="@+id/settingsSwitch2"
         android:layout_above="@id/settingsTextView3"
+        android:layout_marginBottom="14dp"
+        android:text="@string/settingsSwitch2"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsSwitch1"
+        android:layout_above="@id/settingsSwitch2"
         android:layout_marginBottom="14dp"
         android:text="@string/settingsSwitch1"
         android:textStyle="bold"

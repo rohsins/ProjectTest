@@ -1,42 +1,46 @@
 [
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_televisions.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_televisions.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_settings.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_settings.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_settings.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_mqtt.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_mqtt.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_shut_down.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_shut_down.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_open_site_editor.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_open_site_editor.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_lights.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_lights.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_lights.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_lights.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_televisions.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_televisions.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_others.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_others.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_serial_viewer.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_serial_viewer.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_serial_viewer.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_serial_viewer.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_doors.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_doors.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_motor_controls.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_motor_controls.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_shut_down.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_shut_down.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_doors.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_doors.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_open_site_editor.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_open_site_editor.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_main.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_others.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_others.xml"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_motor_controls.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_motor_controls.xml"
     }
 ]

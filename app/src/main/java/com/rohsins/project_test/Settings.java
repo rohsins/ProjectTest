@@ -17,6 +17,7 @@ public class Settings extends socket {
 	EditText editText;
 	TextView textView;
 	Switch aSwitch;
+	Switch bSwitch;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class Settings extends socket {
 		setContentView(R.layout.activity_settings);
 
 		aSwitch = (Switch) findViewById(R.id.settingsSwitch1);
+		bSwitch = (Switch) findViewById(R.id.settingsSwitch2);
 		textView = (TextView)findViewById(R.id.settingsTextView3);
 		editText = (EditText)findViewById(R.id.settingsEditText1);
 		SharedPreferences settings = getSharedPreferences("msettings",0);
@@ -34,9 +36,11 @@ public class Settings extends socket {
 		} else {
 			Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
 		}
-		textView.setText("Current Server Socket:" + Address + ":" + Port);
+		textView.setText("Current Server Socket:\n\r" + Address + ":" + Port);
 
-		aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", true));
+		aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", false));
+		bSwitch.setChecked(settings.getBoolean("ENABLEREUSEADDRESS", false));
+
 
 		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
@@ -45,12 +49,28 @@ public class Settings extends socket {
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putBoolean("ENABLENAGLE", aSwitch.isChecked());
 				editor.commit();
-				aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", true));
-				if(!settings.getBoolean("ENABLENAGLE", true)) {
+				aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", false));
+				if(!settings.getBoolean("ENABLENAGLE", false)) {
 					nagleFlag = false;
 				}
-				else if(settings.getBoolean("ENABLENAGLE", true)) {
+				else if(settings.getBoolean("ENABLENAGLE", false)) {
 					nagleFlag = true;
+				}
+			}
+		});
+
+		bSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				SharedPreferences settings = getSharedPreferences("msettings", 0);
+				SharedPreferences.Editor editor = settings.edit();
+				editor.putBoolean("ENABLEREUSEADDRESS", bSwitch.isChecked());
+				editor.commit();
+				bSwitch.setChecked(settings.getBoolean("ENABLEREUSEADDRESS", false));
+				if (!settings.getBoolean("ENABLEREUSEADDRESS", false)) {
+					reuseAddressFlag = false;
+				} else if (settings.getBoolean("ENABLEREUSEADDRESS", false)) {
+					reuseAddressFlag = true;
 				}
 			}
 		});
@@ -75,7 +95,7 @@ public class Settings extends socket {
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putString("SERVERIPADDRESS", Address + ":" + Port);
 			editor.commit();
-			textView.setText("Current Server IP:" + Address + ":" + Port);
+			textView.setText("Current Server Socket:\n\r" + Address + ":" + Port);
 			Toast.makeText(Settings.this, "Server IP Address is set to " + Address + ":" + Port, Toast.LENGTH_SHORT).show();
 		}
 		else if (inputIpAddressPort.equals("")) {

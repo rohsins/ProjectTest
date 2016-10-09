@@ -10,6 +10,7 @@
     <string name="Motor_Controls">Motor Controls</string>
     <string name="Settings">Settings</string>
     <string name="SerialViewer">Serial Viewer</string>
+    <string name="Mqtt">Mqtt</string>
     <string name="title_activity_lights">Lights</string>
     <string name="lightSwitch1">Light One:</string>
     <string name="lightSwitch2">Light Two:</string>
@@ -33,13 +34,14 @@
     <string name="shutDownButton04">Hibernate</string>
     <string name="shutDownButton05">WakeUp</string>
     <string name="serialViewerDefaultText">Sync to use Serial Viewer</string>
+    <string name="mqttDefaultText">MQTT Viewer</string>
     <string name="textViewSync">Sync</string>
     <string name="updateRate">Update Rate</string>
     <string name="editTextdefault">1000</string>
     <string name="textViewUnit">mS</string>
     <string name="ipAddressSettings">Enter Server Socket</string>
     <string name="defaultIp">192.168.x.x</string>
-    <string name="settingsButton1">Apply (OK)</string>
+    <string name="settingsButton1">Apply</string>
     <string name="title_activity_doors">Doors</string>
     <string name="title_activity_televisions">Televisions</string>
     <string name="title_activity_motor__controls">Motor Controls</string>
@@ -52,6 +54,8 @@
     <string name="action_password">Password</string>
     <string name="openSiteEditorButton01Text">Send</string>
     <string name="settingsSwitch1">Nagle Algorithm</string>
+    <string name="settingsSwitch2">Re-use Address</string>
     <string name="title_activity_open_site_editor">OpenSiteEditor</string>
+    <string name="title_activity_mqtt">Mqtt</string>
 
 </resources>

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/values/values.xml",
+        "outputFile": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 225
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 284
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 324
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 366
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 424
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -140,11 +140,30 @@
                     "startLine": 9,
                     "startColumn": 4,
                     "startOffset": 429,
-                    "endColumn": 54,
-                    "endOffset": 479
+                    "endColumn": 37,
+                    "endOffset": 462
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 505,
+                        "endColumn": 37,
+                        "endOffset": 538
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 467,
+                    "endColumn": 54,
+                    "endOffset": 517
+                },
+                "from": {
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -156,14 +175,14 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 484,
+                    "startOffset": 522,
                     "endColumn": 45,
-                    "endOffset": 525
+                    "endOffset": 563
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -175,14 +194,14 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 530,
+                    "startOffset": 568,
                     "endColumn": 51,
-                    "endOffset": 577
+                    "endOffset": 615
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -194,33 +213,33 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 582,
+                    "startOffset": 620,
                     "endColumn": 52,
-                    "endOffset": 630
+                    "endOffset": 668
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 51,
+                        "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 2706,
+                        "startOffset": 2795,
                         "endColumn": 52,
-                        "endOffset": 2754
+                        "endOffset": 2843
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 635,
+                    "startOffset": 673,
                     "endColumn": 52,
-                    "endOffset": 683
+                    "endOffset": 721
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -232,33 +251,33 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 688,
+                    "startOffset": 726,
                     "endColumn": 41,
-                    "endOffset": 725
+                    "endOffset": 763
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 1109,
+                        "startOffset": 1147,
                         "endColumn": 41,
-                        "endOffset": 1146
+                        "endOffset": 1184
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 730,
+                    "startOffset": 768,
                     "endColumn": 49,
-                    "endOffset": 775
+                    "endOffset": 813
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -270,39 +289,20 @@
             },
             {
                 "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 780,
-                    "endColumn": 41,
-                    "endOffset": 817
-                },
-                "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 1151,
-                        "endColumn": 41,
-                        "endOffset": 1188
-                    }
-                }
-            },
-            {
-                "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 822,
-                    "endColumn": 43,
-                    "endOffset": 861
+                    "startOffset": 818,
+                    "endColumn": 41,
+                    "endOffset": 855
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 1023,
-                        "endColumn": 43,
-                        "endOffset": 1062
+                        "startOffset": 1189,
+                        "endColumn": 41,
+                        "endOffset": 1226
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 866,
-                    "endColumn": 49,
-                    "endOffset": 911
+                    "startOffset": 860,
+                    "endColumn": 43,
+                    "endOffset": 899
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 40,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2023,
-                        "endColumn": 49,
-                        "endOffset": 2068
+                        "startOffset": 1061,
+                        "endColumn": 43,
+                        "endOffset": 1100
                     }
                 }
             },
@@ -329,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 916,
-                    "endColumn": 48,
-                    "endOffset": 960
+                    "startOffset": 904,
+                    "endColumn": 49,
+                    "endOffset": 949
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 37,
+                        "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 1864,
-                        "endColumn": 48,
-                        "endOffset": 1908
+                        "startOffset": 2117,
+                        "endColumn": 49,
+                        "endOffset": 2162
                     }
                 }
             },
@@ -348,12 +348,31 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 965,
-                    "endColumn": 52,
-                    "endOffset": 1013
+                    "startOffset": 954,
+                    "endColumn": 48,
+                    "endOffset": 998
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1958,
+                        "endColumn": 48,
+                        "endOffset": 2002
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1003,
+                    "endColumn": 52,
+                    "endOffset": 1051
+                },
+                "from": {
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -365,39 +384,20 @@
             },
             {
                 "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 1018,
-                    "endColumn": 65,
-                    "endOffset": 1079
-                },
-                "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 1957,
-                        "endColumn": 65,
-                        "endOffset": 2018
-                    }
-                }
-            },
-            {
-                "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1084,
-                    "endColumn": 51,
-                    "endOffset": 1131
+                    "startOffset": 1056,
+                    "endColumn": 65,
+                    "endOffset": 1117
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 41,
                         "startColumn": 4,
-                        "startOffset": 562,
-                        "endColumn": 51,
-                        "endOffset": 609
+                        "startOffset": 2051,
+                        "endColumn": 65,
+                        "endOffset": 2112
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1136,
+                    "startOffset": 1122,
                     "endColumn": 51,
-                    "endOffset": 1183
+                    "endOffset": 1169
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 614,
+                        "startOffset": 600,
                         "endColumn": 51,
-                        "endOffset": 661
+                        "endOffset": 647
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1188,
-                    "endColumn": 53,
-                    "endOffset": 1237
+                    "startOffset": 1174,
+                    "endColumn": 51,
+                    "endOffset": 1221
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 666,
-                        "endColumn": 53,
-                        "endOffset": 715
+                        "startOffset": 652,
+                        "endColumn": 51,
+                        "endOffset": 699
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1242,
-                    "endColumn": 52,
-                    "endOffset": 1290
+                    "startOffset": 1226,
+                    "endColumn": 53,
+                    "endOffset": 1275
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 720,
-                        "endColumn": 52,
-                        "endOffset": 768
+                        "startOffset": 704,
+                        "endColumn": 53,
+                        "endOffset": 753
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1295,
+                    "startOffset": 1280,
                     "endColumn": 52,
-                    "endOffset": 1343
+                    "endOffset": 1328
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 773,
+                        "startOffset": 758,
                         "endColumn": 52,
-                        "endOffset": 821
+                        "endOffset": 806
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1348,
-                    "endColumn": 54,
-                    "endOffset": 1398
+                    "startOffset": 1333,
+                    "endColumn": 52,
+                    "endOffset": 1381
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 826,
-                        "endColumn": 54,
-                        "endOffset": 876
+                        "startOffset": 811,
+                        "endColumn": 52,
+                        "endOffset": 859
                     }
                 }
             },
@@ -500,17 +500,17 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1403,
-                    "endColumn": 37,
+                    "startOffset": 1386,
+                    "endColumn": 54,
                     "endOffset": 1436
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 881,
-                        "endColumn": 37,
+                        "startOffset": 864,
+                        "endColumn": 54,
                         "endOffset": 914
                     }
                 }
@@ -520,17 +520,17 @@
                     "startLine": 29,
                     "startColumn": 4,
                     "startOffset": 1441,
-                    "endColumn": 58,
-                    "endOffset": 1495
+                    "endColumn": 55,
+                    "endOffset": 1492
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 50,
+                        "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 2647,
-                        "endColumn": 58,
-                        "endOffset": 2701
+                        "startOffset": 1805,
+                        "endColumn": 55,
+                        "endOffset": 1856
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1500,
-                    "endColumn": 59,
-                    "endOffset": 1555
+                    "startOffset": 1497,
+                    "endColumn": 37,
+                    "endOffset": 1530
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 52,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 2759,
-                        "endColumn": 59,
-                        "endOffset": 2814
+                        "startOffset": 919,
+                        "endColumn": 37,
+                        "endOffset": 952
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1560,
-                    "endColumn": 41,
-                    "endOffset": 1597
+                    "startOffset": 1535,
+                    "endColumn": 58,
+                    "endOffset": 1589
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 52,
                         "startColumn": 4,
-                        "startOffset": 1067,
-                        "endColumn": 41,
-                        "endOffset": 1104
+                        "startOffset": 2736,
+                        "endColumn": 58,
+                        "endOffset": 2790
                     }
                 }
             },
@@ -576,18 +576,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1602,
-                    "endColumn": 77,
-                    "endOffset": 1675
+                    "startOffset": 1594,
+                    "endColumn": 59,
+                    "endOffset": 1649
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 34,
+                        "startLine": 54,
                         "startColumn": 4,
-                        "startOffset": 1689,
-                        "endColumn": 77,
-                        "endOffset": 1762
+                        "startOffset": 2848,
+                        "endColumn": 59,
+                        "endOffset": 2903
                     }
                 }
             },
@@ -595,18 +595,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1680,
-                    "endColumn": 54,
-                    "endOffset": 1730
+                    "startOffset": 1654,
+                    "endColumn": 41,
+                    "endOffset": 1691
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 41,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 2073,
-                        "endColumn": 54,
-                        "endOffset": 2123
+                        "startOffset": 1105,
+                        "endColumn": 41,
+                        "endOffset": 1142
                     }
                 }
             },
@@ -614,18 +614,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1735,
-                    "endColumn": 59,
-                    "endOffset": 1790
+                    "startOffset": 1696,
+                    "endColumn": 77,
+                    "endOffset": 1769
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 53,
+                        "startLine": 35,
                         "startColumn": 4,
-                        "startOffset": 2819,
-                        "endColumn": 59,
-                        "endOffset": 2874
+                        "startOffset": 1727,
+                        "endColumn": 77,
+                        "endOffset": 1800
                     }
                 }
             },
@@ -633,18 +633,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1795,
-                    "endColumn": 52,
-                    "endOffset": 1843
+                    "startOffset": 1774,
+                    "endColumn": 49,
+                    "endOffset": 1819
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 43,
                         "startColumn": 4,
-                        "startOffset": 1193,
-                        "endColumn": 52,
-                        "endOffset": 1241
+                        "startOffset": 2167,
+                        "endColumn": 49,
+                        "endOffset": 2212
                     }
                 }
             },
@@ -652,18 +652,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1848,
-                    "endColumn": 46,
-                    "endOffset": 1890
+                    "startOffset": 1824,
+                    "endColumn": 59,
+                    "endOffset": 1879
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 55,
                         "startColumn": 4,
-                        "startOffset": 1320,
-                        "endColumn": 46,
-                        "endOffset": 1362
+                        "startOffset": 2908,
+                        "endColumn": 59,
+                        "endOffset": 2963
                     }
                 }
             },
@@ -671,18 +671,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1895,
-                    "endColumn": 53,
-                    "endOffset": 1944
+                    "startOffset": 1884,
+                    "endColumn": 58,
+                    "endOffset": 1938
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 56,
                         "startColumn": 4,
-                        "startOffset": 1415,
-                        "endColumn": 53,
-                        "endOffset": 1464
+                        "startOffset": 2968,
+                        "endColumn": 58,
+                        "endOffset": 3022
                     }
                 }
             },
@@ -690,18 +690,18 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 1949,
-                    "endColumn": 59,
-                    "endOffset": 2004
+                    "startOffset": 1943,
+                    "endColumn": 52,
+                    "endOffset": 1991
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1469,
-                        "endColumn": 59,
-                        "endOffset": 1524
+                        "startOffset": 1231,
+                        "endColumn": 52,
+                        "endOffset": 1279
                     }
                 }
             },
@@ -709,18 +709,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2009,
-                    "endColumn": 52,
-                    "endOffset": 2057
+                    "startOffset": 1996,
+                    "endColumn": 46,
+                    "endOffset": 2038
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 1529,
-                        "endColumn": 52,
-                        "endOffset": 1577
+                        "startOffset": 1358,
+                        "endColumn": 46,
+                        "endOffset": 1400
                     }
                 }
             },
@@ -728,18 +728,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2062,
-                    "endColumn": 54,
-                    "endOffset": 2112
+                    "startOffset": 2043,
+                    "endColumn": 53,
+                    "endOffset": 2092
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 1582,
-                        "endColumn": 54,
-                        "endOffset": 1632
+                        "startOffset": 1453,
+                        "endColumn": 53,
+                        "endOffset": 1502
                     }
                 }
             },
@@ -747,18 +747,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 2117,
-                    "endColumn": 51,
-                    "endOffset": 2164
+                    "startOffset": 2097,
+                    "endColumn": 59,
+                    "endOffset": 2152
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 33,
+                        "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 1637,
-                        "endColumn": 51,
-                        "endOffset": 1684
+                        "startOffset": 1507,
+                        "endColumn": 59,
+                        "endOffset": 1562
                     }
                 }
             },
@@ -766,18 +766,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2169,
-                    "endColumn": 39,
-                    "endOffset": 2204
+                    "startOffset": 2157,
+                    "endColumn": 52,
+                    "endOffset": 2205
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 1367,
-                        "endColumn": 47,
-                        "endOffset": 1410
+                        "startOffset": 1567,
+                        "endColumn": 52,
+                        "endOffset": 1615
                     }
                 }
             },
@@ -785,18 +785,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2209,
-                    "endColumn": 73,
-                    "endOffset": 2278
+                    "startOffset": 2210,
+                    "endColumn": 54,
+                    "endOffset": 2260
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 33,
                         "startColumn": 4,
-                        "startOffset": 1246,
-                        "endColumn": 73,
-                        "endOffset": 1315
+                        "startOffset": 1620,
+                        "endColumn": 54,
+                        "endOffset": 1670
                     }
                 }
             },
@@ -804,18 +804,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2283,
-                    "endColumn": 103,
-                    "endOffset": 2382
+                    "startOffset": 2265,
+                    "endColumn": 51,
+                    "endOffset": 2312
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 34,
                         "startColumn": 4,
-                        "startOffset": 919,
-                        "endColumn": 103,
-                        "endOffset": 1018
+                        "startOffset": 1675,
+                        "endColumn": 51,
+                        "endOffset": 1722
                     }
                 }
             },
@@ -823,18 +823,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2387,
-                    "endColumn": 45,
-                    "endOffset": 2428
+                    "startOffset": 2317,
+                    "endColumn": 39,
+                    "endOffset": 2352
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 35,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 1767,
-                        "endColumn": 45,
-                        "endOffset": 1808
+                        "startOffset": 1405,
+                        "endColumn": 47,
+                        "endOffset": 1448
                     }
                 }
             },
@@ -842,18 +842,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2433,
-                    "endColumn": 43,
-                    "endOffset": 2472
+                    "startOffset": 2357,
+                    "endColumn": 73,
+                    "endOffset": 2426
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 38,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 1913,
-                        "endColumn": 43,
-                        "endOffset": 1952
+                        "startOffset": 1284,
+                        "endColumn": 73,
+                        "endOffset": 1353
                     }
                 }
             },
@@ -861,18 +861,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2477,
-                    "endColumn": 54,
-                    "endOffset": 2527
+                    "startOffset": 2431,
+                    "endColumn": 103,
+                    "endOffset": 2530
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 42,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2128,
-                        "endColumn": 54,
-                        "endOffset": 2178
+                        "startOffset": 957,
+                        "endColumn": 103,
+                        "endOffset": 1056
                     }
                 }
             },
@@ -880,18 +880,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2532,
-                    "endColumn": 56,
-                    "endOffset": 2584
+                    "startOffset": 2535,
+                    "endColumn": 45,
+                    "endOffset": 2576
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 37,
                         "startColumn": 4,
-                        "startOffset": 505,
-                        "endColumn": 56,
-                        "endOffset": 557
+                        "startOffset": 1861,
+                        "endColumn": 45,
+                        "endOffset": 1902
                     }
                 }
             },
@@ -899,18 +899,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2589,
-                    "endColumn": 73,
-                    "endOffset": 2658
+                    "startOffset": 2581,
+                    "endColumn": 43,
+                    "endOffset": 2620
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 44,
+                        "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 2250,
-                        "endColumn": 73,
-                        "endOffset": 2319
+                        "startOffset": 2007,
+                        "endColumn": 43,
+                        "endOffset": 2046
                     }
                 }
             },
@@ -918,18 +918,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2663,
-                    "endColumn": 72,
-                    "endOffset": 2731
+                    "startOffset": 2625,
+                    "endColumn": 54,
+                    "endOffset": 2675
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 46,
+                        "startLine": 44,
                         "startColumn": 4,
-                        "startOffset": 2385,
-                        "endColumn": 72,
-                        "endOffset": 2453
+                        "startOffset": 2217,
+                        "endColumn": 54,
+                        "endOffset": 2267
                     }
                 }
             },
@@ -937,18 +937,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2736,
-                    "endColumn": 74,
-                    "endOffset": 2806
+                    "startOffset": 2680,
+                    "endColumn": 56,
+                    "endOffset": 2732
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 54,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 2879,
-                        "endColumn": 74,
-                        "endOffset": 2949
+                        "startOffset": 543,
+                        "endColumn": 56,
+                        "endOffset": 595
                     }
                 }
             },
@@ -956,18 +956,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2811,
-                    "endColumn": 56,
-                    "endOffset": 2863
+                    "startOffset": 2737,
+                    "endColumn": 73,
+                    "endOffset": 2806
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 47,
+                        "startLine": 46,
                         "startColumn": 4,
-                        "startOffset": 2458,
-                        "endColumn": 56,
-                        "endOffset": 2510
+                        "startOffset": 2339,
+                        "endColumn": 73,
+                        "endOffset": 2408
                     }
                 }
             },
@@ -975,18 +975,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2868,
-                    "endColumn": 69,
-                    "endOffset": 2933
+                    "startOffset": 2811,
+                    "endColumn": 72,
+                    "endOffset": 2879
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 49,
+                        "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 2577,
-                        "endColumn": 69,
-                        "endOffset": 2642
+                        "startOffset": 2474,
+                        "endColumn": 72,
+                        "endOffset": 2542
                     }
                 }
             },
@@ -994,18 +994,18 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2938,
-                    "endColumn": 60,
-                    "endOffset": 2994
+                    "startOffset": 2884,
+                    "endColumn": 52,
+                    "endOffset": 2932
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 45,
+                        "startLine": 58,
                         "startColumn": 4,
-                        "startOffset": 2324,
-                        "endColumn": 60,
-                        "endOffset": 2380
+                        "startOffset": 3102,
+                        "endColumn": 52,
+                        "endOffset": 3150
                     }
                 }
             },
@@ -1013,18 +1013,18 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2999,
-                    "endColumn": 61,
-                    "endOffset": 3056
+                    "startOffset": 2937,
+                    "endColumn": 74,
+                    "endOffset": 3007
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 48,
+                        "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 2515,
-                        "endColumn": 61,
-                        "endOffset": 2572
+                        "startOffset": 3027,
+                        "endColumn": 74,
+                        "endOffset": 3097
                     }
                 }
             },
@@ -1032,18 +1032,18 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 3061,
-                    "endColumn": 66,
-                    "endOffset": 3123
+                    "startOffset": 3012,
+                    "endColumn": 56,
+                    "endOffset": 3064
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 43,
+                        "startLine": 49,
                         "startColumn": 4,
-                        "startOffset": 2183,
-                        "endColumn": 66,
-                        "endOffset": 2245
+                        "startOffset": 2547,
+                        "endColumn": 56,
+                        "endOffset": 2599
                     }
                 }
             },
@@ -1051,18 +1051,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 3128,
-                    "endColumn": 50,
-                    "endOffset": 3174
+                    "startOffset": 3069,
+                    "endColumn": 69,
+                    "endOffset": 3134
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
                     "position": {
-                        "startLine": 36,
+                        "startLine": 51,
                         "startColumn": 4,
-                        "startOffset": 1813,
-                        "endColumn": 50,
-                        "endOffset": 1859
+                        "startOffset": 2666,
+                        "endColumn": 69,
+                        "endOffset": 2731
                     }
                 }
             },
@@ -1070,13 +1070,89 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 3179,
-                    "endLine": 64,
-                    "endColumn": 12,
-                    "endOffset": 3470
+                    "startOffset": 3139,
+                    "endColumn": 60,
+                    "endOffset": 3195
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2413,
+                        "endColumn": 60,
+                        "endOffset": 2469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 3200,
+                    "endColumn": 61,
+                    "endOffset": 3257
+                },
+                "from": {
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2604,
+                        "endColumn": 61,
+                        "endOffset": 2661
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 3262,
+                    "endColumn": 66,
+                    "endOffset": 3324
+                },
+                "from": {
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2272,
+                        "endColumn": 66,
+                        "endOffset": 2334
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 3329,
+                    "endColumn": 50,
+                    "endOffset": 3375
+                },
+                "from": {
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1907,
+                        "endColumn": 50,
+                        "endOffset": 1953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3380,
+                    "endLine": 68,
+                    "endColumn": 12,
+                    "endOffset": 3671
+                },
+                "from": {
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1089,15 +1165,15 @@
             },
             {
                 "to": {
-                    "startLine": 65,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 3475,
-                    "endLine": 67,
+                    "startOffset": 3676,
+                    "endLine": 71,
                     "endColumn": 12,
-                    "endOffset": 3642
+                    "endOffset": 3843
                 },
                 "from": {
-                    "file": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml",
+                    "file": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,

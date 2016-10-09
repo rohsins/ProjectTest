@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/seekswitchprofile.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/seekswitchprofile.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/seekswitchprofile.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/seekswitchprofile.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/button_style2.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style2.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/button_style3.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style3.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/button_style.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/button_style2.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style2.xml"
     },
     {
-        "merged": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/button_style3.xml",
-        "source": "/Volumes/SILICON/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style3.xml"
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable/button_style.xml",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable/button_style.xml"
     }
 ]
