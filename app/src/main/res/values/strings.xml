@@ -33,8 +33,8 @@
     <string name="shutDownButton03">Restart</string>
     <string name="shutDownButton04">Hibernate</string>
     <string name="shutDownButton05">WakeUp</string>
-    <string name="serialViewerDefaultText">Sync to use Serial Viewer</string>
-    <string name="mqttDefaultText">MQTT Viewer</string>
+    <string name="serialViewerDefaultText">Sync to use Serial Viewer\n</string>
+    <string name="mqttDefaultText">MQTT Viewer\n</string>
     <string name="textViewSync">Sync</string>
     <string name="updateRate">Update Rate</string>
     <string name="editTextdefault">1000</string>
@@ -55,6 +55,9 @@
     <string name="openSiteEditorButton01Text">Send</string>
     <string name="settingsSwitch1">Nagle Algorithm</string>
     <string name="settingsSwitch2">Re-use Address</string>
+    <string name="settingsSwitch3">Mqtt Enable</string>
+    <string name="defaultMqttIp">m2m.eclipse.org</string>
+    <string name="settingsTextView4">Enter Mqtt Broker Address</string>
     <string name="title_activity_open_site_editor">OpenSiteEditor</string>
     <string name="title_activity_mqtt">Mqtt</string>
 

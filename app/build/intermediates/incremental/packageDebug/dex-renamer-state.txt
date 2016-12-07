@@ -1,0 +1,4 @@
+#Thu Dec 08 05:06:43 NPT 2016
+base.0=/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

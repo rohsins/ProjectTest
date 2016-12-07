@@ -9,76 +9,218 @@ package com.rohsins.project_test;
 
 public final class R {
     public static final class attr {
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>wide</code></td><td>1</td><td></td></tr>
+<tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int buttonSize=0x7f010003;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circleCrop=0x7f010002;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>light</code></td><td>1</td><td></td></tr>
+<tr><td><code>auto</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int colorScheme=0x7f010004;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int imageAspectRatio=0x7f010001;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
+<tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int imageAspectRatioAdjust=0x7f010000;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int scopeUris=0x7f010005;
+    }
+    public static final class color {
+        public static final int common_action_bar_splitter=0x7f070000;
+        public static final int common_google_signin_btn_text_dark=0x7f070011;
+        public static final int common_google_signin_btn_text_dark_default=0x7f070001;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f070002;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f070003;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f070004;
+        public static final int common_google_signin_btn_text_light=0x7f070012;
+        public static final int common_google_signin_btn_text_light_default=0x7f070005;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f070006;
+        public static final int common_google_signin_btn_text_light_focused=0x7f070007;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f070008;
+        public static final int common_plus_signin_btn_text_dark=0x7f070013;
+        public static final int common_plus_signin_btn_text_dark_default=0x7f070009;
+        public static final int common_plus_signin_btn_text_dark_disabled=0x7f07000a;
+        public static final int common_plus_signin_btn_text_dark_focused=0x7f07000b;
+        public static final int common_plus_signin_btn_text_dark_pressed=0x7f07000c;
+        public static final int common_plus_signin_btn_text_light=0x7f070014;
+        public static final int common_plus_signin_btn_text_light_default=0x7f07000d;
+        public static final int common_plus_signin_btn_text_light_disabled=0x7f07000e;
+        public static final int common_plus_signin_btn_text_light_focused=0x7f07000f;
+        public static final int common_plus_signin_btn_text_light_pressed=0x7f070010;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
-        public static final int serialViewer_horizontal_margin=0x7f050002;
-        public static final int serialViewer_vertical_margin=0x7f050003;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int serialViewer_horizontal_margin=0x7f060002;
+        public static final int serialViewer_vertical_margin=0x7f060003;
     }
     public static final class drawable {
         public static final int button_style=0x7f020000;
         public static final int button_style2=0x7f020001;
         public static final int button_style3=0x7f020002;
-        public static final int doors=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int lights=0x7f020005;
-        public static final int motor_controls=0x7f020006;
-        public static final int seekswitchprofile=0x7f020007;
-        public static final int settings=0x7f020008;
-        public static final int televisions=0x7f020009;
+        public static final int common_full_open_on_phone=0x7f020003;
+        public static final int common_google_signin_btn_icon_dark=0x7f020004;
+        public static final int common_google_signin_btn_icon_dark_disabled=0x7f020005;
+        public static final int common_google_signin_btn_icon_dark_focused=0x7f020006;
+        public static final int common_google_signin_btn_icon_dark_normal=0x7f020007;
+        public static final int common_google_signin_btn_icon_dark_pressed=0x7f020008;
+        public static final int common_google_signin_btn_icon_light=0x7f020009;
+        public static final int common_google_signin_btn_icon_light_disabled=0x7f02000a;
+        public static final int common_google_signin_btn_icon_light_focused=0x7f02000b;
+        public static final int common_google_signin_btn_icon_light_normal=0x7f02000c;
+        public static final int common_google_signin_btn_icon_light_pressed=0x7f02000d;
+        public static final int common_google_signin_btn_text_dark=0x7f02000e;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f02000f;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f020010;
+        public static final int common_google_signin_btn_text_dark_normal=0x7f020011;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f020012;
+        public static final int common_google_signin_btn_text_light=0x7f020013;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f020014;
+        public static final int common_google_signin_btn_text_light_focused=0x7f020015;
+        public static final int common_google_signin_btn_text_light_normal=0x7f020016;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f020017;
+        public static final int common_ic_googleplayservices=0x7f020018;
+        public static final int common_plus_signin_btn_icon_dark=0x7f020019;
+        public static final int common_plus_signin_btn_icon_dark_disabled=0x7f02001a;
+        public static final int common_plus_signin_btn_icon_dark_focused=0x7f02001b;
+        public static final int common_plus_signin_btn_icon_dark_normal=0x7f02001c;
+        public static final int common_plus_signin_btn_icon_dark_pressed=0x7f02001d;
+        public static final int common_plus_signin_btn_icon_light=0x7f02001e;
+        public static final int common_plus_signin_btn_icon_light_disabled=0x7f02001f;
+        public static final int common_plus_signin_btn_icon_light_focused=0x7f020020;
+        public static final int common_plus_signin_btn_icon_light_normal=0x7f020021;
+        public static final int common_plus_signin_btn_icon_light_pressed=0x7f020022;
+        public static final int common_plus_signin_btn_text_dark=0x7f020023;
+        public static final int common_plus_signin_btn_text_dark_disabled=0x7f020024;
+        public static final int common_plus_signin_btn_text_dark_focused=0x7f020025;
+        public static final int common_plus_signin_btn_text_dark_normal=0x7f020026;
+        public static final int common_plus_signin_btn_text_dark_pressed=0x7f020027;
+        public static final int common_plus_signin_btn_text_light=0x7f020028;
+        public static final int common_plus_signin_btn_text_light_disabled=0x7f020029;
+        public static final int common_plus_signin_btn_text_light_focused=0x7f02002a;
+        public static final int common_plus_signin_btn_text_light_normal=0x7f02002b;
+        public static final int common_plus_signin_btn_text_light_pressed=0x7f02002c;
+        public static final int doors=0x7f02002d;
+        public static final int ic_launcher=0x7f02002e;
+        public static final int lights=0x7f02002f;
+        public static final int motor_controls=0x7f020030;
+        public static final int seekswitchprofile=0x7f020031;
+        public static final int settings=0x7f020032;
+        public static final int televisions=0x7f020033;
     }
     public static final class id {
-        public static final int action_password=0x7f080031;
-        public static final int action_settings=0x7f080030;
-        public static final int doorButton1=0x7f080000;
-        public static final int editTextUpdateRate=0x7f080022;
-        public static final int lightSeekBar1=0x7f080002;
-        public static final int lightSeekBar2=0x7f080004;
-        public static final int lightSeekBar3=0x7f080006;
-        public static final int lightSeekBar4=0x7f080008;
-        public static final int lightSeekBar5=0x7f08000a;
-        public static final int lightSwitch1=0x7f080001;
-        public static final int lightSwitch2=0x7f080003;
-        public static final int lightSwitch3=0x7f080005;
-        public static final int lightSwitch4=0x7f080007;
-        public static final int lightSwitch5=0x7f080009;
-        public static final int mainButton1=0x7f08000b;
-        public static final int mainButton2=0x7f08000c;
-        public static final int mainButton3=0x7f08000d;
-        public static final int mainButton4=0x7f08000e;
-        public static final int mainButton5=0x7f08000f;
-        public static final int mainButton6=0x7f080010;
-        public static final int mainButton7=0x7f080012;
-        public static final int mainButton8=0x7f080011;
-        public static final int motor_controlsSeekBar1=0x7f080014;
-        public static final int motor_controlsTextView1=0x7f080013;
-        public static final int motor_controlsTextView2=0x7f080015;
-        public static final int mqttTextView01=0x7f080016;
-        public static final int openSiteEditorButton01=0x7f080018;
-        public static final int openSiteEditorEdittext01=0x7f080017;
-        public static final int othersButton1=0x7f080019;
-        public static final int othersButton2=0x7f08001a;
-        public static final int othersButton3=0x7f08001b;
-        public static final int othersButton4=0x7f08001c;
-        public static final int othersButton5=0x7f08001d;
-        public static final int serialViewerTextView01=0x7f08001e;
-        public static final int settingsButton1=0x7f080025;
-        public static final int settingsEditText1=0x7f080024;
-        public static final int settingsSwitch1=0x7f080028;
-        public static final int settingsSwitch2=0x7f080027;
-        public static final int settingsTextView3=0x7f080026;
-        public static final int shutDownButton01=0x7f08002b;
-        public static final int shutDownButton02=0x7f08002c;
-        public static final int shutDownButton03=0x7f08002d;
-        public static final int shutDownButton04=0x7f08002e;
-        public static final int shutDownButton05=0x7f08002f;
-        public static final int shutDownEditText01=0x7f08002a;
-        public static final int shutDownTextView01=0x7f080029;
-        public static final int syncSwitch=0x7f080020;
-        public static final int textViewSync=0x7f08001f;
-        public static final int textViewUnit=0x7f080023;
-        public static final int textViewUpdateRate=0x7f080021;
+        public static final int action_password=0x7f0a003e;
+        public static final int action_settings=0x7f0a003d;
+        public static final int adjust_height=0x7f0a0000;
+        public static final int adjust_width=0x7f0a0001;
+        public static final int auto=0x7f0a0006;
+        public static final int dark=0x7f0a0007;
+        public static final int doorButton1=0x7f0a0009;
+        public static final int editTextUpdateRate=0x7f0a002c;
+        public static final int icon_only=0x7f0a0003;
+        public static final int light=0x7f0a0008;
+        public static final int lightSeekBar1=0x7f0a000b;
+        public static final int lightSeekBar2=0x7f0a000d;
+        public static final int lightSeekBar3=0x7f0a000f;
+        public static final int lightSeekBar4=0x7f0a0011;
+        public static final int lightSeekBar5=0x7f0a0013;
+        public static final int lightSwitch1=0x7f0a000a;
+        public static final int lightSwitch2=0x7f0a000c;
+        public static final int lightSwitch3=0x7f0a000e;
+        public static final int lightSwitch4=0x7f0a0010;
+        public static final int lightSwitch5=0x7f0a0012;
+        public static final int mainButton1=0x7f0a0014;
+        public static final int mainButton2=0x7f0a0015;
+        public static final int mainButton3=0x7f0a0016;
+        public static final int mainButton4=0x7f0a0017;
+        public static final int mainButton5=0x7f0a001a;
+        public static final int mainButton6=0x7f0a0018;
+        public static final int mainButton7=0x7f0a001b;
+        public static final int mainButton8=0x7f0a0019;
+        public static final int motor_controlsSeekBar1=0x7f0a001d;
+        public static final int motor_controlsTextView1=0x7f0a001c;
+        public static final int motor_controlsTextView2=0x7f0a001e;
+        public static final int mqttTextView01=0x7f0a0020;
+        public static final int mqttView=0x7f0a001f;
+        public static final int none=0x7f0a0002;
+        public static final int openSiteEditorButton01=0x7f0a0022;
+        public static final int openSiteEditorEdittext01=0x7f0a0021;
+        public static final int othersButton1=0x7f0a0023;
+        public static final int othersButton2=0x7f0a0024;
+        public static final int othersButton3=0x7f0a0025;
+        public static final int othersButton4=0x7f0a0026;
+        public static final int othersButton5=0x7f0a0027;
+        public static final int serialViewerTextView01=0x7f0a0028;
+        public static final int settingsButton1=0x7f0a0031;
+        public static final int settingsEditText1=0x7f0a002e;
+        public static final int settingsEditText2=0x7f0a0030;
+        public static final int settingsSwitch1=0x7f0a0034;
+        public static final int settingsSwitch2=0x7f0a0033;
+        public static final int settingsSwitch3=0x7f0a0035;
+        public static final int settingsTextView3=0x7f0a0032;
+        public static final int settingsTextView4=0x7f0a002f;
+        public static final int shutDownButton01=0x7f0a0038;
+        public static final int shutDownButton02=0x7f0a0039;
+        public static final int shutDownButton03=0x7f0a003a;
+        public static final int shutDownButton04=0x7f0a003b;
+        public static final int shutDownButton05=0x7f0a003c;
+        public static final int shutDownEditText01=0x7f0a0037;
+        public static final int shutDownTextView01=0x7f0a0036;
+        public static final int standard=0x7f0a0004;
+        public static final int syncSwitch=0x7f0a002a;
+        public static final int textViewSync=0x7f0a0029;
+        public static final int textViewUnit=0x7f0a002d;
+        public static final int textViewUpdateRate=0x7f0a002b;
+        public static final int wide=0x7f0a0005;
+    }
+    public static final class integer {
+        public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int activity_doors=0x7f030000;
@@ -94,86 +236,248 @@ public final class R {
         public static final int activity_televisions=0x7f03000a;
     }
     public static final class menu {
-        public static final int doors=0x7f070000;
-        public static final int lights=0x7f070001;
-        public static final int main=0x7f070002;
-        public static final int menu_others=0x7f070003;
-        public static final int menu_serial_viewer=0x7f070004;
-        public static final int menu_shut_down=0x7f070005;
-        public static final int motor_controls=0x7f070006;
-        public static final int settings=0x7f070007;
-        public static final int televisions=0x7f070008;
+        public static final int doors=0x7f090000;
+        public static final int lights=0x7f090001;
+        public static final int main=0x7f090002;
+        public static final int menu_others=0x7f090003;
+        public static final int menu_serial_viewer=0x7f090004;
+        public static final int menu_shut_down=0x7f090005;
+        public static final int motor_controls=0x7f090006;
+        public static final int mqtt=0x7f090007;
+        public static final int open_site_editor=0x7f090008;
+        public static final int settings=0x7f090009;
+        public static final int televisions=0x7f09000a;
     }
     public static final class string {
-        public static final int Doors=0x7f060000;
-        public static final int Lights=0x7f060001;
-        public static final int Motor_Controls=0x7f060002;
-        public static final int Mqtt=0x7f060003;
-        public static final int SerialViewer=0x7f060004;
-        public static final int Settings=0x7f060005;
-        public static final int Televisions=0x7f060006;
-        public static final int action_password=0x7f060007;
-        public static final int action_settings=0x7f060008;
-        public static final int altium=0x7f060009;
-        public static final int app_name=0x7f06000a;
-        public static final int chrome=0x7f06000b;
-        public static final int curtain=0x7f06000c;
-        public static final int defaultIp=0x7f06000d;
-        public static final int editTextdefault=0x7f06000e;
-        public static final int hello_world=0x7f06000f;
-        public static final int ipAddressSettings=0x7f060010;
-        public static final int lightSwitch1=0x7f060011;
-        public static final int lightSwitch2=0x7f060012;
-        public static final int lightSwitch3=0x7f060013;
-        public static final int lightSwitch4=0x7f060014;
-        public static final int lightSwitch5=0x7f060015;
-        public static final int mainEntranceDoor=0x7f060016;
-        public static final int mqttDefaultText=0x7f060017;
-        public static final int open=0x7f060018;
-        public static final int openSiteEditor=0x7f060019;
-        public static final int openSiteEditorButton01Text=0x7f06001a;
-        public static final int others=0x7f06001b;
-        public static final int serialViewerDefaultText=0x7f06001c;
-        public static final int settingsButton1=0x7f06001d;
-        public static final int settingsSwitch1=0x7f06001e;
-        public static final int settingsSwitch2=0x7f06001f;
-        public static final int showDesktop=0x7f060020;
-        public static final int shutDown=0x7f060021;
-        public static final int shutDownButton01=0x7f060022;
-        public static final int shutDownButton02=0x7f060023;
-        public static final int shutDownButton03=0x7f060024;
-        public static final int shutDownButton04=0x7f060025;
-        public static final int shutDownButton05=0x7f060026;
-        public static final int shutDownEditText01=0x7f060027;
-        public static final int shutDownTextView01=0x7f060028;
-        public static final int televisionMessage=0x7f060029;
-        public static final int textViewSync=0x7f06002a;
-        public static final int textViewUnit=0x7f06002b;
-        public static final int title_activity_doors=0x7f06002c;
-        public static final int title_activity_lights=0x7f06002d;
-        public static final int title_activity_motor__controls=0x7f06002e;
-        public static final int title_activity_motor_controls=0x7f06002f;
-        public static final int title_activity_mqtt=0x7f060030;
-        public static final int title_activity_open_site_editor=0x7f060031;
-        public static final int title_activity_others=0x7f060032;
-        public static final int title_activity_serial_viewer=0x7f060033;
-        public static final int title_activity_settings=0x7f060034;
-        public static final int title_activity_shut_down=0x7f060035;
-        public static final int title_activity_televisions=0x7f060036;
-        public static final int updateRate=0x7f060037;
+        public static final int Doors=0x7f04001d;
+        public static final int Lights=0x7f04001e;
+        public static final int Motor_Controls=0x7f04001f;
+        public static final int Mqtt=0x7f040020;
+        public static final int SerialViewer=0x7f040021;
+        public static final int Settings=0x7f040022;
+        public static final int Televisions=0x7f040023;
+        public static final int action_password=0x7f040024;
+        public static final int action_settings=0x7f040025;
+        public static final int altium=0x7f040026;
+        public static final int app_name=0x7f040027;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f040028;
+        public static final int auth_google_play_services_client_google_display_name=0x7f040029;
+        public static final int chrome=0x7f04002a;
+        public static final int common_google_play_services_api_unavailable_text=0x7f040000;
+        public static final int common_google_play_services_enable_button=0x7f040001;
+        public static final int common_google_play_services_enable_text=0x7f040002;
+        public static final int common_google_play_services_enable_title=0x7f040003;
+        public static final int common_google_play_services_install_button=0x7f040004;
+        public static final int common_google_play_services_install_text_phone=0x7f040005;
+        public static final int common_google_play_services_install_text_tablet=0x7f040006;
+        public static final int common_google_play_services_install_title=0x7f040007;
+        public static final int common_google_play_services_invalid_account_text=0x7f040008;
+        public static final int common_google_play_services_invalid_account_title=0x7f040009;
+        public static final int common_google_play_services_network_error_text=0x7f04000a;
+        public static final int common_google_play_services_network_error_title=0x7f04000b;
+        public static final int common_google_play_services_notification_ticker=0x7f04000c;
+        public static final int common_google_play_services_restricted_profile_text=0x7f04000d;
+        public static final int common_google_play_services_restricted_profile_title=0x7f04000e;
+        public static final int common_google_play_services_sign_in_failed_text=0x7f04000f;
+        public static final int common_google_play_services_sign_in_failed_title=0x7f040010;
+        public static final int common_google_play_services_unknown_issue=0x7f040011;
+        public static final int common_google_play_services_unsupported_text=0x7f040012;
+        public static final int common_google_play_services_unsupported_title=0x7f040013;
+        public static final int common_google_play_services_update_button=0x7f040014;
+        public static final int common_google_play_services_update_text=0x7f040015;
+        public static final int common_google_play_services_update_title=0x7f040016;
+        public static final int common_google_play_services_updating_text=0x7f040017;
+        public static final int common_google_play_services_updating_title=0x7f040018;
+        public static final int common_google_play_services_wear_update_text=0x7f040019;
+        public static final int common_open_on_phone=0x7f04001a;
+        public static final int common_signin_button_text=0x7f04001b;
+        public static final int common_signin_button_text_long=0x7f04001c;
+        public static final int curtain=0x7f04002b;
+        public static final int defaultIp=0x7f04002c;
+        public static final int defaultMqttIp=0x7f04002d;
+        public static final int editTextdefault=0x7f04002e;
+        public static final int hello_world=0x7f04002f;
+        public static final int ipAddressSettings=0x7f040030;
+        public static final int lightSwitch1=0x7f040031;
+        public static final int lightSwitch2=0x7f040032;
+        public static final int lightSwitch3=0x7f040033;
+        public static final int lightSwitch4=0x7f040034;
+        public static final int lightSwitch5=0x7f040035;
+        public static final int mainEntranceDoor=0x7f040036;
+        public static final int mqttDefaultText=0x7f040037;
+        public static final int open=0x7f040038;
+        public static final int openSiteEditor=0x7f040039;
+        public static final int openSiteEditorButton01Text=0x7f04003a;
+        public static final int others=0x7f04003b;
+        public static final int serialViewerDefaultText=0x7f04003c;
+        public static final int settingsButton1=0x7f04003d;
+        public static final int settingsSwitch1=0x7f04003e;
+        public static final int settingsSwitch2=0x7f04003f;
+        public static final int settingsSwitch3=0x7f040040;
+        public static final int settingsTextView4=0x7f040041;
+        public static final int showDesktop=0x7f040042;
+        public static final int shutDown=0x7f040043;
+        public static final int shutDownButton01=0x7f040044;
+        public static final int shutDownButton02=0x7f040045;
+        public static final int shutDownButton03=0x7f040046;
+        public static final int shutDownButton04=0x7f040047;
+        public static final int shutDownButton05=0x7f040048;
+        public static final int shutDownEditText01=0x7f040049;
+        public static final int shutDownTextView01=0x7f04004a;
+        public static final int televisionMessage=0x7f04004b;
+        public static final int textViewSync=0x7f04004c;
+        public static final int textViewUnit=0x7f04004d;
+        public static final int title_activity_doors=0x7f04004e;
+        public static final int title_activity_lights=0x7f04004f;
+        public static final int title_activity_motor__controls=0x7f040050;
+        public static final int title_activity_motor_controls=0x7f040051;
+        public static final int title_activity_mqtt=0x7f040052;
+        public static final int title_activity_open_site_editor=0x7f040053;
+        public static final int title_activity_others=0x7f040054;
+        public static final int title_activity_serial_viewer=0x7f040055;
+        public static final int title_activity_settings=0x7f040056;
+        public static final int title_activity_shut_down=0x7f040057;
+        public static final int title_activity_televisions=0x7f040058;
+        public static final int updateRate=0x7f040059;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
-        public static final int AppBaseTheme=0x7f040000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f040001;
+        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppTheme=0x7f050001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a LoadingImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.rohsins.project_test:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.rohsins.project_test:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.rohsins.project_test:imageAspectRatioAdjust}</code></td><td></td></tr>
+           </table>
+           @see #LoadingImageView_circleCrop
+           @see #LoadingImageView_imageAspectRatio
+           @see #LoadingImageView_imageAspectRatioAdjust
+         */
+        public static final int[] LoadingImageView = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#circleCrop}
+          attribute's value can be found in the {@link #LoadingImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.rohsins.project_test:circleCrop
+        */
+        public static final int LoadingImageView_circleCrop = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#imageAspectRatio}
+          attribute's value can be found in the {@link #LoadingImageView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.rohsins.project_test:imageAspectRatio
+        */
+        public static final int LoadingImageView_imageAspectRatio = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#imageAspectRatioAdjust}
+          attribute's value can be found in the {@link #LoadingImageView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
+<tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.rohsins.project_test:imageAspectRatioAdjust
+        */
+        public static final int LoadingImageView_imageAspectRatioAdjust = 0;
+        /** Attributes that can be used with a SignInButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize com.rohsins.project_test:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme com.rohsins.project_test:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris com.rohsins.project_test:scopeUris}</code></td><td></td></tr>
+           </table>
+           @see #SignInButton_buttonSize
+           @see #SignInButton_colorScheme
+           @see #SignInButton_scopeUris
+         */
+        public static final int[] SignInButton = {
+            0x7f010003, 0x7f010004, 0x7f010005
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#buttonSize}
+          attribute's value can be found in the {@link #SignInButton} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>wide</code></td><td>1</td><td></td></tr>
+<tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.rohsins.project_test:buttonSize
+        */
+        public static final int SignInButton_buttonSize = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#colorScheme}
+          attribute's value can be found in the {@link #SignInButton} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>light</code></td><td>1</td><td></td></tr>
+<tr><td><code>auto</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.rohsins.project_test:colorScheme
+        */
+        public static final int SignInButton_colorScheme = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#scopeUris}
+          attribute's value can be found in the {@link #SignInButton} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          @attr name com.rohsins.project_test:scopeUris
+        */
+        public static final int SignInButton_scopeUris = 2;
+    };
 }

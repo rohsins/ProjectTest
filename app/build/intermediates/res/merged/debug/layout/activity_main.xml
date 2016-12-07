@@ -68,18 +68,6 @@
                android:drawableRight="@drawable/motor_controls"
                android:onClick="Motor_Controls"
                android:ems="5" />
-           
-           <Button 
-               android:id="@+id/mainButton5"
-               android:background="@drawable/button_style"
-               android:layout_width="match_parent"
-               android:layout_height="55dp"
-               android:layout_marginTop="15dp"
-               android:gravity="center_vertical|center_horizontal|left"
-               android:text="@string/others"
-               android:textSize="22sp"
-               android:onClick="Others"
-               android:ems="5" />
 
            <Button
                android:id="@+id/mainButton6"
@@ -103,6 +91,18 @@
                android:text="@string/Mqtt"
                android:textSize="22sp"
                android:onClick="Mqtt"
+               android:ems="5" />
+
+           <Button
+               android:id="@+id/mainButton5"
+               android:background="@drawable/button_style"
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:layout_marginTop="15dp"
+               android:gravity="center_vertical|center_horizontal|left"
+               android:text="@string/others"
+               android:textSize="22sp"
+               android:onClick="Others"
                android:ems="5" />
 
            <Button

@@ -5,19 +5,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Settings extends socket {
+public class Settings extends Connectivity {
 	
 	EditText editText;
+	EditText editText2;
 	TextView textView;
+	TextView textView2;
 	Switch aSwitch;
 	Switch bSwitch;
+	Switch cSwitch;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +28,12 @@ public class Settings extends socket {
 
 		aSwitch = (Switch) findViewById(R.id.settingsSwitch1);
 		bSwitch = (Switch) findViewById(R.id.settingsSwitch2);
-		textView = (TextView)findViewById(R.id.settingsTextView3);
-		editText = (EditText)findViewById(R.id.settingsEditText1);
+		cSwitch = (Switch) findViewById(R.id.settingsSwitch3);
+		textView = (TextView) findViewById(R.id.settingsTextView3);
+		textView2 = (TextView) findViewById(R.id.settingsTextView4);
+		editText = (EditText) findViewById(R.id.settingsEditText1);
+		editText2 = (EditText) findViewById(R.id.settingsEditText2);
+
 		SharedPreferences settings = getSharedPreferences("msettings",0);
 		if(settings.getString("SERVERIPADDRESS", "192,168.1.9:8080").contains(":")) {
 			ipAddressPort = settings.getString("SERVERIPADDRESS", "192.168.1.9:8080").split(":");
@@ -36,10 +42,12 @@ public class Settings extends socket {
 		} else {
 			Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
 		}
-		textView.setText("Current Server Socket:\n\r" + Address + ":" + Port);
+        inputMqttBrokerIp = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
+		textView.setText("Current Server Socket:\n\r" + Address + ":" + Port + "\n\r" + inputMqttBrokerIp + ":1883");
 
 		aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", false));
 		bSwitch.setChecked(settings.getBoolean("ENABLEREUSEADDRESS", false));
+        cSwitch.setChecked(settings.getBoolean("ENABLEMQTT", false));
 
 
 		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -74,11 +82,29 @@ public class Settings extends socket {
 				}
 			}
 		});
+
+		cSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				SharedPreferences settings = getSharedPreferences("msettings",0);
+				SharedPreferences.Editor editor = settings.edit();
+				editor.putBoolean("ENABLEMQTT", cSwitch.isChecked());
+				editor.commit();
+				cSwitch.setChecked(settings.getBoolean("ENABLEMQTT", false));
+				if(!settings.getBoolean("ENABLEMQTT", false)) {
+					mqttFlag = false;
+				}
+				else if(settings.getBoolean("ENABLEMQTT", false)) {
+					mqttFlag = true;
+				}
+			}
+		});
 	}
 
 	public void Apply(View view) {
 
 		inputIpAddressPort = editText.getText().toString();
+        inputMqttBrokerIp = editText2.getText().toString();
 		
 		if (!(inputIpAddressPort.equals(""))) {
 			if (inputIpAddressPort.contains(":")) {
@@ -95,11 +121,18 @@ public class Settings extends socket {
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putString("SERVERIPADDRESS", Address + ":" + Port);
 			editor.commit();
-			textView.setText("Current Server Socket:\n\r" + Address + ":" + Port);
+//			textView.setText("Current Server Socket:\n\r" + Address + ":" + Port);
+            textView.setText("Current Server Socket:\n\r" + Address + ":" + Port + "\n\r" + inputMqttBrokerIp + ":1883");
 			Toast.makeText(Settings.this, "Server IP Address is set to " + Address + ":" + Port, Toast.LENGTH_SHORT).show();
-		}
-		else if (inputIpAddressPort.equals("")) {
-			Toast.makeText(Settings.this, "Server IP Address is empty", Toast.LENGTH_SHORT).show();
+		} else if (!inputMqttBrokerIp.equals("")) {
+            SharedPreferences settings = getSharedPreferences("msettings", 0);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putString("MQTTBROKERADDRESS", inputMqttBrokerIp);
+            editor.commit();
+            textView.setText("Current Server Socket:\n\r" + Address + ":" + Port + "\n\r" + inputMqttBrokerIp + ":1883");
+            Toast.makeText(Settings.this, "Mqtt Broker Address is set to " + inputMqttBrokerIp, Toast.LENGTH_SHORT).show();
+        } else if (inputIpAddressPort.equals("") || inputMqttBrokerIp.equals("")) {
+			Toast.makeText(Settings.this, "Server IP Address or Mqtt Broker Address is empty", Toast.LENGTH_SHORT).show();
 		}
 	}
 

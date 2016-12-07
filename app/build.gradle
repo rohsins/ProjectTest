@@ -20,5 +20,7 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:21.0.0'
-    compile files('libs/org.eclipse.paho.client.mqttv3-1.1.0.jar')
+    compile files('libs/org.eclipse.paho.android.service-1.1.1-20160907.104533-5.jar')
+    compile files('libs/org.eclipse.paho.client.mqttv3-1.1.1-20161008.042128-48.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
 }

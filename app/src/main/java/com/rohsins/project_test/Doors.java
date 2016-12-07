@@ -5,13 +5,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Doors extends socket {
+public class Doors extends Connectivity {
 	
 	public void doorOpen(View view) {
-		
-		//openDoor function
 		exchangeData ("Door Opened");
-		
 	}
 
 	@Override

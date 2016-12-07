@@ -10,7 +10,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Switch;
 
-public class Lights extends socket {
+public class Lights extends Connectivity {
 	
 	SeekBar lightSeekBar1;
 	SeekBar lightSeekBar2;

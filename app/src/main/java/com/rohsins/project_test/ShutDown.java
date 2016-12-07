@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class ShutDown extends socket {
+public class ShutDown extends Connectivity {
 
     EditText editText01;
     String password = null;

@@ -8,7 +8,7 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
-public class Motor_Controls extends socket {
+public class Motor_Controls extends Connectivity {
 	
 	SeekBar motor_controlsSeekBar1;
 	TextView motor_controlsTextView;

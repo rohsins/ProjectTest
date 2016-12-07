@@ -1,123 +1,202 @@
 package com.rohsins.project_test;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Activity;
+import android.os.Handler;
+import android.text.method.ScrollingMovementMethod;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.Socket;
-import java.net.UnknownHostException;
-
-public class Mqtt extends Activity {
+public class Mqtt extends Connectivity implements MqttCallback {
 
     TextView textView;
-    StringBuilder stringBuilderMqtt = new StringBuilder("ME");
 
-    public void mqttTestFunction2() {
-        //String topic = "rtsmqtt/r&d/roomX";
-        String topic = "rhome/test";
-        String content = "rohsins from Research & Development test sequence 001022456691578";
-        int qos = 2;
-        String broker = "tcp://m2m.eclipse.org:1883";
-        String clientId = "rtsHardware";
-        MemoryPersistence persistence = new MemoryPersistence();
+    MqttClient mqttClient;
+    String topic;
+    int qos;
+    String broker;
+    String clientId;
+    MemoryPersistence persistence;
+    MqttConnectOptions connOpts;
 
-        try {
-            MqttClient hardwareClient = new MqttClient(broker, clientId, persistence);
-            MqttConnectOptions connOpts = new MqttConnectOptions();
-            connOpts.setCleanSession(true);
-//                System.out.println("Connecting to broker: " + broker);
-            stringBuilderMqtt.append("Connecting to broker: " + broker);
-            hardwareClient.connect(connOpts);
-//                System.out.println("Connected");
-            stringBuilderMqtt.append("\n\r Connected");
-//                System.out.println("topic: " + topic);
-            stringBuilderMqtt.append("\n\r topic:" + topic);
-//                System.out.println("Publishing message: " + content);
-            stringBuilderMqtt.append("\n\r Publishing message: " + content);
-            MqttMessage message = new MqttMessage(content.getBytes());
-            message.setQos(qos);
-            hardwareClient.publish(topic, message);
-//                System.out.println("Message published");
-            stringBuilderMqtt.append("\n\r Message published");
-            hardwareClient.disconnect();
-//                System.out.println("Disconnected");
-            stringBuilderMqtt.append("\n\rDisconnected");
-            System.exit(0);
-        } catch (MqttException me) {
-            me.printStackTrace();
+    private static MqttMessage mqttMessageTextView;
+
+    private static boolean closeFlag = false;
+
+    private Handler runUi = new Handler();
+
+    Runnable uiRunnable = new Runnable() {
+        @Override
+        public void run() {
+            textView.append(mqttMessageTextView.toString());
+
+            int totalLines = ((textView.getHeight())/textView.getLineHeight());
+            if (textView.getLineCount() >= totalLines) {
+                textView.setScrollY((textView.getLineCount() - totalLines) * textView.getLineHeight());
+                if (textView.getLineCount() > 20000) {
+                    textView.setText("");
+                }
+            }
         }
-    }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mqtt);
 
+        on_create_func();
+
         textView = (TextView) findViewById(R.id.mqttTextView01);
+        textView.setMovementMethod(new ScrollingMovementMethod());
 
-        textView.setText("hello this is test");
-        mqttTestFunction2();
-        textView.setText(stringBuilderMqtt.toString());
+        topic = "R&D/hardware";
+        qos = 1;
+        broker = "tcp://" + inputMqttBrokerIp + ":1883";
+        clientId = "rohsins's cell phone mqtt viewer";
+        persistence = new MemoryPersistence();
+        connOpts = new MqttConnectOptions();
+        connOpts.setUserName("rtshardware");
+        connOpts.setPassword("rtshardware".toCharArray());
 
-    }
-/*
-    public class MqttTest extends AsyncTask<Void, Void, Void> {
-
-        //String topic = "rtsmqtt/r&d/roomX";
-        String topic = "rhome/test";
-        String content = "rohsins from Research & Development test sequence 001022456691578";
-        int qos = 2;
-        String broker = "tcp://m2m.eclipse.org:1883";
-        String clientId = "rtsHardware";
-        MemoryPersistence persistence = new MemoryPersistence();
-
-
-
-        @Override
-        protected Void doInBackground(Void... arg0) {
-
-            try {
-                MqttClient hardwareClient = new MqttClient(broker, clientId, persistence);
-                MqttConnectOptions connOpts = new MqttConnectOptions();
-                connOpts.setCleanSession(true);
-//                System.out.println("Connecting to broker: " + broker);
-                stringBuilderMqtt.append("Connecting to broker: " + broker);
-                hardwareClient.connect(connOpts);
-//                System.out.println("Connected");
-                stringBuilderMqtt.append("\n\r Connected");
-//                System.out.println("topic: " + topic);
-                stringBuilderMqtt.append("\n\r topic:" + topic);
-//                System.out.println("Publishing message: " + content);
-                stringBuilderMqtt.append("\n\r Publishing message: " + content);
-                MqttMessage message = new MqttMessage(content.getBytes());
-                message.setQos(qos);
-                hardwareClient.publish(topic, message);
-//                System.out.println("Message published");
-                stringBuilderMqtt.append("\n\r Message published");
-                hardwareClient.disconnect();
-//                System.out.println("Disconnected");
-                stringBuilderMqtt.append("\n\rDisconnected");
-                System.exit(0);
-            } catch (MqttException me) {
-                me.printStackTrace();
-            }
-            return null;
+        try {
+            closeFlag = false;
+            mqttClient = new MqttClient(broker, clientId, persistence);
+            mqttClient.connect(connOpts);
+            mqttClient.setCallback(this);
+            mqttClient.subscribe(topic, qos);
+        } catch (MqttException e) {
+            e.printStackTrace();
         }
     }
-    public void mqttTestFunction() {
-        MqttTest mqttTestInstance = new MqttTest();
-        mqttTestInstance.execute();
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (closeFlag == true) {
+            try {
+                closeFlag = false;
+                mqttClient = new MqttClient(broker, clientId, persistence);
+                mqttClient.connect(connOpts);
+                mqttClient.setCallback(this);
+                mqttClient.subscribe(topic, qos);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
     }
-    */
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        if (closeFlag == true) {
+            try {
+                closeFlag = false;
+                mqttClient = new MqttClient(broker, clientId, persistence);
+                mqttClient.connect(connOpts);
+                mqttClient.setCallback(this);
+                mqttClient.subscribe(topic, qos);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (closeFlag == true) {
+            try {
+                closeFlag = false;
+                mqttClient = new MqttClient(broker, clientId, persistence);
+                mqttClient.connect(connOpts);
+                mqttClient.setCallback(this);
+                mqttClient.subscribe(topic, qos);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (closeFlag == false) {
+            try {
+                closeFlag = true;
+                mqttClient.disconnect();
+                mqttClient.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (closeFlag == false) {
+            try {
+                closeFlag = true;
+                mqttClient.disconnect();
+                mqttClient.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (closeFlag == false) {
+            try {
+                closeFlag = true;
+                mqttClient.disconnect();
+                mqttClient.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mqtt, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void connectionLost(Throwable throwable) {
+
+    }
+
+    @Override
+    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
+        mqttMessageTextView = mqttMessage;
+//        stringBuilderMqtt.append(mqttMessage.toString());
+        runUi.post(uiRunnable);
+    }
+
+    @Override
+    public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
+
+    }
 }

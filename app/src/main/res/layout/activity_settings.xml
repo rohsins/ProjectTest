@@ -29,6 +29,25 @@
         android:layout_height="wrap_content"
         android:hint="@string/defaultIp"
         android:layout_marginTop="28dp" />  <!-- 100 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsTextView4"
+        android:text="@string/settingsTextView4"
+        android:layout_below="@id/settingsEditText1"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="21sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/settingsEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsTextView4"
+        android:hint="@string/defaultMqttIp"
+        android:layout_marginTop="2dp" />  <!-- 100 -->
     
     <Button 
         android:id="@+id/settingsButton1"
@@ -36,7 +55,8 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:text="@string/settingsButton1"
-        android:layout_marginTop="83dp"
+        android:layout_below="@id/settingsEditText2"
+        android:layout_marginTop="13dp"
         android:onClick="Apply" />  <!-- 140 -->
     
     <TextView 
@@ -63,6 +83,16 @@
         android:layout_above="@id/settingsSwitch2"
         android:layout_marginBottom="14dp"
         android:text="@string/settingsSwitch1"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsSwitch3"
+        android:layout_above="@id/settingsSwitch1"
+        android:layout_marginBottom="14dp"
+        android:text="@string/settingsSwitch3"
         android:textStyle="bold"
         android:background="@drawable/button_style"/>
 

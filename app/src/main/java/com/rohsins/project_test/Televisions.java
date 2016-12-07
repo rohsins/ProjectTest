@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Televisions extends socket {
+public class Televisions extends Connectivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

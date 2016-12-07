@@ -14,7 +14,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class SerialViewer extends socket {
+public class SerialViewer extends Connectivity {
 
     TextView serialViewerTextView;
     Switch sync;
