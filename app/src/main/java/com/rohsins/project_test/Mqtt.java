@@ -58,9 +58,9 @@ public class Mqtt extends Connectivity implements MqttCallback {
         textView = (TextView) findViewById(R.id.mqttTextView01);
         textView.setMovementMethod(new ScrollingMovementMethod());
 
-        topic = "R&D/hardware";
+        topic = "R&D/hardware/viewer";
         qos = 1;
-        broker = "tcp://" + inputMqttBrokerIp + ":1883";
+        broker = "tcp://" + brokerAddress + ":1883";
         clientId = "rohsins's cell phone mqtt viewer";
         persistence = new MemoryPersistence();
         connOpts = new MqttConnectOptions();

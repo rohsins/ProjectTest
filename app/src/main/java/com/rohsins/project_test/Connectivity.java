@@ -1,11 +1,5 @@
 package com.rohsins.project_test;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.net.Socket;
-import java.net.UnknownHostException;
-
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -13,17 +7,21 @@ import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
 
 public class Connectivity extends Activity {
 
 	public volatile String Address;
+    public volatile String brokerAddress;
 	public volatile int Port;
     String ipAddressPort[];
     String inputIpAddressPort;
@@ -45,26 +43,11 @@ public class Connectivity extends Activity {
         else {
             Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
         }
-        inputMqttBrokerIp = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
+        brokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
 		nagleFlag = settings.getBoolean("ENABLENAGLE", false);
 		reuseAddressFlag = settings.getBoolean("ENABLEREUSEADDRESS", false);
         mqttFlag = settings.getBoolean("ENABLEMQTT", false);
     }
-
-//	@Override
-//	public void connectionLost(Throwable throwable) {
-//		mqttViewerTextView.setText(throwable.toString());
-//	}
-//
-//	@Override
-//	public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-//		mqttViewerTextView.setText(mqttMessage.toString());
-//	}
-//
-//	@Override
-//	public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-//		mqttViewerTextView.setText(iMqttDeliveryToken.toString());
-//	}
 
 	public class MyClientTask extends AsyncTask<Void, Void, Void> {
 
@@ -86,7 +69,7 @@ public class Connectivity extends Activity {
 		MyClientTask(byte[] payload) {
             topic = "R&D/hardware";
             qos = 1;
-            broker = "tcp://" + inputMqttBrokerIp + ":1883";
+            broker = "tcp://" + brokerAddress + ":1883";
             clientId = "rohsinsCellPhone";
             will = "rohsins's cell phone out".getBytes();
             retained = false;
@@ -96,10 +79,9 @@ public class Connectivity extends Activity {
             connOpts.setUserName("rtshardware");
             connOpts.setPassword("rtshardware".toCharArray());
             connOpts.setWill(topic, will, 1, retained);
-            connOpts.setKeepAliveInterval(30000);
+//            connOpts.setKeepAliveInterval(30000);
 
 //            serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
-//            serialViewerTextView.setMovementMethod(new ScrollingMovementMethod());
 		}
 
 		MyClientTask(String addr, int port, String msgTo) {
@@ -108,7 +90,6 @@ public class Connectivity extends Activity {
 			msgToServer = msgTo;
 
             serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
-            serialViewerTextView.setMovementMethod(new ScrollingMovementMethod());
 		}
 
 		@Override
@@ -200,6 +181,8 @@ public class Connectivity extends Activity {
                 switch (switchCheck[0]) {
                     case "0xA0":
 //                        serialViewerTextView.setText(switchCheck[1]);
+
+                        serialViewerTextView.setMovementMethod(new ScrollingMovementMethod());
                         serialViewerTextView.append(switchCheck[1]);
 
                         int totalLines = ((serialViewerTextView.getHeight())/serialViewerTextView.getLineHeight());
