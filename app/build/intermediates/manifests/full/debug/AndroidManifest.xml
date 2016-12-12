@@ -88,6 +88,7 @@
         </activity>
         <activity
             android:name="com.rohsins.project_test.ShutDown"
+            android:icon="@drawable/shutdown"
             android:label="@string/title_activity_shut_down"
             android:parentActivityName="com.rohsins.project_test.MainActivity" >
             <meta-data
@@ -96,6 +97,7 @@
         </activity>
         <activity
             android:name="com.rohsins.project_test.SerialViewer"
+            android:icon="@drawable/serialviewer"
             android:label="@string/title_activity_serial_viewer"
             android:parentActivityName="com.rohsins.project_test.MainActivity" >
             <meta-data

@@ -2333,7 +2333,14 @@
                     "endOffset": 2415
                 },
                 "from": {
-                    "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml"
+                    "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 89,
+                        "endColumn": 57,
+                        "endOffset": 142
+                    }
                 }
             },
             {
@@ -2345,7 +2352,14 @@
                     "endOffset": 2471
                 },
                 "from": {
-                    "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml"
+                    "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 147,
+                        "endColumn": 55,
+                        "endOffset": 198
+                    }
                 }
             },
             {
@@ -3097,8 +3111,8 @@
                     "startLine": 97,
                     "startColumn": 4,
                     "startOffset": 8262,
-                    "endColumn": 41,
-                    "endOffset": 8299
+                    "endColumn": 44,
+                    "endOffset": 8302
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3108,28 +3122,21 @@
                 "to": {
                     "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 8304,
+                    "startOffset": 8307,
                     "endColumn": 79,
-                    "endOffset": 8379
+                    "endOffset": 8382
                 },
                 "from": {
-                    "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 35,
-                        "startColumn": 4,
-                        "startOffset": 1727,
-                        "endColumn": 79,
-                        "endOffset": 1802
-                    }
+                    "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 8384,
+                    "startOffset": 8387,
                     "endColumn": 49,
-                    "endOffset": 8429
+                    "endOffset": 8432
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3139,9 +3146,9 @@
                 "to": {
                     "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 8434,
+                    "startOffset": 8437,
                     "endColumn": 59,
-                    "endOffset": 8489
+                    "endOffset": 8492
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3151,9 +3158,9 @@
                 "to": {
                     "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 8494,
+                    "startOffset": 8497,
                     "endColumn": 58,
-                    "endOffset": 8548
+                    "endOffset": 8551
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3163,9 +3170,9 @@
                 "to": {
                     "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 8553,
+                    "startOffset": 8556,
                     "endColumn": 55,
-                    "endOffset": 8604
+                    "endOffset": 8607
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3175,9 +3182,9 @@
                 "to": {
                     "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 8609,
+                    "startOffset": 8612,
                     "endColumn": 71,
-                    "endOffset": 8676
+                    "endOffset": 8679
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3187,9 +3194,9 @@
                 "to": {
                     "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 8681,
+                    "startOffset": 8684,
                     "endColumn": 52,
-                    "endOffset": 8729
+                    "endOffset": 8732
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3199,9 +3206,9 @@
                 "to": {
                     "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 8734,
-                    "endColumn": 46,
-                    "endOffset": 8776
+                    "startOffset": 8737,
+                    "endColumn": 45,
+                    "endOffset": 8778
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3211,9 +3218,9 @@
                 "to": {
                     "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 8781,
+                    "startOffset": 8783,
                     "endColumn": 53,
-                    "endOffset": 8830
+                    "endOffset": 8832
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3223,9 +3230,9 @@
                 "to": {
                     "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 8835,
+                    "startOffset": 8837,
                     "endColumn": 59,
-                    "endOffset": 8890
+                    "endOffset": 8892
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3235,9 +3242,9 @@
                 "to": {
                     "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 8895,
+                    "startOffset": 8897,
                     "endColumn": 52,
-                    "endOffset": 8943
+                    "endOffset": 8945
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3247,9 +3254,9 @@
                 "to": {
                     "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 8948,
+                    "startOffset": 8950,
                     "endColumn": 54,
-                    "endOffset": 8998
+                    "endOffset": 9000
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3259,9 +3266,9 @@
                 "to": {
                     "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 9003,
+                    "startOffset": 9005,
                     "endColumn": 51,
-                    "endOffset": 9050
+                    "endOffset": 9052
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3271,9 +3278,9 @@
                 "to": {
                     "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 9055,
+                    "startOffset": 9057,
                     "endColumn": 39,
-                    "endOffset": 9090
+                    "endOffset": 9092
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3283,9 +3290,9 @@
                 "to": {
                     "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 9095,
+                    "startOffset": 9097,
                     "endColumn": 73,
-                    "endOffset": 9164
+                    "endOffset": 9166
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3295,9 +3302,9 @@
                 "to": {
                     "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 9169,
+                    "startOffset": 9171,
                     "endColumn": 103,
-                    "endOffset": 9268
+                    "endOffset": 9270
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3307,9 +3314,9 @@
                 "to": {
                     "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 9273,
+                    "startOffset": 9275,
                     "endColumn": 45,
-                    "endOffset": 9314
+                    "endOffset": 9316
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3319,9 +3326,9 @@
                 "to": {
                     "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 9319,
+                    "startOffset": 9321,
                     "endColumn": 43,
-                    "endOffset": 9358
+                    "endOffset": 9360
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3331,9 +3338,9 @@
                 "to": {
                     "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 9363,
+                    "startOffset": 9365,
                     "endColumn": 54,
-                    "endOffset": 9413
+                    "endOffset": 9415
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3343,9 +3350,9 @@
                 "to": {
                     "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 9418,
+                    "startOffset": 9420,
                     "endColumn": 56,
-                    "endOffset": 9470
+                    "endOffset": 9472
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3355,9 +3362,9 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 9475,
+                    "startOffset": 9477,
                     "endColumn": 73,
-                    "endOffset": 9544
+                    "endOffset": 9546
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3367,9 +3374,9 @@
                 "to": {
                     "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 9549,
+                    "startOffset": 9551,
                     "endColumn": 72,
-                    "endOffset": 9617
+                    "endOffset": 9619
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3379,9 +3386,9 @@
                 "to": {
                     "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 9622,
+                    "startOffset": 9624,
                     "endColumn": 52,
-                    "endOffset": 9670
+                    "endOffset": 9672
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3391,9 +3398,9 @@
                 "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 9675,
+                    "startOffset": 9677,
                     "endColumn": 74,
-                    "endOffset": 9745
+                    "endOffset": 9747
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3403,9 +3410,9 @@
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 9750,
+                    "startOffset": 9752,
                     "endColumn": 56,
-                    "endOffset": 9802
+                    "endOffset": 9804
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3415,9 +3422,9 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 9807,
+                    "startOffset": 9809,
                     "endColumn": 69,
-                    "endOffset": 9872
+                    "endOffset": 9874
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3427,9 +3434,9 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 9877,
+                    "startOffset": 9879,
                     "endColumn": 60,
-                    "endOffset": 9933
+                    "endOffset": 9935
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3439,9 +3446,9 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 9938,
+                    "startOffset": 9940,
                     "endColumn": 61,
-                    "endOffset": 9995
+                    "endOffset": 9997
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3451,9 +3458,9 @@
                 "to": {
                     "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 10000,
+                    "startOffset": 10002,
                     "endColumn": 66,
-                    "endOffset": 10062
+                    "endOffset": 10064
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3463,9 +3470,9 @@
                 "to": {
                     "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 10067,
+                    "startOffset": 10069,
                     "endColumn": 50,
-                    "endOffset": 10113
+                    "endOffset": 10115
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/strings.xml"
@@ -3475,10 +3482,10 @@
                 "to": {
                     "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 10118,
+                    "startOffset": 10120,
                     "endLine": 130,
                     "endColumn": 12,
-                    "endOffset": 10201
+                    "endOffset": 10203
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml"
@@ -3488,10 +3495,10 @@
                 "to": {
                     "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 10206,
+                    "startOffset": 10208,
                     "endLine": 133,
                     "endColumn": 12,
-                    "endOffset": 10285
+                    "endOffset": 10287
                 },
                 "from": {
                     "file": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/values/styles.xml"

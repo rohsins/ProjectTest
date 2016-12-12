@@ -31,8 +31,8 @@
             <enum name="light" value="1"/>
             <enum name="auto" value="2"/>
         </attr><attr format="reference|string" name="scopeUris"/></declare-styleable>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
     <dimen name="serialViewer_horizontal_margin">8dp</dimen>
     <dimen name="serialViewer_vertical_margin">8dp</dimen>
     <integer name="google_play_services_version">8487000</integer>
@@ -95,7 +95,7 @@
     <string name="open">Open</string>
     <string name="openSiteEditor">Open SiteEditor</string>
     <string name="openSiteEditorButton01Text">Send</string>
-    <string name="others">Others</string>
+    <string name="others">Shortcuts</string>
     <string name="serialViewerDefaultText">Sync to use Serial Viewer\n</string>
     <string name="settingsButton1">Apply</string>
     <string name="settingsSwitch1">Nagle Algorithm</string>
@@ -103,9 +103,9 @@
     <string name="settingsSwitch3">Mqtt Enable</string>
     <string name="settingsTextView4">Enter Mqtt Broker Address</string>
     <string name="showDesktop">Show Desktop</string>
-    <string name="shutDown">Shut Down</string>
-    <string name="shutDownButton01">ShutDown</string>
-    <string name="shutDownButton02">ShutDown Abort</string>
+    <string name="shutDown">Shutdown</string>
+    <string name="shutDownButton01">Shutdown</string>
+    <string name="shutDownButton02">Shutdown Abort</string>
     <string name="shutDownButton03">Restart</string>
     <string name="shutDownButton04">Hibernate</string>
     <string name="shutDownButton05">WakeUp</string>
@@ -117,7 +117,7 @@
     <string name="title_activity_doors">Doors</string>
     <string name="title_activity_lights">Lights</string>
     <string name="title_activity_motor__controls">Motor Controls</string>
-    <string name="title_activity_motor_controls">Motor_controls</string>
+    <string name="title_activity_motor_controls">Motor Controls</string>
     <string name="title_activity_mqtt">Mqtt</string>
     <string name="title_activity_open_site_editor">OpenSiteEditor</string>
     <string name="title_activity_others">Others</string>

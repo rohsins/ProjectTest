@@ -88,6 +88,7 @@
         </activity>
         <activity
             android:name=".ShutDown"
+            android:icon="@drawable/shutdown"
             android:label="@string/title_activity_shut_down"
             android:parentActivityName=".MainActivity">
             <meta-data
@@ -96,6 +97,7 @@
         </activity>
         <activity
             android:name=".SerialViewer"
+            android:icon="@drawable/serialviewer"
             android:label="@string/title_activity_serial_viewer"
             android:parentActivityName=".MainActivity">
             <meta-data

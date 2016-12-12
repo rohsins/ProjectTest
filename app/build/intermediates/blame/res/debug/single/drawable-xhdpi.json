@@ -44,12 +44,12 @@
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/lights.png",
-        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/lights.png"
-    },
-    {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_disabled.9.png",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/lights.png",
+        "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/lights.png"
     },
     {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
@@ -82,6 +82,10 @@
     {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_pressed.9.png",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/shutdown.png",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/shutdown.png"
     },
     {
         "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_focused.9.png",
@@ -122,6 +126,10 @@
     {
         "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_normal.9.png",
         "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/serialviewer.png",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/serialviewer.png"
     },
     {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/motor_controls.png",
@@ -290,6 +298,10 @@
     {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_disabled.9.png",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/chrome.png",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xhdpi/chrome.png"
     },
     {
         "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xhdpi/televisions.png",

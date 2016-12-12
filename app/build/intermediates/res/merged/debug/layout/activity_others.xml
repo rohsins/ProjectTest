@@ -20,8 +20,9 @@
         android:layout_height="55dp"
         android:text="@string/altium"
         android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal|left"
         android:onClick="othersFunction01"
-        android:layout_marginTop="20dp" /> <!-- 80 -->
+        android:layout_marginTop="4dp" /> <!-- 80 -->
 
     <Button
         android:id="@+id/othersButton2"
@@ -30,6 +31,8 @@
         android:layout_height="55dp"
         android:text="@string/chrome"
         android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal|left"
+        android:drawableRight="@drawable/chrome"
         android:onClick="othersFunction02"
         android:layout_marginTop="10dp" /> <!-- 80 -->
 
@@ -40,6 +43,7 @@
         android:layout_height="55dp"
         android:text="@string/showDesktop"
         android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal|left"
         android:onClick="othersFunction03"
         android:layout_marginTop="10dp" /> <!-- 80 -->
 
@@ -50,6 +54,8 @@
         android:layout_height="55dp"
         android:text="@string/shutDown"
         android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal|left"
+        android:drawableRight="@drawable/shutdown"
         android:onClick="othersFunction04"
         android:layout_marginTop="10dp" /> <!-- 80 -->
 
@@ -60,6 +66,7 @@
         android:layout_height="55dp"
         android:text="@string/openSiteEditor"
         android:textSize="18sp"
+        android:gravity="center_vertical|center_horizontal|left"
         android:onClick="othersFunction05"
         android:layout_marginTop="10dp" /> <!-- 80 -->
 

@@ -111,7 +111,7 @@ public class Connectivity extends Activity {
                     } else if (reuseAddressFlag == true) {
                         socket.setReuseAddress(true);
                     }
-//                    socket.setSoTimeout(100);
+                    socket.setSoTimeout(100);
 //				      nagleReplyFlag = Connectivity.getTcpNoDelay();
                     dataOutputStream = new DataOutputStream(socket.getOutputStream());
                     dataInputStream = new DataInputStream(socket.getInputStream());

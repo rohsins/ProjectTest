@@ -24,6 +24,10 @@
         "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xxhdpi/common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/chrome.png",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/chrome.png"
+    },
+    {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_google_signin_btn_icon_dark_focused.9.png",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xxhdpi/common_google_signin_btn_icon_dark_focused.9.png"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_plus_signin_btn_icon_light_focused.9.png",
         "source": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xxhdpi/common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/serialviewer.png",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/serialviewer.png"
     },
     {
         "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/doors.png",
@@ -294,6 +302,10 @@
     {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_plus_signin_btn_text_dark_focused.9.png",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xxhdpi/common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/shutdown.png",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/drawable-xxhdpi/shutdown.png"
     },
     {
         "merged": "/Volumes/evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/drawable-xxhdpi/common_google_signin_btn_icon_light_pressed.9.png",
