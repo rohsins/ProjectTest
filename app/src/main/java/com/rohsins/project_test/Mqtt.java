@@ -61,7 +61,7 @@ public class Mqtt extends Connectivity implements MqttCallback {
         topic = "R&D/hardware/viewer";
         qos = 1;
         broker = "tcp://" + brokerAddress + ":1883";
-        clientId = "rohsins's cell phone mqtt viewer";
+        clientId = uniqueId;
         persistence = new MemoryPersistence();
         connOpts = new MqttConnectOptions();
         connOpts.setUserName("rtshardware");

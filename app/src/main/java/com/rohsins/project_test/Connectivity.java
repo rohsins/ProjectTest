@@ -3,6 +3,7 @@ package com.rohsins.project_test;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.provider.Settings;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ import java.net.UnknownHostException;
 
 public class Connectivity extends Activity {
 
+    public static String uniqueId;
 	public volatile String Address;
     public volatile String brokerAddress;
 	public volatile int Port;
@@ -47,6 +49,7 @@ public class Connectivity extends Activity {
 		nagleFlag = settings.getBoolean("ENABLENAGLE", false);
 		reuseAddressFlag = settings.getBoolean("ENABLEREUSEADDRESS", false);
         mqttFlag = settings.getBoolean("ENABLEMQTT", false);
+        uniqueId = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
     }
 
 	public class MyClientTask extends AsyncTask<Void, Void, Void> {
@@ -70,15 +73,15 @@ public class Connectivity extends Activity {
             topic = "R&D/hardware";
             qos = 1;
             broker = "tcp://" + brokerAddress + ":1883";
-            clientId = "rohsinsCellPhone";
-            will = "rohsins's cell phone out".getBytes();
+            clientId = uniqueId;
+//            will = "rohsins's cell phone out".getBytes();
             retained = false;
             this.payload = payload;
             persistence = new MemoryPersistence();
             connOpts = new MqttConnectOptions();
             connOpts.setUserName("rtshardware");
             connOpts.setPassword("rtshardware".toCharArray());
-            connOpts.setWill(topic, will, 1, retained);
+//            connOpts.setWill(topic, will, 1, retained);
 //            connOpts.setKeepAliveInterval(30000);
 
 //            serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
