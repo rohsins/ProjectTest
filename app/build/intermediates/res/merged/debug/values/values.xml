@@ -49,6 +49,7 @@
     <string name="app_name">Project_Test</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <string name="chat">Chat</string>
     <string name="chrome">Chrome</string>
     <string name="common_google_play_services_api_unavailable_text"><ns1:g id="app_name">%1$s</ns1:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
@@ -114,6 +115,7 @@
     <string name="televisionMessage">Please connect compatible hardware to control televisions</string>
     <string name="textViewSync">Sync</string>
     <string name="textViewUnit">mS</string>
+    <string name="title_activity_chat">Chat</string>
     <string name="title_activity_doors">Doors</string>
     <string name="title_activity_lights">Lights</string>
     <string name="title_activity_motor__controls">Motor Controls</string>

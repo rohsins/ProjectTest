@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rohsins.project_test"
-    android:versionCode="1"
-    android:versionName="1.0">
+          package="com.rohsins.project_test"
+          android:versionCode="1"
+          android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="21"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        android:maxSdkVersion="18"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+        android:maxSdkVersion="18"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
@@ -40,7 +40,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".Doors"
@@ -49,7 +49,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".Televisions"
@@ -58,7 +58,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".Motor_Controls"
@@ -67,7 +67,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".Settings"
@@ -76,7 +76,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".Others"
@@ -84,7 +84,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".ShutDown"
@@ -93,7 +93,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".SerialViewer"
@@ -102,7 +102,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".OpenSiteEditor"
@@ -110,7 +110,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
         <activity
             android:name=".Mqtt"
@@ -118,11 +118,17 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.rohsins.project_test.MainActivity" />
+                android:value="com.rohsins.project_test.MainActivity"/>
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name=".Chat"
+            android:label="@string/title_activity_chat">
+        </activity>
     </application>
 
 </manifest>

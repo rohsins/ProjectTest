@@ -124,6 +124,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.rohsins.project_test.Chat"
+            android:label="@string/title_activity_chat" >
+        </activity>
     </application>
 
 </manifest>

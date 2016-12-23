@@ -24,6 +24,10 @@
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/settings.xml"
     },
     {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/chat.xml",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/chat.xml"
+    },
+    {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/menu/lights.xml",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/menu/lights.xml"
     },

@@ -35,6 +35,11 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void Chat(View view) {
+        Intent intent = new Intent(this, Chat.class);
+        startActivity(intent);
+    }
+
     public void SerialViewer(View view) {
         Intent intent = new Intent(this, SerialViewer.class);
         startActivity(intent);

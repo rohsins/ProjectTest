@@ -22,6 +22,7 @@
     <string name="televisionMessage">Please connect compatible hardware to control televisions</string>
     <string name="curtain">Curtain</string>
     <string name="others">Shortcuts</string>
+    <string name="chat">Chat</string>
     <string name="altium">Altium</string>
     <string name="chrome">Chrome</string>
     <string name="showDesktop">Show Desktop</string>
@@ -42,6 +43,7 @@
     <string name="ipAddressSettings">Enter Server Socket</string>
     <string name="defaultIp">192.168.x.x</string>
     <string name="settingsButton1">Apply</string>
+    <string name="chatDefaultEditText">Type a message</string>
     <string name="title_activity_doors">Doors</string>
     <string name="title_activity_televisions">Televisions</string>
     <string name="title_activity_motor__controls">Motor Controls</string>
@@ -60,5 +62,6 @@
     <string name="settingsTextView4">Enter Mqtt Broker Address</string>
     <string name="title_activity_open_site_editor">OpenSiteEditor</string>
     <string name="title_activity_mqtt">Mqtt</string>
+    <string name="title_activity_chat">Chat</string>
 
 </resources>

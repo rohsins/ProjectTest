@@ -8,6 +8,10 @@
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_settings.xml"
     },
     {
+        "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_chat.xml",
+        "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_chat.xml"
+    },
+    {
         "merged": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/res/merged/debug/layout/activity_doors.xml",
         "source": "/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/res/layout/activity_doors.xml"
     },
