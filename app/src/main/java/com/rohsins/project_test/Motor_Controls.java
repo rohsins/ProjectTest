@@ -36,7 +36,6 @@ public class Motor_Controls extends Connectivity {
 
 		@Override
 		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
-			// TODO Auto-generated method stub
 			SharedPreferences settings = getSharedPreferences("msettings",0);
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putInt("MOTORCONTROLSSEEKBAR1VALUE", motor_controlsSeekBar1.getProgress());
@@ -47,13 +46,11 @@ public class Motor_Controls extends Connectivity {
 
 		@Override
 		public void onStartTrackingTouch(SeekBar arg0) {
-			// TODO Auto-generated method stub
 			
 		}
 
 		@Override
 		public void onStopTrackingTouch(SeekBar arg0) {
-			// TODO Auto-generated method stub
 			
 		}
 		

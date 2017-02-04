@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-134:12
+ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-135:12
 	package
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:3:11-45
 		INJECTED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
@@ -50,7 +50,7 @@ ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/s
 	android:name
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:17:9-64
 application
-ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:20:5-132:19
+ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:20:5-133:19
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.0.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
@@ -190,8 +190,10 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Evoiklo/Progr
 	android:name
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:125:13-58
 activity#com.rohsins.project_test.Chat
-ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:128:9-131:20
+ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:128:9-132:20
 	android:label
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:130:13-56
+	android:parentActivityName
+		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:131:13-55
 	android:name
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:129:13-33

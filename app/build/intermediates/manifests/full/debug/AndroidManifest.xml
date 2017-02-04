@@ -127,7 +127,8 @@
 
         <activity
             android:name="com.rohsins.project_test.Chat"
-            android:label="@string/title_activity_chat" >
+            android:label="@string/title_activity_chat"
+            android:parentActivityName="com.rohsins.project_test.MainActivity" >
         </activity>
     </application>
 

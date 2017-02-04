@@ -81,7 +81,6 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				// TODO Auto-generated method stub
 				SharedPreferences settings = getSharedPreferences("msettings",0);
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putBoolean("LIGHTSWITCH1", lightSwitch1.isChecked());
@@ -102,7 +101,6 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				// TODO Auto-generated method stub
 				SharedPreferences settings = getSharedPreferences("msettings",0);
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putBoolean("LIGHTSWITCH2", lightSwitch2.isChecked());
@@ -123,7 +121,6 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				// TODO Auto-generated method stub
 				SharedPreferences settings = getSharedPreferences("msettings",0);
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putBoolean("LIGHTSWITCH3", lightSwitch3.isChecked());
@@ -144,7 +141,6 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				// TODO Auto-generated method stub
 				SharedPreferences settings = getSharedPreferences("msettings",0);
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putBoolean("LIGHTSWITCH4", lightSwitch4.isChecked());
@@ -165,7 +161,6 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				// TODO Auto-generated method stub
 				SharedPreferences settings = getSharedPreferences("msettings",0);
 				SharedPreferences.Editor editor = settings.edit();
 				editor.putBoolean("LIGHTSWITCH5", lightSwitch5.isChecked());
@@ -187,7 +182,6 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
-			// TODO Auto-generated method stub
 			
 			SharedPreferences settings = getSharedPreferences("msettings",0);
 			SharedPreferences.Editor editor = settings.edit();
@@ -200,13 +194,11 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStartTrackingTouch(SeekBar arg0) {
-			// TODO Auto-generated method stub
 			
 		}
 
 		@Override
 		public void onStopTrackingTouch(SeekBar arg0) {
-			// TODO Auto-generated method stub
 			
 		}
 		
@@ -218,7 +210,6 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			// TODO Auto-generated method stub
 			SharedPreferences settings = getSharedPreferences("msettings",0);
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putInt("LIGHTSEEKBAR2", lightSeekBar2.getProgress());
@@ -230,13 +221,11 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStartTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 		
@@ -248,7 +237,6 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			// TODO Auto-generated method stub
 			SharedPreferences settings = getSharedPreferences("msettings",0);
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putInt("LIGHTSEEKBAR3", lightSeekBar3.getProgress());
@@ -260,13 +248,11 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStartTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 		
@@ -278,7 +264,6 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			// TODO Auto-generated method stub
 			SharedPreferences settings = getSharedPreferences("msettings",0);
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putInt("LIGHTSEEKBAR4", lightSeekBar4.getProgress());
@@ -290,13 +275,11 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStartTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 		
@@ -308,7 +291,6 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			// TODO Auto-generated method stub
 			SharedPreferences settings = getSharedPreferences("msettings",0);
 			SharedPreferences.Editor editor = settings.edit();
 			editor.putInt("LIGHTSEEKBAR5", lightSeekBar5.getProgress());
@@ -320,13 +302,11 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStartTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			// TODO Auto-generated method stub
 			
 		}
 		

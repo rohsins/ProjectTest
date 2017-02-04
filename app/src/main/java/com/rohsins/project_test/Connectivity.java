@@ -70,7 +70,7 @@ public class Connectivity extends Activity {
         byte[] will;
 
 		MyClientTask(byte[] payload) {
-            topic = "R&D/hardware";
+            topic = "R&D/hardware/home";
             qos = 1;
             broker = "tcp://" + brokerAddress + ":1883";
             clientId = uniqueId;
