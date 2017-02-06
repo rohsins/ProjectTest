@@ -40,6 +40,7 @@ public class Chat extends Connectivity implements MqttCallback {
     byte[] payloadChat;
 
     private static MqttMessage mqttMessageTextViewChat;
+    private static boolean closeFlag = false;
 
     private Handler runUiChat = new Handler();
     private Handler runUiChatSend = new Handler();
@@ -127,6 +128,96 @@ public class Chat extends Connectivity implements MqttCallback {
             mqttClientChat.subscribe(topicChat, qosChat);
         } catch (MqttException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (closeFlag == true) {
+            try {
+                closeFlag = false;
+                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
+                mqttClientChat.connect(connOptsChat);
+                mqttClientChat.setCallback(this);
+                mqttClientChat.subscribe(topicChat, qosChat);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        if (closeFlag == true) {
+            try {
+                closeFlag = false;
+                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
+                mqttClientChat.connect(connOptsChat);
+                mqttClientChat.setCallback(this);
+                mqttClientChat.subscribe(topicChat, qosChat);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (closeFlag == true) {
+            try {
+                closeFlag = false;
+                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
+                mqttClientChat.connect(connOptsChat);
+                mqttClientChat.setCallback(this);
+                mqttClientChat.subscribe(topicChat, qosChat);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (closeFlag == false) {
+            try {
+                closeFlag = true;
+                mqttClientChat.disconnect();
+                mqttClientChat.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (closeFlag == false) {
+            try {
+                closeFlag = true;
+                mqttClientChat.disconnect();
+                mqttClientChat.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (closeFlag == false) {
+            try {
+                closeFlag = true;
+                mqttClientChat.disconnect();
+                mqttClientChat.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
         }
     }
 

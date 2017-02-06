@@ -73,7 +73,8 @@
             android:name=".Settings"
             android:icon="@drawable/settings"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.rohsins.project_test.MainActivity"/>
