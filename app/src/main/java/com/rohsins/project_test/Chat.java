@@ -40,7 +40,6 @@ public class Chat extends Connectivity implements MqttCallback {
     byte[] payloadChat;
 
     private static MqttMessage mqttMessageTextViewChat;
-    private static boolean closeFlag = false;
 
     private Handler runUiChat = new Handler();
     private Handler runUiChatSend = new Handler();
@@ -71,6 +70,22 @@ public class Chat extends Connectivity implements MqttCallback {
             }
         }
     };
+
+    Runnable mqttChatlaunch = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
+                mqttClientChat.connect(connOptsChat);
+                mqttClientChat.setCallback(Chat.this);
+                mqttClientChat.subscribe(topicChat, qosChat);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    };
+
+    Thread launchMqttChat = new Thread(mqttChatlaunch);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,7 +127,7 @@ public class Chat extends Connectivity implements MqttCallback {
         });
 
         topicChat = "R&D/hardware/chat";
-        qosChat = 1;
+        qosChat = 2;
         brokerChat = "tcp://" + brokerAddress + ":1883";
         clientIdChat = uniqueId;
         persistenceChat = new MemoryPersistence();
@@ -121,98 +136,22 @@ public class Chat extends Connectivity implements MqttCallback {
         connOptsChat.setUserName("rtshardware");
         connOptsChat.setPassword("rtshardware".toCharArray());
 
-        try {
-            mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
-            mqttClientChat.connect(connOptsChat);
-            mqttClientChat.setCallback(this);
-            mqttClientChat.subscribe(topicChat, qosChat);
-        } catch (MqttException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (closeFlag == true) {
-            try {
-                closeFlag = false;
-                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
-                mqttClientChat.connect(connOptsChat);
-                mqttClientChat.setCallback(this);
-                mqttClientChat.subscribe(topicChat, qosChat);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
+        launchMqttChat.start();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        if (closeFlag == true) {
-            try {
-                closeFlag = false;
-                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
-                mqttClientChat.connect(connOptsChat);
-                mqttClientChat.setCallback(this);
-                mqttClientChat.subscribe(topicChat, qosChat);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (closeFlag == true) {
-            try {
-                closeFlag = false;
-                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
-                mqttClientChat.connect(connOptsChat);
-                mqttClientChat.setCallback(this);
-                mqttClientChat.subscribe(topicChat, qosChat);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
+        if (!mqttClientChat.isConnected()) {
+            launchMqttChat.start();
         }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (closeFlag == false) {
+        if (mqttClientChat.isConnected()) {
             try {
-                closeFlag = true;
-                mqttClientChat.disconnect();
-                mqttClientChat.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (closeFlag == false) {
-            try {
-                closeFlag = true;
-                mqttClientChat.disconnect();
-                mqttClientChat.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if (closeFlag == false) {
-            try {
-                closeFlag = true;
                 mqttClientChat.disconnect();
                 mqttClientChat.close();
             } catch (MqttException e) {

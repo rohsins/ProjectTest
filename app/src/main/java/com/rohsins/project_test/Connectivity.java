@@ -71,7 +71,7 @@ public class Connectivity extends Activity {
 
 		MyClientTask(byte[] payload) {
             topic = "R&D/hardware/home";
-            qos = 1;
+            qos = 2;
             broker = "tcp://" + brokerAddress + ":1883";
             clientId = uniqueId;
 //            will = "rohsins's cell phone out".getBytes();
@@ -114,7 +114,7 @@ public class Connectivity extends Activity {
                     } else if (reuseAddressFlag == true) {
                         socket.setReuseAddress(true);
                     }
-                    socket.setSoTimeout(100);
+                    socket.setSoTimeout(200);
 //				      nagleReplyFlag = Connectivity.getTcpNoDelay();
                     dataOutputStream = new DataOutputStream(socket.getOutputStream());
                     dataInputStream = new DataInputStream(socket.getInputStream());
@@ -200,7 +200,7 @@ public class Connectivity extends Activity {
                         if (switchCheck[1].equals("java.io.EOFException")) {
                             break;
                         }
-                        if (switchCheck[1].equals("java.net.SocketTimeoutException")) break;
+                        if (switchCheck[1].equals("java.net.SocketTimeoutException: Read timed out")) break;
                         Toast.makeText(Connectivity.this, "Error: " + switchCheck[1], Toast.LENGTH_SHORT).show();
                         break;
                     default:

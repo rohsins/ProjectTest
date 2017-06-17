@@ -17,11 +17,11 @@ ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/s
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:multidex:1.0.1] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.0.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.1] /Users/rohsins/.android/build-cache/a689f1c0c67bab039c2f9f0745621ff4b7ad3071/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/rohsins/.android/build-cache/8fe50a96974826554ff81f0ae43375680b4e9423/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/rohsins/.android/build-cache/4ef88062d05d278bf5d0a9052967b3341389c479/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/rohsins/.android/build-cache/3423207d1e270361fd82f71d6eea415069f722e4/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.0] /Users/rohsins/.android/build-cache/b2c7555aaf1aafa8a9f724815f4974425105e24d/output/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
@@ -52,9 +52,9 @@ ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/s
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:17:9-64
 application
 ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:20:5-134:19
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/rohsins/.android/build-cache/8fe50a96974826554ff81f0ae43375680b4e9423/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/rohsins/.android/build-cache/3423207d1e270361fd82f71d6eea415069f722e4/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.0] /Users/rohsins/.android/build-cache/b2c7555aaf1aafa8a9f724815f4974425105e24d/output/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:23:9-41
 	android:allowBackup
@@ -187,7 +187,7 @@ ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/s
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:117:13-33
 meta-data#com.google.android.gms.version
 ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:125:9-127:68
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/rohsins/.android/build-cache/3423207d1e270361fd82f71d6eea415069f722e4/output/AndroidManifest.xml:21:9-23:69
 	android:value
 		ADDED from /Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:127:13-66
 	android:name

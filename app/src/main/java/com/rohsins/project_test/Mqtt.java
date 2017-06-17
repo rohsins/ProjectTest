@@ -3,9 +3,11 @@ package com.rohsins.project_test;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
@@ -14,6 +16,9 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+
+import java.sql.Time;
+import java.util.Date;
 
 public class Mqtt extends Connectivity implements MqttCallback {
 
@@ -28,9 +33,6 @@ public class Mqtt extends Connectivity implements MqttCallback {
     MqttConnectOptions connOpts;
 
     private static MqttMessage mqttMessageTextView;
-
-    private static boolean closeFlag = false;
-
     private Handler runUi = new Handler();
 
     Runnable uiRunnable = new Runnable() {
@@ -48,6 +50,22 @@ public class Mqtt extends Connectivity implements MqttCallback {
         }
     };
 
+    Runnable launchMqtt = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                mqttClient = new MqttClient(broker, clientId, persistence);
+                mqttClient.connect(connOpts);
+                mqttClient.setCallback(Mqtt.this);
+                mqttClient.subscribe(topic, qos);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    };
+
+    Thread mqttThread = new Thread(launchMqtt);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +76,8 @@ public class Mqtt extends Connectivity implements MqttCallback {
         textView = (TextView) findViewById(R.id.mqttTextView01);
         textView.setMovementMethod(new ScrollingMovementMethod());
 
-        topic = "R&D/hardware/viewer";
-        qos = 1;
+        topic = "RTSR&D/rozbor/sub/D21348830";
+        qos = 2;
         broker = "tcp://" + brokerAddress + ":1883";
         clientId = uniqueId;
         persistence = new MemoryPersistence();
@@ -67,99 +85,22 @@ public class Mqtt extends Connectivity implements MqttCallback {
         connOpts.setUserName("rtshardware");
         connOpts.setPassword("rtshardware".toCharArray());
 
-        try {
-            closeFlag = false;
-            mqttClient = new MqttClient(broker, clientId, persistence);
-            mqttClient.connect(connOpts);
-            mqttClient.setCallback(this);
-            mqttClient.subscribe(topic, qos);
-        } catch (MqttException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (closeFlag == true) {
-            try {
-                closeFlag = false;
-                mqttClient = new MqttClient(broker, clientId, persistence);
-                mqttClient.connect(connOpts);
-                mqttClient.setCallback(this);
-                mqttClient.subscribe(topic, qos);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
+        mqttThread.start();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        if (closeFlag == true) {
-            try {
-                closeFlag = false;
-                mqttClient = new MqttClient(broker, clientId, persistence);
-                mqttClient.connect(connOpts);
-                mqttClient.setCallback(this);
-                mqttClient.subscribe(topic, qos);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (closeFlag == true) {
-            try {
-                closeFlag = false;
-                mqttClient = new MqttClient(broker, clientId, persistence);
-                mqttClient.connect(connOpts);
-                mqttClient.setCallback(this);
-                mqttClient.subscribe(topic, qos);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
+        if (!mqttClient.isConnected()) {
+            mqttThread.start();
         }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (closeFlag == false) {
+        if (mqttClient.isConnected()) {
             try {
-                closeFlag = true;
-                mqttClient.disconnect();
-                mqttClient.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (closeFlag == false) {
-            try {
-                closeFlag = true;
-                mqttClient.disconnect();
-                mqttClient.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if (closeFlag == false) {
-            try {
-                closeFlag = true;
                 mqttClient.disconnect();
                 mqttClient.close();
             } catch (MqttException e) {
@@ -185,7 +126,7 @@ public class Mqtt extends Connectivity implements MqttCallback {
 
     @Override
     public void connectionLost(Throwable throwable) {
-
+//        Toast.makeText(Mqtt.this, "Connection Lost", Toast.LENGTH_SHORT).show();
     }
 
     @Override
