@@ -1,7 +1,13 @@
 package com.rohsins.project_test;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.NotificationCompat;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
@@ -16,6 +22,7 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.json.JSONObject;
 
 import java.sql.Time;
 import java.util.Date;
@@ -32,8 +39,18 @@ public class Mqtt extends Connectivity implements MqttCallback {
     MemoryPersistence persistence;
     MqttConnectOptions connOpts;
 
-    private static MqttMessage mqttMessageTextView;
+    NotificationCompat.Builder mBuilder;
+    Intent resultIntent;
+    TaskStackBuilder stackBuilder;
+    PendingIntent resultPendingIntent;
+    NotificationManager mNotificationManager;
+    int mId = 0;
+    boolean backRun = false;
+
+//    private static MqttMessage mqttMessageTextView;
+    private static String mqttMessageTextView;
     private Handler runUi = new Handler();
+    private Handler notificationHandler = new Handler();
 
     Runnable uiRunnable = new Runnable() {
         @Override
@@ -64,6 +81,16 @@ public class Mqtt extends Connectivity implements MqttCallback {
         }
     };
 
+    Runnable notificationRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (backRun) {
+                mBuilder.setContentText(mqttMessageTextView.toString());
+                mNotificationManager.notify(mId, mBuilder.build());
+            }
+        }
+    };
+
     Thread mqttThread = new Thread(launchMqtt);
 
     @Override
@@ -86,6 +113,19 @@ public class Mqtt extends Connectivity implements MqttCallback {
         connOpts.setPassword("rtshardware".toCharArray());
 
         mqttThread.start();
+
+        mBuilder = new NotificationCompat.Builder(this)
+            .setSmallIcon(R.drawable.motor_controls)
+            .setContentTitle("Mqtt Notification");
+
+        resultIntent = new Intent(this, Mqtt.class);
+        stackBuilder = TaskStackBuilder.create(this);
+        stackBuilder.addParentStack(Mqtt.class);
+        stackBuilder.addNextIntent(resultIntent);
+        resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+        mBuilder.setContentIntent(resultPendingIntent);
+        mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        backRun = false;
     }
 
     @Override
@@ -94,6 +134,13 @@ public class Mqtt extends Connectivity implements MqttCallback {
         if (!mqttClient.isConnected()) {
             mqttThread.start();
         }
+        backRun = false;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        backRun = true;
     }
 
     @Override
@@ -107,6 +154,7 @@ public class Mqtt extends Connectivity implements MqttCallback {
                 e.printStackTrace();
             }
         }
+        backRun = false;
     }
 
     @Override
@@ -131,9 +179,10 @@ public class Mqtt extends Connectivity implements MqttCallback {
 
     @Override
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-        mqttMessageTextView = mqttMessage;
-//        stringBuilderMqtt.append(mqttMessage.toString());
+        JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
+        mqttMessageTextView = jsonMqttMessage.getString("data") + " @ " + jsonMqttMessage.getString("date")  + "\n";
         runUi.post(uiRunnable);
+        notificationHandler.post(notificationRunnable);
     }
 
     @Override
