@@ -1,10 +1,12 @@
 package com.rohsins.project_test;
 
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.NotificationCompat;
@@ -24,9 +26,6 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.json.JSONObject;
 
-import java.sql.Time;
-import java.util.Date;
-
 public class Mqtt extends Connectivity implements MqttCallback {
 
     TextView textView;
@@ -40,9 +39,9 @@ public class Mqtt extends Connectivity implements MqttCallback {
     MqttConnectOptions connOpts;
 
     NotificationCompat.Builder mBuilder;
-    Intent resultIntent;
-    TaskStackBuilder stackBuilder;
-    PendingIntent resultPendingIntent;
+//    Intent resultIntent;
+//    TaskStackBuilder stackBuilder;
+//    PendingIntent resultPendingIntent;
     NotificationManager mNotificationManager;
     int mId = 0;
     boolean backRun = false;
@@ -84,10 +83,8 @@ public class Mqtt extends Connectivity implements MqttCallback {
     Runnable notificationRunnable = new Runnable() {
         @Override
         public void run() {
-            if (backRun) {
-                mBuilder.setContentText(mqttMessageTextView.toString());
-                mNotificationManager.notify(mId, mBuilder.build());
-            }
+            mBuilder.setContentText(mqttMessageTextView.toString());
+            mNotificationManager.notify(mId, mBuilder.build());
         }
     };
 
@@ -103,7 +100,7 @@ public class Mqtt extends Connectivity implements MqttCallback {
         textView = (TextView) findViewById(R.id.mqttTextView01);
         textView.setMovementMethod(new ScrollingMovementMethod());
 
-        topic = "RTSR&D/rozbor/sub/D21348830";
+        topic = "RTSR&D/rozbor/sub/"+uniqueId;
         qos = 2;
         broker = "tcp://" + brokerAddress + ":1883";
         clientId = uniqueId;
@@ -116,14 +113,17 @@ public class Mqtt extends Connectivity implements MqttCallback {
 
         mBuilder = new NotificationCompat.Builder(this)
             .setSmallIcon(R.drawable.motor_controls)
-            .setContentTitle("Mqtt Notification");
+            .setContentTitle("Mqtt Notification")
+            .setLights(Color.YELLOW, 1000, 3000)
+            .setDefaults(Notification.DEFAULT_SOUND | Notification.FLAG_SHOW_LIGHTS);
 
-        resultIntent = new Intent(this, Mqtt.class);
-        stackBuilder = TaskStackBuilder.create(this);
-        stackBuilder.addParentStack(Mqtt.class);
-        stackBuilder.addNextIntent(resultIntent);
-        resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
-        mBuilder.setContentIntent(resultPendingIntent);
+
+//        resultIntent = new Intent(this, Mqtt.class);
+//        stackBuilder = TaskStackBuilder.create(this);
+//        stackBuilder.addParentStack(Mqtt.class);
+//        stackBuilder.addNextIntent(resultIntent);
+//        resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+//        mBuilder.setContentIntent(resultPendingIntent);
         mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         backRun = false;
     }
@@ -135,6 +135,9 @@ public class Mqtt extends Connectivity implements MqttCallback {
             mqttThread.start();
         }
         backRun = false;
+        if (mNotificationManager.areNotificationsEnabled()) {
+            mNotificationManager.cancel(mId);
+        }
     }
 
     @Override
@@ -175,6 +178,7 @@ public class Mqtt extends Connectivity implements MqttCallback {
     @Override
     public void connectionLost(Throwable throwable) {
 //        Toast.makeText(Mqtt.this, "Connection Lost", Toast.LENGTH_SHORT).show();
+//        Log.d("Lost", "connection lost " + throwable);
     }
 
     @Override
@@ -182,7 +186,9 @@ public class Mqtt extends Connectivity implements MqttCallback {
         JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
         mqttMessageTextView = jsonMqttMessage.getString("data") + " @ " + jsonMqttMessage.getString("date")  + "\n";
         runUi.post(uiRunnable);
-        notificationHandler.post(notificationRunnable);
+        if (backRun) {
+            notificationHandler.post(notificationRunnable);
+        }
     }
 
     @Override
