@@ -66,14 +66,14 @@ public class MainActivity extends Connectivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (globalMqttClient.isConnected()) {
-            try {
-                globalMqttClient.disconnect();
-                globalMqttClient.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
+//        if (globalMqttClient.isConnected()) {
+//            try {
+//                globalMqttClient.disconnect();
+//                globalMqttClient.close();
+//            } catch (MqttException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
     @Override

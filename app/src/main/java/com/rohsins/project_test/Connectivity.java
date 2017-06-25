@@ -22,6 +22,7 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.json.JSONObject;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -29,7 +30,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class Connectivity extends Activity implements MqttCallbackExtended{
+public class Connectivity extends Activity implements MqttCallbackExtended {
 
     public boolean initializeChecker = false;
 
@@ -164,7 +165,8 @@ public class Connectivity extends Activity implements MqttCallbackExtended{
     @Override
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
         Log.d("Runner", mqttMessage.toString());
-        globalNotificationMessage = mqttMessage.toString();
+        JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
+        globalNotificationMessage = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
         globalNotificationHandler.post(globalNotificationRunnable);
     }
 
@@ -344,4 +346,3 @@ public class Connectivity extends Activity implements MqttCallbackExtended{
 		myClientTask.execute();
 	}
 }
-

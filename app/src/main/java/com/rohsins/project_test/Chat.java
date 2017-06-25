@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
@@ -135,6 +136,7 @@ public class Chat extends Connectivity implements MqttCallback {
         connOptsChat = new MqttConnectOptions();
         connOptsChat.setUserName("rtshardware");
         connOptsChat.setPassword("rtshardware".toCharArray());
+//        connOptsChat.setAutomaticReconnect(true);
 
         launchMqttChat.start();
     }
@@ -185,6 +187,17 @@ public class Chat extends Connectivity implements MqttCallback {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void connectComplete(boolean b, String s) {
+        if (b) {
+            try {
+                mqttClientChat.subscribe(topicChat, qosChat);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override
