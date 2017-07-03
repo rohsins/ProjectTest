@@ -30,7 +30,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class Connectivity extends Activity implements MqttCallbackExtended {
+public class Connectivity extends Activity {
 
     public boolean initializeChecker = false;
 
@@ -42,67 +42,12 @@ public class Connectivity extends Activity implements MqttCallbackExtended {
     String inputIpAddressPort;
     String inputMqttBrokerIp;
     TextView serialViewerTextView;
-//	TextView mqttViewerTextView;
 	public static boolean nagleFlag = false;
 	public static boolean mqttFlag = false;
 //	public static boolean nagleReplyFlag = true;
 	public static boolean reuseAddressFlag = false;
 
-    public static MqttClient globalMqttClient;
-    public static String globalPublishTopic;
-    public static String globalSubscribeTopic;
-    public static int globalQos;
-    public static String globalBrokerAddress;
-    public static String globalClientId;
-    public static MemoryPersistence globalPersistence;
-    public static MqttConnectOptions globalConnectOptions;
-    public static Boolean globalMqttRetained;
-    public static byte[] globalMqttPayload;
-
-    NotificationCompat.Builder globalNotificationBuilder;
-    NotificationManager globalNotificationManager;
-    public static int globalNotificationId = 0;
-    public static String globalNotificationMessage;
-
-    Handler globalMqttSendHandler = new Handler();
-    Handler globalNotificationHandler = new Handler();
-
-    Runnable globalMqttSend = new Runnable() {
-        @Override
-        public void run() {
-            try {
-                globalMqttClient.publish(globalPublishTopic, globalMqttPayload, globalQos, globalMqttRetained);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    };
-
-    Runnable globalNotificationRunnable = new Runnable() {
-        @Override
-        public void run() {
-            globalNotificationBuilder.setContentText(globalNotificationMessage);
-            globalNotificationBuilder.setShowWhen(true);
-            globalNotificationManager.notify(globalNotificationId, globalNotificationBuilder.build());
-        }
-    };
-
-
-    Runnable globalMqttLaunch = new Runnable() {
-        @Override
-        public void run() {
-            try {
-                globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
-                globalMqttClient.connect(globalConnectOptions);
-                globalMqttClient.setCallback(Connectivity.this);
-                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    };
-
-    Thread globalMqttLaunchThread = new Thread(globalMqttLaunch);
+    boolean mqttViewerOn = false;
 
     public void on_create_func() {
         if (!initializeChecker) {
@@ -120,59 +65,7 @@ public class Connectivity extends Activity implements MqttCallbackExtended {
             reuseAddressFlag = settings.getBoolean("ENABLEREUSEADDRESS", false);
             mqttFlag = settings.getBoolean("ENABLEMQTT", false);
             uniqueId = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
-
-            globalBrokerAddress = "tcp://" + brokerAddress + ":1883";
-            globalPublishTopic = "RTSR&D/rozbor/pub";
-            globalSubscribeTopic = "RTSR&D/rozbor/sub/" + uniqueId;
-            globalQos = 2;
-            globalClientId = "rohsins";
-            globalPersistence = new MemoryPersistence();
-            globalConnectOptions = new MqttConnectOptions();
-            globalConnectOptions.setAutomaticReconnect(true);
-            globalConnectOptions.setCleanSession(false);
-            globalConnectOptions.setUserName("rtshardware");
-            globalConnectOptions.setPassword(("rtshardware").toCharArray());
-
-            globalNotificationBuilder = new NotificationCompat.Builder(this)
-                    .setSmallIcon(R.drawable.motor_controls)
-                    .setContentTitle("Mqtt Notification")
-                    .setLights(Color.YELLOW, 1000, 3000)
-                    .setPriority(Notification.PRIORITY_HIGH)
-                    .setDefaults(Notification.DEFAULT_SOUND | Notification.FLAG_SHOW_LIGHTS);
-
-            globalNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-            globalMqttLaunchThread.start();
         }
-    }
-
-    @Override
-    public void connectComplete(boolean b, String s) {
-        if (b) {
-            try {
-                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    public void connectionLost(Throwable throwable) {
-
-    }
-
-    @Override
-    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-        Log.d("Runner", mqttMessage.toString());
-        JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
-        globalNotificationMessage = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
-        globalNotificationHandler.post(globalNotificationRunnable);
-    }
-
-    @Override
-    public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-
     }
 
     public class MyClientTask extends AsyncTask<Void, Void, Void> {
@@ -195,7 +88,7 @@ public class Connectivity extends Activity implements MqttCallbackExtended {
 		MyClientTask(byte[] payload) {
             topic = "R&D/hardware/home";
             qos = 2;
-            broker = "tcp://" + brokerAddress + ":1883";
+//            broker = "tcp://" + brokerAddress + ":1883";
             clientId = uniqueId;
 //            will = "rohsins's cell phone out".getBytes();
             retained = false;

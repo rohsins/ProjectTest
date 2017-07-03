@@ -24,7 +24,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 
-public class Chat extends Connectivity implements MqttCallback {
+public class Chat extends Connectivity implements MqttCallbackExtended {
 
     EditText chatEditText;
     TextView chatTextView;
