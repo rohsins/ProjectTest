@@ -1,5 +1,6 @@
 package com.rohsins.project_test;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,6 +21,7 @@ public class Settings extends Connectivity {
 	Switch aSwitch;
 	Switch bSwitch;
 	Switch cSwitch;
+    static Switch dSwitch;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class Settings extends Connectivity {
 		aSwitch = (Switch) findViewById(R.id.settingsSwitch1);
 		bSwitch = (Switch) findViewById(R.id.settingsSwitch2);
 		cSwitch = (Switch) findViewById(R.id.settingsSwitch3);
+        dSwitch = (Switch) findViewById(R.id.settingsSwitch4);
 		textView = (TextView) findViewById(R.id.settingsTextView3);
 		textView2 = (TextView) findViewById(R.id.settingsTextView4);
 		editText = (EditText) findViewById(R.id.settingsEditText1);
@@ -48,7 +51,7 @@ public class Settings extends Connectivity {
 		aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", false));
 		bSwitch.setChecked(settings.getBoolean("ENABLEREUSEADDRESS", false));
         cSwitch.setChecked(settings.getBoolean("ENABLEMQTT", false));
-
+        dSwitch.setChecked(AlwaysRunner.serviceIsAlive);
 
 		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
@@ -99,6 +102,25 @@ public class Settings extends Connectivity {
 				}
 			}
 		});
+
+        dSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                SharedPreferences settings = getSharedPreferences("msettings",0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putBoolean("BACKGROUNDSERVICE", dSwitch.isChecked());
+                editor.commit();
+                dSwitch.setChecked(settings.getBoolean("BACKGROUNDSERVICE", false));
+                if(settings.getBoolean("BACKGROUNDSERVICE", true) && !AlwaysRunner.serviceIsAlive) {
+                    Intent intent = new Intent(Settings.this, AlwaysRunner.class);
+                    startService(intent);
+                }
+                else if(!settings.getBoolean("BACKGROUNDSERVICE", true) && AlwaysRunner.serviceIsAlive) {
+                    Intent intent = new Intent(Settings.this, AlwaysRunner.class);
+                    stopService(intent);
+                }
+            }
+        });
 	}
 
 	public void Apply(View view) {

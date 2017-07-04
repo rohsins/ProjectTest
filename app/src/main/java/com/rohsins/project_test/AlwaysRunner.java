@@ -18,9 +18,12 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONObject;
 
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 import android.widget.Toast;
 
 
@@ -32,6 +35,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     public static MqttClient globalMqttClient;
     public static String globalPublishTopic;
     public static String globalSubscribeTopic;
+    public static String globalChatTopic;
     public static int globalQos;
     public static String globalBrokerAddress;
     public static String globalClientId;
@@ -44,18 +48,20 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     NotificationManager globalNotificationManager;
     public static int globalNotificationId = 0;
     public static String globalNotificationMessage;
+    public static boolean serviceIsAlive = false;
 
     Handler globalMqttSendHandler = new Handler();
     Handler globalNotificationHandler = new Handler();
+    Handler executeService = new Handler();
 
-        Runnable globalMqttSend = new Runnable() {
-        @Override
-        public void run() {
-            try {
-                globalMqttClient.publish(globalPublishTopic, globalMqttPayload, globalQos, globalMqttRetained);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+    Runnable globalMqttSend = new Runnable() {
+    @Override
+    public void run() {
+        try {
+            globalMqttClient.publish(globalPublishTopic, globalMqttPayload, globalQos, globalMqttRetained);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         }
     };
 
@@ -75,7 +81,6 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
                 globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
                 globalMqttClient.connect(globalConnectOptions);
                 globalMqttClient.setCallback(AlwaysRunner.this);
-                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
 
             } catch (MqttException e) {
                 e.printStackTrace();
@@ -83,18 +88,48 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         }
     };
 
+    Runnable stopServiceRunnable = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                globalMqttClient.unsubscribe(globalSubscribeTopic);
+                globalMqttClient.disconnect();
+                globalMqttClient.close();
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+            EventBus.getDefault().unregister(this);
+            serviceIsAlive = false;
+            Toast.makeText(AlwaysRunner.this, "Killing Service", Toast.LENGTH_SHORT).show();
+        }
+    };
+
     Thread globalMqttLaunchThread = new Thread(globalMqttLaunch);
+
+    public static class MessageEvent {
+        String messageValue;
+
+        MessageEvent(String value) {
+            messageValue = value;
+        }
+
+        public String getMessageValue() {
+            return messageValue;
+        }
+    }
 
     @Override
     public void onCreate() {
 
         globalUniqueId = android.provider.Settings.Secure.getString(this.getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
+
         SharedPreferences settings = getSharedPreferences("msettings", 0);
         globalLoadBrokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
 
         globalBrokerAddress = "tcp://" + globalLoadBrokerAddress + ":1883";
         globalPublishTopic = "RTSR&D/rozbor/pub";
         globalSubscribeTopic = "RTSR&D/rozbor/sub/" + globalUniqueId;
+        globalChatTopic = "RTSR&D/rozbor/chatpub";
         globalQos = 2;
         globalClientId = "rohsins";
         globalPersistence = new MemoryPersistence();
@@ -121,6 +156,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         if (b) {
             try {
                 globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
+                globalMqttClient.subscribe(globalChatTopic, globalQos);
             } catch (MqttException e) {
                 e.printStackTrace();
             }
@@ -135,8 +171,15 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
         JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
-        globalNotificationMessage = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
-        globalNotificationHandler.post(globalNotificationRunnable);
+
+        if (Mqtt.mqttViewerOn) {
+            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(mqttMessage.toString()));
+        } else {
+            globalNotificationMessage = jsonMqttMessage.toString();
+
+//            globalNotificationMessage = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
+            globalNotificationHandler.post(globalNotificationRunnable);
+        }
     }
 
     @Override
@@ -146,6 +189,8 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        serviceIsAlive = true;
+        EventBus.getDefault().register(this);
         Toast.makeText(this, "Starting Service", Toast.LENGTH_SHORT).show();
         return START_STICKY;
     }
@@ -157,13 +202,11 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
     @Override
     public void onDestroy() {
-        try {
-            globalMqttClient.unsubscribe(globalSubscribeTopic);
-            globalMqttClient.disconnect();
-            globalMqttClient.close();
-        } catch (MqttException e) {
-            e.printStackTrace();
-        }
-        Toast.makeText(this, "Killing Service", Toast.LENGTH_SHORT).show();
+        executeService.post(stopServiceRunnable);
+    }
+
+    @Subscribe(threadMode = ThreadMode.BACKGROUND)
+    public void onMessageEvent(AlwaysRunner.MessageEvent event) {
+        Log.d("runner", event.getMessageValue());
     }
 }

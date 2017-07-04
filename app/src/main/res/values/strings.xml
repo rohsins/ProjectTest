@@ -58,6 +58,7 @@
     <string name="settingsSwitch1">Nagle Algorithm</string>
     <string name="settingsSwitch2">Re-use Address</string>
     <string name="settingsSwitch3">Mqtt Enable</string>
+    <string name="settingsSwitch4">Run Service in Background</string>
     <string name="defaultMqttIp">m2m.eclipse.org</string>
     <string name="settingsTextView4">Enter Mqtt Broker Address</string>
     <string name="title_activity_open_site_editor">OpenSiteEditor</string>

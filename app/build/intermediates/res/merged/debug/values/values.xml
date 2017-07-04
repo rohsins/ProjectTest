@@ -103,6 +103,7 @@
     <string name="settingsSwitch1">Nagle Algorithm</string>
     <string name="settingsSwitch2">Re-use Address</string>
     <string name="settingsSwitch3">Mqtt Enable</string>
+    <string name="settingsSwitch4">Run Service in Background</string>
     <string name="settingsTextView4">Enter Mqtt Broker Address</string>
     <string name="showDesktop">Show Desktop</string>
     <string name="shutDown">Shutdown</string>
@@ -130,13 +131,9 @@
     <string name="title_activity_televisions">Televisions</string>
     <string name="updateRate">Update Rate</string>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="android:Theme.Holo.Light">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
 </resources>

@@ -14,33 +14,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
-import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
-import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
-public class Chat extends Connectivity implements MqttCallbackExtended {
+public class Chat extends Connectivity {
 
     EditText chatEditText;
     TextView chatTextView;
     Button chatSendButton;
 
-    MqttClient mqttClientChat;
-    String topicChat;
-    int qosChat;
-    String brokerChat;
-    String clientIdChat;
-    MemoryPersistence persistenceChat;
-    MqttConnectOptions connOptsChat;
-    Boolean retainedChat;
     byte[] payloadChat;
 
-    private static MqttMessage mqttMessageTextViewChat;
+    private static String mqttMessageTextViewChat;
 
     private Handler runUiChat = new Handler();
     private Handler runUiChatSend = new Handler();
@@ -65,28 +54,13 @@ public class Chat extends Connectivity implements MqttCallbackExtended {
         @Override
         public void run() {
             try {
-                mqttClientChat.publish(topicChat, payloadChat, qosChat, retainedChat);
+                AlwaysRunner.globalMqttClient.publish(AlwaysRunner.globalChatTopic, payloadChat, AlwaysRunner.globalQos, AlwaysRunner.globalMqttRetained);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     };
 
-    Runnable mqttChatlaunch = new Runnable() {
-        @Override
-        public void run() {
-            try {
-                mqttClientChat = new MqttClient(brokerChat, clientIdChat, persistenceChat);
-                mqttClientChat.connect(connOptsChat);
-                mqttClientChat.setCallback(Chat.this);
-                mqttClientChat.subscribe(topicChat, qosChat);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
-    };
-
-    Thread launchMqttChat = new Thread(mqttChatlaunch);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,45 +101,32 @@ public class Chat extends Connectivity implements MqttCallbackExtended {
             }
         });
 
-        topicChat = "R&D/hardware/chat";
-        qosChat = 2;
-        brokerChat = "tcp://" + brokerAddress + ":1883";
-        clientIdChat = uniqueId;
-        persistenceChat = new MemoryPersistence();
-        retainedChat = false;
-        connOptsChat = new MqttConnectOptions();
-        connOptsChat.setUserName("rtshardware");
-        connOptsChat.setPassword("rtshardware".toCharArray());
-//        connOptsChat.setAutomaticReconnect(true);
-
-        launchMqttChat.start();
+        EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        if (!mqttClientChat.isConnected()) {
-            launchMqttChat.start();
-        }
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+//        mqttViewerOn = false;
+        EventBus.getDefault().unregister(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mqttClientChat.isConnected()) {
-            try {
-                mqttClientChat.disconnect();
-                mqttClientChat.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-        }
+        EventBus.getDefault().unregister(this);
     }
 
     public void sendButton(View view) {
 //        chatTextView.setGravity(Gravity.END);
 //        chatTextView.append(chatEditText.getText()+"\n");
-        payloadChat = (clientIdChat+": "+chatEditText.getText().toString() + "\n").getBytes();
+        payloadChat = (AlwaysRunner.globalUniqueId +": "+chatEditText.getText().toString() + "\n").getBytes();
         chatEditText.setText("");
         runUiChatSend.post(uiRunnableChatSend);
     }
@@ -189,31 +150,22 @@ public class Chat extends Connectivity implements MqttCallbackExtended {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void connectComplete(boolean b, String s) {
-        if (b) {
-            try {
-                mqttClientChat.subscribe(topicChat, qosChat);
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
+
+//    @Override
+//    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
+//        mqttMessageTextViewChat = mqttMessage;
+////        stringBuilderMqtt.append(mqttMessage.toString());
+//        runUiChat.post(uiRunnableChat);
+//    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(AlwaysRunner.MessageEvent event) {
+        try {
+            JSONObject jsonMqttMessage = new JSONObject(event.getMessageValue());
+            mqttMessageTextViewChat = jsonMqttMessage.getString("payload") + "\n";
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
-    }
-
-    @Override
-    public void connectionLost(Throwable throwable) {
-
-    }
-
-    @Override
-    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-        mqttMessageTextViewChat = mqttMessage;
-//        stringBuilderMqtt.append(mqttMessage.toString());
         runUiChat.post(uiRunnableChat);
-    }
-
-    @Override
-    public void deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) {
-
     }
 }

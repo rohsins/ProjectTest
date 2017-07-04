@@ -47,8 +47,6 @@ public class Connectivity extends Activity {
 //	public static boolean nagleReplyFlag = true;
 	public static boolean reuseAddressFlag = false;
 
-    boolean mqttViewerOn = false;
-
     public void on_create_func() {
         if (!initializeChecker) {
             initializeChecker = true;
@@ -88,7 +86,7 @@ public class Connectivity extends Activity {
 		MyClientTask(byte[] payload) {
             topic = "R&D/hardware/home";
             qos = 2;
-//            broker = "tcp://" + brokerAddress + ":1883";
+            broker = "tcp://" + brokerAddress + ":1883";
             clientId = uniqueId;
 //            will = "rohsins's cell phone out".getBytes();
             retained = false;

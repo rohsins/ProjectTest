@@ -4,13 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Mqtt extends Connectivity {
 
     TextView textView;
+    public static boolean mqttViewerOn = false;
 
     private static String mqttMessageTextView;
     private Handler runUi = new Handler();
@@ -41,25 +48,28 @@ public class Mqtt extends Connectivity {
         textView.setMovementMethod(new ScrollingMovementMethod());
 
         mqttViewerOn = true;
+        EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
         mqttViewerOn = true;
+        EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-//        backRun = true;
         mqttViewerOn = false;
+        EventBus.getDefault().unregister(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mqttViewerOn = false;
+        EventBus.getDefault().unregister(this);
     }
 
     @Override
@@ -77,5 +87,16 @@ public class Mqtt extends Connectivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(AlwaysRunner.MessageEvent event) {
+        try {
+            JSONObject jsonMqttMessage = new JSONObject(event.getMessageValue());
+            mqttMessageTextView = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        runUi.post(uiRunnable);
     }
 }

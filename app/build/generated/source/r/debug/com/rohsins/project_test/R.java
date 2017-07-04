@@ -158,8 +158,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int televisions=0x7f020036;
     }
     public static final class id {
-        public static final int action_password=0x7f0a0044;
-        public static final int action_settings=0x7f0a0043;
+        public static final int action_password=0x7f0a0045;
+        public static final int action_settings=0x7f0a0044;
         public static final int activity_chat=0x7f0a0009;
         public static final int adjust_height=0x7f0a0000;
         public static final int adjust_width=0x7f0a0001;
@@ -211,16 +211,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int settingsSwitch1=0x7f0a003b;
         public static final int settingsSwitch2=0x7f0a003a;
         public static final int settingsSwitch3=0x7f0a0039;
+        public static final int settingsSwitch4=0x7f0a003c;
         public static final int settingsTextView3=0x7f0a0033;
         public static final int settingsTextView4=0x7f0a0036;
         public static final int settingstextView=0x7f0a0034;
-        public static final int shutDownButton01=0x7f0a003e;
-        public static final int shutDownButton02=0x7f0a003f;
-        public static final int shutDownButton03=0x7f0a0040;
-        public static final int shutDownButton04=0x7f0a0041;
-        public static final int shutDownButton05=0x7f0a0042;
-        public static final int shutDownEditText01=0x7f0a003d;
-        public static final int shutDownTextView01=0x7f0a003c;
+        public static final int shutDownButton01=0x7f0a003f;
+        public static final int shutDownButton02=0x7f0a0040;
+        public static final int shutDownButton03=0x7f0a0041;
+        public static final int shutDownButton04=0x7f0a0042;
+        public static final int shutDownButton05=0x7f0a0043;
+        public static final int shutDownEditText01=0x7f0a003e;
+        public static final int shutDownTextView01=0x7f0a003d;
         public static final int standard=0x7f0a0004;
         public static final int syncSwitch=0x7f0a002f;
         public static final int textViewSync=0x7f0a002e;
@@ -327,45 +328,39 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int settingsSwitch1=0x7f040040;
         public static final int settingsSwitch2=0x7f040041;
         public static final int settingsSwitch3=0x7f040042;
-        public static final int settingsTextView4=0x7f040043;
-        public static final int showDesktop=0x7f040044;
-        public static final int shutDown=0x7f040045;
-        public static final int shutDownButton01=0x7f040046;
-        public static final int shutDownButton02=0x7f040047;
-        public static final int shutDownButton03=0x7f040048;
-        public static final int shutDownButton04=0x7f040049;
-        public static final int shutDownButton05=0x7f04004a;
-        public static final int shutDownEditText01=0x7f04004b;
-        public static final int shutDownTextView01=0x7f04004c;
-        public static final int televisionMessage=0x7f04004d;
-        public static final int textViewSync=0x7f04004e;
-        public static final int textViewUnit=0x7f04004f;
-        public static final int title_activity_chat=0x7f040050;
-        public static final int title_activity_doors=0x7f040051;
-        public static final int title_activity_lights=0x7f040052;
-        public static final int title_activity_motor__controls=0x7f040053;
-        public static final int title_activity_motor_controls=0x7f040054;
-        public static final int title_activity_mqtt=0x7f040055;
-        public static final int title_activity_open_site_editor=0x7f040056;
-        public static final int title_activity_others=0x7f040057;
-        public static final int title_activity_serial_viewer=0x7f040058;
-        public static final int title_activity_settings=0x7f040059;
-        public static final int title_activity_shut_down=0x7f04005a;
-        public static final int title_activity_televisions=0x7f04005b;
-        public static final int updateRate=0x7f04005c;
+        public static final int settingsSwitch4=0x7f040043;
+        public static final int settingsTextView4=0x7f040044;
+        public static final int showDesktop=0x7f040045;
+        public static final int shutDown=0x7f040046;
+        public static final int shutDownButton01=0x7f040047;
+        public static final int shutDownButton02=0x7f040048;
+        public static final int shutDownButton03=0x7f040049;
+        public static final int shutDownButton04=0x7f04004a;
+        public static final int shutDownButton05=0x7f04004b;
+        public static final int shutDownEditText01=0x7f04004c;
+        public static final int shutDownTextView01=0x7f04004d;
+        public static final int televisionMessage=0x7f04004e;
+        public static final int textViewSync=0x7f04004f;
+        public static final int textViewUnit=0x7f040050;
+        public static final int title_activity_chat=0x7f040051;
+        public static final int title_activity_doors=0x7f040052;
+        public static final int title_activity_lights=0x7f040053;
+        public static final int title_activity_motor__controls=0x7f040054;
+        public static final int title_activity_motor_controls=0x7f040055;
+        public static final int title_activity_mqtt=0x7f040056;
+        public static final int title_activity_open_site_editor=0x7f040057;
+        public static final int title_activity_others=0x7f040058;
+        public static final int title_activity_serial_viewer=0x7f040059;
+        public static final int title_activity_settings=0x7f04005a;
+        public static final int title_activity_shut_down=0x7f04005b;
+        public static final int title_activity_televisions=0x7f04005c;
+        public static final int updateRate=0x7f04005d;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
          */
         public static final int AppBaseTheme=0x7f050000;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f050001;
     }
     public static final class styleable {

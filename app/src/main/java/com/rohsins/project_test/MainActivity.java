@@ -2,12 +2,9 @@ package com.rohsins.project_test;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import org.eclipse.paho.client.mqttv3.MqttException;
 
 public class MainActivity extends Connectivity {
 
@@ -62,24 +59,11 @@ public class MainActivity extends Connectivity {
         setContentView(R.layout.activity_main);
 
         on_create_func();
-
-        Intent intent = new Intent(this, AlwaysRunner.class);
-        startService(intent);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Intent intent = new Intent(this, AlwaysRunner.class);
-        stopService(intent);
-//        if (globalMqttClient.isConnected()) {
-//            try {
-//                globalMqttClient.disconnect();
-//                globalMqttClient.close();
-//            } catch (MqttException e) {
-//                e.printStackTrace();
-//            }
-//        }
     }
 
     @Override
