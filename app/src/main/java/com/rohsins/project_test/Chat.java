@@ -138,6 +138,7 @@ public class Chat extends Connectivity {
 //        chatTextView.append(chatEditText.getText()+"\n");
         JSONObject jsonObjectChat = new JSONObject();
         try {
+            jsonObjectChat.put("user", AlwaysRunner.globalUniqueId);
             jsonObjectChat.put("payload", chatEditText.getText().toString());
             chatPayload = jsonObjectChat.toString();
             chatEditText.setText("");
@@ -173,7 +174,7 @@ public class Chat extends Connectivity {
             try {
                 JSONObject jObject = new JSONObject(event.getMessageData());
 //                mqttMessageTextViewChat = event.getMessageData();
-                mqttMessageTextViewChat = jObject.getString("payload") + "\n";
+                mqttMessageTextViewChat = jObject.getString("user") + ": " + jObject.getString("payload") + "\n";
                 runUiChat.post(uiRunnableChat);
             } catch (JSONException e) {
                 e.printStackTrace();

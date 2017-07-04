@@ -64,6 +64,8 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
                 globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
                 globalMqttClient.connect(globalConnectOptions);
                 globalMqttClient.setCallback(AlwaysRunner.this);
+                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
+                globalMqttClient.subscribe(globalChatTopic, globalQos);
             } catch (MqttException e) {
                 e.printStackTrace();
             }
@@ -109,7 +111,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public void onCreate() {
 
-        globalUniqueId = android.provider.Settings.Secure.getString(this.getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
+        globalUniqueId = Connectivity.uniqueId;
 
         SharedPreferences settings = getSharedPreferences("msettings", 0);
         globalLoadBrokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
@@ -119,7 +121,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalSubscribeTopic = "RTSR&D/rozbor/sub/" + globalUniqueId;
         globalChatTopic = "RTSR&D/rozbor/chatpub";
         globalQos = 2;
-        globalClientId = "rohsins";
+        globalClientId = MqttClient.generateClientId();
         globalPersistence = new MemoryPersistence();
         globalConnectOptions = new MqttConnectOptions();
         globalConnectOptions.setAutomaticReconnect(true);
@@ -164,22 +166,22 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         if (!Mqtt.mqttViewerOn && !Chat.mqttChatOn && s.contains("RTSR&D/rozbor/chatpub")) {
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
             globalNotificationBuilder.setContentTitle("Chat Notification");
-            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationMessage = jsonMqttMessage.getString("payload");
             globalNotificationHandler.post(globalNotificationRunnable);
         } else if (!Chat.mqttChatOn && !Mqtt.mqttViewerOn && s.contains("RTSR&D/rozbor/sub/")){
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
             globalNotificationBuilder.setContentTitle("Viewer Notification");
-            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationMessage = jsonMqttMessage.getString("payload");
             globalNotificationHandler.post(globalNotificationRunnable);
         } else if (Mqtt.mqttViewerOn && s.contains("RTSR&D/rozbor/chatpub")) {
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
             globalNotificationBuilder.setContentTitle("Chat Notification");
-            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationMessage = jsonMqttMessage.getString("payload");
             globalNotificationHandler.post(globalNotificationRunnable);
         } else if (Chat.mqttChatOn && s.contains("RTSR&D/rozbor/sub/")){
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
             globalNotificationBuilder.setContentTitle("Viewer Notification");
-            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationMessage = jsonMqttMessage.getString("payload");
             globalNotificationHandler.post(globalNotificationRunnable);
         } else {
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
