@@ -27,9 +27,10 @@ public class Chat extends Connectivity {
     TextView chatTextView;
     Button chatSendButton;
 
-    byte[] payloadChat;
-
     private static String mqttMessageTextViewChat;
+    private static String chatPayload;
+
+    public static boolean mqttChatOn = false;
 
     private Handler runUiChat = new Handler();
     private Handler runUiChatSend = new Handler();
@@ -54,7 +55,12 @@ public class Chat extends Connectivity {
         @Override
         public void run() {
             try {
-                AlwaysRunner.globalMqttClient.publish(AlwaysRunner.globalChatTopic, payloadChat, AlwaysRunner.globalQos, AlwaysRunner.globalMqttRetained);
+                if (AlwaysRunner.globalMqttClient.isConnected()) {
+                    AlwaysRunner.globalMqttClient.publish(AlwaysRunner.globalChatTopic, chatPayload.getBytes(), AlwaysRunner.globalQos, AlwaysRunner.globalMqttRetained);
+                } else {
+                        AlwaysRunner.globalMqttClient.connect(AlwaysRunner.globalConnectOptions);
+                        AlwaysRunner.globalMqttClient.publish(AlwaysRunner.globalChatTopic, chatPayload.getBytes(), AlwaysRunner.globalQos, AlwaysRunner.globalMqttRetained);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -72,6 +78,8 @@ public class Chat extends Connectivity {
         chatSendButton = (Button) findViewById(R.id.chatButton);
 
         on_create_func();
+
+        mqttChatOn = true;
 
         chatTextView.setMovementMethod(new ScrollingMovementMethod());
         chatEditText.addTextChangedListener(new TextWatcher() {
@@ -107,28 +115,36 @@ public class Chat extends Connectivity {
     @Override
     protected void onRestart() {
         super.onRestart();
+        mqttChatOn = true;
         EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-//        mqttViewerOn = false;
+        mqttChatOn = false;
         EventBus.getDefault().unregister(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        mqttChatOn = false;
         EventBus.getDefault().unregister(this);
     }
 
     public void sendButton(View view) {
 //        chatTextView.setGravity(Gravity.END);
 //        chatTextView.append(chatEditText.getText()+"\n");
-        payloadChat = (AlwaysRunner.globalUniqueId +": "+chatEditText.getText().toString() + "\n").getBytes();
-        chatEditText.setText("");
-        runUiChatSend.post(uiRunnableChatSend);
+        JSONObject jsonObjectChat = new JSONObject();
+        try {
+            jsonObjectChat.put("payload", chatEditText.getText().toString());
+            chatPayload = jsonObjectChat.toString();
+            chatEditText.setText("");
+            runUiChatSend.post(uiRunnableChatSend);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -151,21 +167,17 @@ public class Chat extends Connectivity {
     }
 
 
-//    @Override
-//    public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-//        mqttMessageTextViewChat = mqttMessage;
-////        stringBuilderMqtt.append(mqttMessage.toString());
-//        runUiChat.post(uiRunnableChat);
-//    }
-
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(AlwaysRunner.MessageEvent event) {
-        try {
-            JSONObject jsonMqttMessage = new JSONObject(event.getMessageValue());
-            mqttMessageTextViewChat = jsonMqttMessage.getString("payload") + "\n";
-        } catch (JSONException e) {
-            e.printStackTrace();
+        if (event.getMessageTopic().contains("RTSR&D/rozbor/chatpub")) {
+            try {
+                JSONObject jObject = new JSONObject(event.getMessageData());
+//                mqttMessageTextViewChat = event.getMessageData();
+                mqttMessageTextViewChat = jObject.getString("payload") + "\n";
+                runUiChat.post(uiRunnableChat);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
-        runUiChat.post(uiRunnableChat);
     }
 }

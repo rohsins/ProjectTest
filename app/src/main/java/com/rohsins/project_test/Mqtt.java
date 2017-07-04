@@ -91,12 +91,9 @@ public class Mqtt extends Connectivity {
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(AlwaysRunner.MessageEvent event) {
-        try {
-            JSONObject jsonMqttMessage = new JSONObject(event.getMessageValue());
-            mqttMessageTextView = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
-        } catch (JSONException e) {
-            e.printStackTrace();
+        if (event.getMessageTopic().contains("RTSR&D/rozbor/sub/")) {
+            mqttMessageTextView = event.getMessageData();
+            runUi.post(uiRunnable);
         }
-        runUi.post(uiRunnable);
     }
 }

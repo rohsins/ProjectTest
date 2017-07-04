@@ -18,14 +18,10 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 import org.json.JSONObject;
 
 import android.support.v4.app.NotificationCompat;
-import android.util.Log;
 import android.widget.Toast;
-
 
 public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
@@ -42,7 +38,6 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     public static MemoryPersistence globalPersistence;
     public static MqttConnectOptions globalConnectOptions;
     public static Boolean globalMqttRetained;
-    public static byte[] globalMqttPayload;
 
     NotificationCompat.Builder globalNotificationBuilder;
     NotificationManager globalNotificationManager;
@@ -50,20 +45,8 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     public static String globalNotificationMessage;
     public static boolean serviceIsAlive = false;
 
-    Handler globalMqttSendHandler = new Handler();
     Handler globalNotificationHandler = new Handler();
     Handler executeService = new Handler();
-
-    Runnable globalMqttSend = new Runnable() {
-    @Override
-    public void run() {
-        try {
-            globalMqttClient.publish(globalPublishTopic, globalMqttPayload, globalQos, globalMqttRetained);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        }
-    };
 
     Runnable globalNotificationRunnable = new Runnable() {
         @Override
@@ -74,14 +57,13 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         }
     };
 
-    Runnable globalMqttLaunch = new Runnable() {
+    Runnable globalMqttLaunchRunnable = new Runnable() {
         @Override
         public void run() {
             try {
                 globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
                 globalMqttClient.connect(globalConnectOptions);
                 globalMqttClient.setCallback(AlwaysRunner.this);
-
             } catch (MqttException e) {
                 e.printStackTrace();
             }
@@ -93,28 +75,34 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         public void run() {
             try {
                 globalMqttClient.unsubscribe(globalSubscribeTopic);
+                globalMqttClient.unsubscribe(globalChatTopic);
                 globalMqttClient.disconnect();
                 globalMqttClient.close();
             } catch (MqttException e) {
                 e.printStackTrace();
             }
-            EventBus.getDefault().unregister(this);
             serviceIsAlive = false;
             Toast.makeText(AlwaysRunner.this, "Killing Service", Toast.LENGTH_SHORT).show();
         }
     };
 
-    Thread globalMqttLaunchThread = new Thread(globalMqttLaunch);
+    Thread globalMqttLaunchThread = new Thread(globalMqttLaunchRunnable);
 
     public static class MessageEvent {
-        String messageValue;
+        String messageData;
+        String messageTopic;
 
-        MessageEvent(String value) {
-            messageValue = value;
+        MessageEvent(String topic, String data) {
+            messageTopic = topic;
+            messageData = data;
         }
 
-        public String getMessageValue() {
-            return messageValue;
+        public String getMessageData() {
+            return messageData;
+        }
+
+        public String getMessageTopic() {
+            return messageTopic;
         }
     }
 
@@ -138,6 +126,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalConnectOptions.setCleanSession(false);
         globalConnectOptions.setUserName("rtshardware");
         globalConnectOptions.setPassword(("rtshardware").toCharArray());
+        globalMqttRetained = false;
 
         globalNotificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.motor_controls)
@@ -172,13 +161,28 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
         JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
 
-        if (Mqtt.mqttViewerOn) {
-            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(mqttMessage.toString()));
-        } else {
+        if (!Mqtt.mqttViewerOn && !Chat.mqttChatOn && s.contains("RTSR&D/rozbor/chatpub")) {
+            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
+            globalNotificationBuilder.setContentTitle("Chat Notification");
             globalNotificationMessage = jsonMqttMessage.toString();
-
-//            globalNotificationMessage = jsonMqttMessage.getString("payload") + " @ " + jsonMqttMessage.getString("date")  + "\n";
             globalNotificationHandler.post(globalNotificationRunnable);
+        } else if (!Chat.mqttChatOn && !Mqtt.mqttViewerOn && s.contains("RTSR&D/rozbor/sub/")){
+            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
+            globalNotificationBuilder.setContentTitle("Viewer Notification");
+            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationHandler.post(globalNotificationRunnable);
+        } else if (Mqtt.mqttViewerOn && s.contains("RTSR&D/rozbor/chatpub")) {
+            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
+            globalNotificationBuilder.setContentTitle("Chat Notification");
+            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationHandler.post(globalNotificationRunnable);
+        } else if (Chat.mqttChatOn && s.contains("RTSR&D/rozbor/sub/")){
+            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
+            globalNotificationBuilder.setContentTitle("Viewer Notification");
+            globalNotificationMessage = jsonMqttMessage.toString();
+            globalNotificationHandler.post(globalNotificationRunnable);
+        } else {
+            EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
         }
     }
 
@@ -190,7 +194,6 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         serviceIsAlive = true;
-        EventBus.getDefault().register(this);
         Toast.makeText(this, "Starting Service", Toast.LENGTH_SHORT).show();
         return START_STICKY;
     }
@@ -203,10 +206,5 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public void onDestroy() {
         executeService.post(stopServiceRunnable);
-    }
-
-    @Subscribe(threadMode = ThreadMode.BACKGROUND)
-    public void onMessageEvent(AlwaysRunner.MessageEvent event) {
-        Log.d("runner", event.getMessageValue());
     }
 }
