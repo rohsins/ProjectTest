@@ -20,6 +20,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
 
+import android.provider.*;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
@@ -111,7 +112,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public void onCreate() {
 
-        globalUniqueId = Connectivity.uniqueId;
+        globalUniqueId = android.provider.Settings.Secure.getString(this.getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
 
         SharedPreferences settings = getSharedPreferences("msettings", 0);
         globalLoadBrokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
