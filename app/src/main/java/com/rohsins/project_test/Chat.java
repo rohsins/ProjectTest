@@ -1,5 +1,6 @@
 package com.rohsins.project_test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -110,6 +111,12 @@ public class Chat extends Connectivity {
         });
 
         EventBus.getDefault().register(this);
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            mqttMessageTextViewChat = bundle.getString("tempMessage", "okay");
+            runUiChat.post(uiRunnableChat);
+        }
     }
 
     @Override

@@ -49,6 +49,12 @@ public class Mqtt extends Connectivity {
 
         mqttViewerOn = true;
         EventBus.getDefault().register(this);
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            mqttMessageTextView = bundle.getString("tempMessage", "okay");
+            runUi.post(uiRunnable);
+        }
     }
 
     @Override
@@ -92,8 +98,13 @@ public class Mqtt extends Connectivity {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(AlwaysRunner.MessageEvent event) {
         if (event.getMessageTopic().contains("RTSR&D/rozbor/sub/")) {
-            mqttMessageTextView = event.getMessageData();
-            runUi.post(uiRunnable);
+            try {
+                JSONObject jObject = new JSONObject(event.getMessageData());
+                mqttMessageTextView = jObject.getString("payload") + "\n";
+                runUi.post(uiRunnable);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
