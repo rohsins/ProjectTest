@@ -54,6 +54,7 @@ public class Mqtt extends Connectivity {
         if (bundle != null) {
             mqttMessageTextView = bundle.getString("tempMessage", "okay");
             runUi.post(uiRunnable);
+            AlwaysRunner.globalNotificationManager.cancel(0);
         }
     }
 

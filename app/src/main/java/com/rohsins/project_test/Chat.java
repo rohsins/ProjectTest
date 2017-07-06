@@ -116,6 +116,7 @@ public class Chat extends Connectivity {
         if (bundle != null) {
             mqttMessageTextViewChat = bundle.getString("tempMessage", "okay");
             runUiChat.post(uiRunnableChat);
+            AlwaysRunner.globalNotificationManager.cancel(0);
         }
     }
 

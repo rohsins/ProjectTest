@@ -43,7 +43,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     public static Boolean globalMqttRetained;
 
     NotificationCompat.Builder globalNotificationBuilder;
-    NotificationManager globalNotificationManager;
+    static NotificationManager globalNotificationManager;
     public static int globalNotificationId = 0;
     public static String globalNotificationMessage;
     public static boolean serviceIsAlive = false;
