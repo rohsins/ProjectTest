@@ -126,7 +126,8 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalSubscribeTopic = "RTSR&D/rozbor/sub/" + globalUniqueId;
         globalChatTopic = "RTSR&D/rozbor/chatpub";
         globalQos = 2;
-        globalClientId = MqttClient.generateClientId();
+//        globalClientId = MqttClient.generateClientId();
+        globalClientId = "rohsins Q";
         globalPersistence = new MemoryPersistence();
         globalConnectOptions = new MqttConnectOptions();
         globalConnectOptions.setAutomaticReconnect(true);
@@ -146,9 +147,9 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
         globalMqttLaunchThread.start();
 
-        PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLockUp");
-        wakeLock.acquire();
+//        PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
+//        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLockUp");
+//        wakeLock.acquire();
     }
 
     @Override
@@ -244,9 +245,9 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public void onDestroy() {
         executeService.post(stopServiceRunnable);
-        if (wakeLock != null) {
-            wakeLock.release();
-            wakeLock = null;
-        }
+//        if (wakeLock != null) {
+//            wakeLock.release();
+//            wakeLock = null;
+//        }
     }
 }
