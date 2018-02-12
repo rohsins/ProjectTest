@@ -47,10 +47,13 @@ public class Connectivity extends Activity {
 //	public static boolean nagleReplyFlag = true;
 	public static boolean reuseAddressFlag = false;
 
+	public static SharedPreferences settings;
+	public static SharedPreferences.Editor editor;
+
     public void on_create_func() {
         if (!initializeChecker) {
             initializeChecker = true;
-            SharedPreferences settings = getSharedPreferences("msettings", 0);
+//            SharedPreferences settings = getSharedPreferences("msettings", 0);
             if (settings.getString("SERVERIPADDRESS", "192,168.1.9:8080").contains(":")) {
                 ipAddressPort = settings.getString("SERVERIPADDRESS", "192.168.1.9:8080").split(":");
                 Address = ipAddressPort[0];

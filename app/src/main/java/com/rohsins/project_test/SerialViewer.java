@@ -20,6 +20,9 @@ public class SerialViewer extends Connectivity {
     Switch sync;
     EditText editTextUpdateRate;
 
+    private int editTextUpdateRate_value;
+    private  boolean sync_value;
+
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
@@ -44,7 +47,7 @@ public class SerialViewer extends Connectivity {
                 }
             };
             timer = new Timer("updateTimer");
-            timer.scheduleAtFixedRate(timerTask, 1, period);
+            timer.scheduleAtFixedRate(timerTask, 1000, period);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -65,41 +68,42 @@ public class SerialViewer extends Connectivity {
         editTextUpdateRate = (EditText) findViewById(R.id.editTextUpdateRate);
         sync = (Switch) findViewById(R.id.syncSwitch);
 
-        SharedPreferences settings = getSharedPreferences("msettings", 0);
         on_create_func();
-        editTextUpdateRate.setText(String.valueOf(settings.getInt("UPDATERATE", 1)));
-        if (!settings.getBoolean("SYNCSWITCH", false)) {
+
+        editTextUpdateRate_value = settings.getInt("UPDATERATE", 1000);
+        sync_value = settings.getBoolean("SYNCSWITCH", false);
+
+        editTextUpdateRate.setText(String.valueOf(editTextUpdateRate_value));
+
+        if (!sync_value) {
             editTextUpdateRate.setEnabled(true);
-        } else if (settings.getBoolean("SYNCSWITCH", false)) {
+        } else if (sync_value) {
             editTextUpdateRate.setEnabled(false);
         }
-        sync.setChecked(settings.getBoolean("SYNCSWITCH", false));
+        sync.setChecked(sync_value);
 
         /*
          to fix app crash because of calling stopTransfer() before startTransfer();
          not a good fix. work on it later.
          */
-        startTransfer(settings.getInt("UPDATERATE", 1000));
+        startTransfer(editTextUpdateRate_value);
         stopTransfer();
 
-        if (settings.getBoolean("SYNCSWITCH", false)) {
-            startTransfer(settings.getInt("UPDATERATE", 1000));
+        if (sync_value) {
+            startTransfer(editTextUpdateRate_value);
         }
 
         sync.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
-                SharedPreferences settings = getSharedPreferences("msettings", 0);
-                SharedPreferences.Editor editor = settings.edit();
-                editor.putInt("UPDATERATE", Integer.parseInt(editTextUpdateRate.getText().toString()));
-                editor.putBoolean("SYNCSWITCH", sync.isChecked());
-                editor.commit();
+                sync_value = sync.isChecked();
+                editTextUpdateRate_value = Integer.parseInt(editTextUpdateRate.getText().toString());
 
-                if (!settings.getBoolean("SYNCSWITCH", false)) {
+                if (!sync_value) {
                     stopTransfer();
                     editTextUpdateRate.setEnabled(true);
-                } else if (settings.getBoolean("SYNCSWITCH", false)) {
-                    startTransfer(settings.getInt("UPDATERATE", 1000));
+                } else if (sync_value) {
+                    startTransfer(editTextUpdateRate_value);
                     editTextUpdateRate.setEnabled(false);
                 }
             }
@@ -116,6 +120,9 @@ public class SerialViewer extends Connectivity {
     public void onDestroy() {
         super.onDestroy();
         stopTransfer();
+
+        editor.putInt("UPDATERATE", editTextUpdateRate_value);
+        editor.putBoolean("SYNCSWITCH", sync_value);
     }
 
     @Override

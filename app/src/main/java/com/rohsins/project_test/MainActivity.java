@@ -58,12 +58,17 @@ public class MainActivity extends Connectivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+		settings = getSharedPreferences("msettings", 0);
+		editor = settings.edit();
+
         on_create_func();
     }
 
     @Override
     protected void onDestroy() {
+
         super.onDestroy();
+        editor.commit();
     }
 
     @Override

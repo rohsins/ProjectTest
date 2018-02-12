@@ -15,9 +15,7 @@ public class Doors extends Connectivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_doors);
-		
-//		SharedPreferences settings = getSharedPreferences("msettings",0);
-//		Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
+
 		on_create_func();
 	}
 

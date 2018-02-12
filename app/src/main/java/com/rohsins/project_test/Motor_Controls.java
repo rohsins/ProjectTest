@@ -12,7 +12,7 @@ public class Motor_Controls extends Connectivity {
 	
 	SeekBar motor_controlsSeekBar1;
 	TextView motor_controlsTextView;
-	private int motor_controlsSeekBar_value;
+	private int motor_controlsSeekBar1_value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +21,11 @@ public class Motor_Controls extends Connectivity {
 		
 		motor_controlsSeekBar1 = (SeekBar)findViewById(R.id.motor_controlsSeekBar1);
 		motor_controlsTextView = (TextView)findViewById(R.id.motor_controlsTextView2);
-		
-		SharedPreferences settings = getSharedPreferences("msettings", 0);
-//		Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
+
 		on_create_func();
-		motor_controlsSeekBar_value = settings.getInt("MOTORCONTROLSSEEKBAR1VALUE", 20);
-		motor_controlsSeekBar1.setProgress(motor_controlsSeekBar_value);
-		motor_controlsTextView.setText(String.valueOf(motor_controlsSeekBar_value));
+		motor_controlsSeekBar1_value = settings.getInt("MOTORCONTROLSSEEKBAR1VALUE", 20);
+		motor_controlsSeekBar1.setProgress(motor_controlsSeekBar1_value);
+		motor_controlsTextView.setText(String.valueOf(motor_controlsSeekBar1_value));
 		motor_controlsSeekBar1.setOnSeekBarChangeListener(motor_controlsSeekBar1Listener);
 		
 	}
@@ -36,12 +34,8 @@ public class Motor_Controls extends Connectivity {
 
 		@Override
 		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("MOTORCONTROLSSEEKBAR1VALUE", motor_controlsSeekBar1.getProgress());
-			editor.commit();
-			motor_controlsTextView.setText(String.valueOf(motor_controlsSeekBar1.getProgress()));
-			exchangeData("CURTAIN:" + settings.getInt("MOTORCONTROLSSEEKBAR1VALUE", 20));
+			motor_controlsSeekBar1_value = motor_controlsSeekBar1.getProgress();
+			motor_controlsTextView.setText(String.valueOf(motor_controlsSeekBar1_value));
 		}
 
 		@Override
@@ -51,7 +45,7 @@ public class Motor_Controls extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar arg0) {
-			
+			exchangeData("CURTAIN:" + motor_controlsSeekBar1_value);
 		}
 		
 	};
@@ -73,5 +67,11 @@ public class Motor_Controls extends Connectivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		editor.putInt("MOTORCONTROLSSEEKBAR1VALUE", motor_controlsSeekBar1_value);
 	}
 }

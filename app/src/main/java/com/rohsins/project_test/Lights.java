@@ -17,14 +17,24 @@ public class Lights extends Connectivity {
 	SeekBar lightSeekBar3;
 	SeekBar lightSeekBar4;
 	SeekBar lightSeekBar5;
-	private int lightSeekBar_value;
+
+	private int lightSeekBar1_value;
+	private int lightSeekBar2_value;
+	private int lightSeekBar3_value;
+	private int lightSeekBar4_value;
+	private int lightSeekBar5_value;
 	
 	Switch lightSwitch1;
 	Switch lightSwitch2;
 	Switch lightSwitch3;
 	Switch lightSwitch4;
 	Switch lightSwitch5;
-	
+
+	private boolean lightSwitch1_value;
+	private boolean lightSwitch2_value;
+	private boolean lightSwitch3_value;
+	private boolean lightSwitch4_value;
+	private boolean lightSwitch5_value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,33 +52,36 @@ public class Lights extends Connectivity {
 		lightSwitch3 = (Switch) findViewById(R.id.lightSwitch3);
 		lightSwitch4 = (Switch) findViewById(R.id.lightSwitch4);
 		lightSwitch5 = (Switch) findViewById(R.id.lightSwitch5);
-		
-		SharedPreferences settings = getSharedPreferences("msettings",0);
-//		Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
+
 		on_create_func();
 		
-		lightSeekBar1.setEnabled(settings.getBoolean("LIGHTSWITCH1", false));
-		lightSeekBar2.setEnabled(settings.getBoolean("LIGHTSWITCH2", false));
-		lightSeekBar3.setEnabled(settings.getBoolean("LIGHTSWITCH3", false));
-		lightSeekBar4.setEnabled(settings.getBoolean("LIGHTSWITCH4", false));
-		lightSeekBar5.setEnabled(settings.getBoolean("LIGHTSWITCH5", false));
-		
-		lightSeekBar_value = settings.getInt("LIGHTSEEKBAR1", 20);
-		lightSeekBar1.setProgress(lightSeekBar_value);
-		lightSeekBar_value = settings.getInt("LIGHTSEEKBAR2", 20);
-		lightSeekBar2.setProgress(lightSeekBar_value);
-		lightSeekBar_value = settings.getInt("LIGHTSEEKBAR3", 20);
-		lightSeekBar3.setProgress(lightSeekBar_value);
-		lightSeekBar_value = settings.getInt("LIGHTSEEKBAR4", 20);
-		lightSeekBar4.setProgress(lightSeekBar_value);
-		lightSeekBar_value = settings.getInt("LIGHTSEEKBAR5", 20);
-		lightSeekBar5.setProgress(lightSeekBar_value);
-		
-		lightSwitch1.setChecked(settings.getBoolean("LIGHTSWITCH1", false));
-		lightSwitch2.setChecked(settings.getBoolean("LIGHTSWITCH2", false));
-		lightSwitch3.setChecked(settings.getBoolean("LIGHTSWITCH3", false));
-		lightSwitch4.setChecked(settings.getBoolean("LIGHTSWITCH4", false));
-		lightSwitch5.setChecked(settings.getBoolean("LIGHTSWITCH5", false));
+		lightSeekBar1_value = settings.getInt("LIGHTSEEKBAR1", 20);
+		lightSeekBar1.setProgress(lightSeekBar1_value);
+		lightSeekBar2_value = settings.getInt("LIGHTSEEKBAR2", 20);
+		lightSeekBar2.setProgress(lightSeekBar2_value);
+		lightSeekBar3_value = settings.getInt("LIGHTSEEKBAR3", 20);
+		lightSeekBar3.setProgress(lightSeekBar3_value);
+		lightSeekBar4_value = settings.getInt("LIGHTSEEKBAR4", 20);
+		lightSeekBar4.setProgress(lightSeekBar4_value);
+		lightSeekBar5_value = settings.getInt("LIGHTSEEKBAR5", 20);
+		lightSeekBar5.setProgress(lightSeekBar5_value);
+
+		lightSwitch1_value = settings.getBoolean("LIGHTSWITCH1", false);
+		lightSwitch1.setChecked(lightSwitch1_value);
+		lightSwitch2_value = settings.getBoolean("LIGHTSWITCH2", false);
+		lightSwitch2.setChecked(lightSwitch2_value);
+		lightSwitch3_value = settings.getBoolean("LIGHTSWITCH3", false);
+		lightSwitch3.setChecked(lightSwitch3_value);
+		lightSwitch4_value = settings.getBoolean("LIGHTSWITCH4", false);
+		lightSwitch4.setChecked(lightSwitch4_value);
+		lightSwitch5_value = settings.getBoolean("LIGHTSWITCH5", false);
+		lightSwitch5.setChecked(lightSwitch5_value);
+
+		lightSeekBar1.setEnabled(lightSwitch1_value);
+		lightSeekBar2.setEnabled(lightSwitch2_value);
+		lightSeekBar3.setEnabled(lightSwitch3_value);
+		lightSeekBar4.setEnabled(lightSwitch4_value);
+		lightSeekBar5.setEnabled(lightSwitch5_value);
 		
 		lightSeekBar1.setOnSeekBarChangeListener(lightSeekBar1Listener);
 		lightSeekBar2.setOnSeekBarChangeListener(lightSeekBar2Listener);
@@ -81,16 +94,13 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("LIGHTSWITCH1", lightSwitch1.isChecked());
-				editor.commit();
-				lightSeekBar1.setEnabled(settings.getBoolean("LIGHTSWITCH1", false));
-				if(!settings.getBoolean("LIGHTSWITCH1", true)) {
+				lightSwitch1_value = lightSwitch1.isChecked();
+				lightSeekBar1.setEnabled(lightSwitch1_value);
+				if(!lightSwitch1_value) {
 					exchangeData("LIGHTONE:" + String.valueOf(0));
 				}
-				else if(settings.getBoolean("LIGHTSWITCH1", true)) {
-					exchangeData("LIGHTONE:" + settings.getInt("LIGHTSEEKBAR1", 20));
+				else if(lightSwitch1_value) {
+					exchangeData("LIGHTONE:" + lightSeekBar1_value);
 				}
 			}
 			
@@ -101,16 +111,13 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("LIGHTSWITCH2", lightSwitch2.isChecked());
-				editor.commit();
-				lightSeekBar2.setEnabled(settings.getBoolean("LIGHTSWITCH2", false));
-				if(!settings.getBoolean("LIGHTSWITCH2", true)) {
+				lightSwitch2_value = lightSwitch2.isChecked();
+				lightSeekBar2.setEnabled(lightSwitch2_value);
+				if(!lightSwitch2_value) {
 					exchangeData("LIGHTTWO:" + String.valueOf(0));
 				}
-				else if(settings.getBoolean("LIGHTSWITCH2", true)) {
-					exchangeData("LIGHTTWO:" + settings.getInt("LIGHTSEEKBAR2", 20));
+				else if(lightSwitch2_value) {
+					exchangeData("LIGHTTWO:" + lightSeekBar2_value);
 				}
 			}
 			
@@ -121,16 +128,13 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("LIGHTSWITCH3", lightSwitch3.isChecked());
-				editor.commit();
-				lightSeekBar3.setEnabled(settings.getBoolean("LIGHTSWITCH3", false));
-				if(!settings.getBoolean("LIGHTSWITCH3", true)) {
+				lightSwitch3_value = lightSwitch3.isChecked();
+				lightSeekBar3.setEnabled(lightSwitch3_value);
+				if(!lightSwitch3_value) {
 					exchangeData("LIGHTTHREE:" + String.valueOf(0));
 				}
-				else if(settings.getBoolean("LIGHTSWITCH3", true)) {
-					exchangeData("LIGHTTHREE:" + settings.getInt("LIGHTSEEKBAR3", 20));
+				else if(lightSwitch3_value) {
+					exchangeData("LIGHTTHREE:" + lightSeekBar3_value);
 				}
 			}
 			
@@ -141,16 +145,13 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("LIGHTSWITCH4", lightSwitch4.isChecked());
-				editor.commit();
-				lightSeekBar4.setEnabled(settings.getBoolean("LIGHTSWITCH4", false));
-				if(!settings.getBoolean("LIGHTSWITCH4", true)) {
+				lightSwitch4_value = lightSwitch4.isChecked();
+				lightSeekBar4.setEnabled(lightSwitch4_value);
+				if(!lightSwitch4_value) {
 					exchangeData("LIGHTFOUR:" + String.valueOf(0));
 				}
-				else if(settings.getBoolean("LIGHTSWITCH4", true)) {
-					exchangeData("LIGHTFOUR:" + settings.getInt("LIGHTSEEKBAR4", 20));
+				else if(lightSwitch4_value) {
+					exchangeData("LIGHTFOUR:" + lightSeekBar4_value);
 				}
 			}
 			
@@ -161,16 +162,13 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("LIGHTSWITCH5", lightSwitch5.isChecked());
-				editor.commit();
-				lightSeekBar5.setEnabled(settings.getBoolean("LIGHTSWITCH5", false));
-				if(!settings.getBoolean("LIGHTSWITCH5", true)) {
+				lightSwitch5_value = lightSwitch5.isChecked();
+				lightSeekBar5.setEnabled(lightSwitch5_value);
+				if(!lightSwitch5_value) {
 					exchangeData("LIGHTFIVE:" + String.valueOf(0));
 				}
-				else if(settings.getBoolean("LIGHTSWITCH5", true)) {
-					exchangeData("LIGHTFIVE:" + settings.getInt("LIGHTSEEKBAR5", 20));
+				else if(lightSwitch5_value) {
+					exchangeData("LIGHTFIVE:" + lightSeekBar5_value);
 				}
 			}
 			
@@ -182,14 +180,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
-			
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("LIGHTSEEKBAR1", lightSeekBar1.getProgress());
-			editor.commit();
-			
-			exchangeData("LIGHTONE:" + String.valueOf(lightSeekBar1.getProgress()));
-			
+			lightSeekBar1_value = lightSeekBar1.getProgress();
 		}
 
 		@Override
@@ -199,7 +190,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar arg0) {
-			
+			exchangeData("LIGHTONE:" + String.valueOf(lightSeekBar1_value));
 		}
 		
 	};
@@ -210,13 +201,7 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("LIGHTSEEKBAR2", lightSeekBar2.getProgress());
-			editor.commit();
-			
-			exchangeData("LIGHTTWO:" + String.valueOf(lightSeekBar2.getProgress()));
-			
+			lightSeekBar2_value = lightSeekBar2.getProgress();
 		}
 
 		@Override
@@ -226,7 +211,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			
+			exchangeData("LIGHTTWO:" + String.valueOf(lightSeekBar2_value));
 		}
 		
 	};
@@ -237,13 +222,8 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("LIGHTSEEKBAR3", lightSeekBar3.getProgress());
-			editor.commit();
-			
-			exchangeData("LIGHTTHREE:" + String.valueOf(lightSeekBar3.getProgress()));
-			
+			lightSeekBar3_value = lightSeekBar3.getProgress();
+
 		}
 
 		@Override
@@ -253,7 +233,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			
+			exchangeData("LIGHTTHREE:" + String.valueOf(lightSeekBar3_value));
 		}
 		
 	};
@@ -264,13 +244,8 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("LIGHTSEEKBAR4", lightSeekBar4.getProgress());
-			editor.commit();
-			
-			exchangeData("LIGHTFOUR:" + String.valueOf(lightSeekBar4.getProgress()));
-			
+			lightSeekBar4_value = lightSeekBar4.getProgress();
+
 		}
 
 		@Override
@@ -280,7 +255,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			
+			exchangeData("LIGHTFOUR:" + String.valueOf(lightSeekBar4_value));
 		}
 		
 	};
@@ -291,13 +266,8 @@ public class Lights extends Connectivity {
 		@Override
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
-			editor.putInt("LIGHTSEEKBAR5", lightSeekBar5.getProgress());
-			editor.commit();
-			
-			exchangeData("LIGHTFIVE:" + String.valueOf(lightSeekBar5.getProgress()));
-			
+			lightSeekBar5_value = lightSeekBar5.getProgress();
+
 		}
 
 		@Override
@@ -307,7 +277,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
-			
+			exchangeData("LIGHTFIVE:" + String.valueOf(lightSeekBar5_value));
 		}
 		
 	};
@@ -329,5 +299,22 @@ public class Lights extends Connectivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+
+		editor.putBoolean("LIGHTSWITCH1", lightSwitch1.isChecked());
+		editor.putBoolean("LIGHTSWITCH2", lightSwitch2.isChecked());
+		editor.putBoolean("LIGHTSWITCH3", lightSwitch3.isChecked());
+		editor.putBoolean("LIGHTSWITCH4", lightSwitch4.isChecked());
+		editor.putBoolean("LIGHTSWITCH5", lightSwitch5.isChecked());
+
+		editor.putInt("LIGHTSEEKBAR1", lightSeekBar1_value);
+		editor.putInt("LIGHTSEEKBAR2", lightSeekBar2_value);
+		editor.putInt("LIGHTSEEKBAR3", lightSeekBar3_value);
+		editor.putInt("LIGHTSEEKBAR4", lightSeekBar4_value);
+		editor.putInt("LIGHTSEEKBAR5", lightSeekBar5_value);
 	}
 }

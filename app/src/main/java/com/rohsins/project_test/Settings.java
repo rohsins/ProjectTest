@@ -21,7 +21,12 @@ public class Settings extends Connectivity {
 	Switch aSwitch;
 	Switch bSwitch;
 	Switch cSwitch;
-    static Switch dSwitch;
+	Switch dSwitch;
+
+	private boolean aSwitch_value;
+	private boolean bSwitch_value;
+	private boolean cSwitch_value;
+	private boolean dSwitch_value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +42,6 @@ public class Settings extends Connectivity {
 		editText = (EditText) findViewById(R.id.settingsEditText1);
 		editText2 = (EditText) findViewById(R.id.settingsEditText2);
 
-		SharedPreferences settings = getSharedPreferences("msettings",0);
 		if(settings.getString("SERVERIPADDRESS", "192,168.1.9:8080").contains(":")) {
 			ipAddressPort = settings.getString("SERVERIPADDRESS", "192.168.1.9:8080").split(":");
 			Address = ipAddressPort[0];
@@ -48,23 +52,25 @@ public class Settings extends Connectivity {
         brokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
 		textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
 
-		aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", false));
-		bSwitch.setChecked(settings.getBoolean("ENABLEREUSEADDRESS", false));
-        cSwitch.setChecked(settings.getBoolean("ENABLEMQTT", false));
-        dSwitch.setChecked(AlwaysRunner.serviceIsAlive);
+		aSwitch_value = settings.getBoolean("ENABLENAGLE", false);
+		bSwitch_value = settings.getBoolean("ENABLEREUSEADDRESS", false);
+		cSwitch_value = settings.getBoolean("ENABLEMQTT", false);
+		dSwitch_value = AlwaysRunner.serviceIsAlive;
+
+		aSwitch.setChecked(aSwitch_value);
+		bSwitch.setChecked(bSwitch_value);
+        cSwitch.setChecked(cSwitch_value);
+        dSwitch.setChecked(dSwitch_value);
 
 		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("ENABLENAGLE", aSwitch.isChecked());
-				editor.commit();
-				aSwitch.setChecked(settings.getBoolean("ENABLENAGLE", false));
-				if(!settings.getBoolean("ENABLENAGLE", false)) {
+				aSwitch_value = aSwitch.isChecked();
+				aSwitch.setChecked(aSwitch_value);
+				if(!aSwitch_value) {
 					nagleFlag = false;
 				}
-				else if(settings.getBoolean("ENABLENAGLE", false)) {
+				else if(aSwitch_value) {
 					nagleFlag = true;
 				}
 			}
@@ -73,14 +79,11 @@ public class Settings extends Connectivity {
 		bSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-				SharedPreferences settings = getSharedPreferences("msettings", 0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("ENABLEREUSEADDRESS", bSwitch.isChecked());
-				editor.commit();
-				bSwitch.setChecked(settings.getBoolean("ENABLEREUSEADDRESS", false));
-				if (!settings.getBoolean("ENABLEREUSEADDRESS", false)) {
+				bSwitch_value = bSwitch.isChecked();
+				bSwitch.setChecked(bSwitch_value);
+				if (!bSwitch_value) {
 					reuseAddressFlag = false;
-				} else if (settings.getBoolean("ENABLEREUSEADDRESS", false)) {
+				} else if (bSwitch_value) {
 					reuseAddressFlag = true;
 				}
 			}
@@ -89,15 +92,12 @@ public class Settings extends Connectivity {
 		cSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-				SharedPreferences settings = getSharedPreferences("msettings",0);
-				SharedPreferences.Editor editor = settings.edit();
-				editor.putBoolean("ENABLEMQTT", cSwitch.isChecked());
-				editor.commit();
-				cSwitch.setChecked(settings.getBoolean("ENABLEMQTT", false));
-				if(!settings.getBoolean("ENABLEMQTT", false)) {
+				cSwitch_value = cSwitch.isChecked();
+				cSwitch.setChecked(cSwitch_value);
+				if(!cSwitch_value) {
 					mqttFlag = false;
 				}
-				else if(settings.getBoolean("ENABLEMQTT", false)) {
+				else if(cSwitch_value) {
 					mqttFlag = true;
 				}
 			}
@@ -106,16 +106,13 @@ public class Settings extends Connectivity {
         dSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                SharedPreferences settings = getSharedPreferences("msettings",0);
-                SharedPreferences.Editor editor = settings.edit();
-                editor.putBoolean("BACKGROUNDSERVICE", dSwitch.isChecked());
-                editor.commit();
-                dSwitch.setChecked(settings.getBoolean("BACKGROUNDSERVICE", false));
-                if(settings.getBoolean("BACKGROUNDSERVICE", true) && !AlwaysRunner.serviceIsAlive) {
+                dSwitch_value = dSwitch.isChecked();
+                dSwitch.setChecked(dSwitch_value);
+                if(dSwitch_value && !AlwaysRunner.serviceIsAlive) {
                     Intent intent = new Intent(Settings.this, AlwaysRunner.class);
                     startService(intent);
                 }
-                else if(!settings.getBoolean("BACKGROUNDSERVICE", true) && AlwaysRunner.serviceIsAlive) {
+                else if(!dSwitch_value && AlwaysRunner.serviceIsAlive) {
                     Intent intent = new Intent(Settings.this, AlwaysRunner.class);
                     stopService(intent);
                 }
@@ -139,18 +136,12 @@ public class Settings extends Connectivity {
 			else {
 				Address = inputIpAddressPort;
 			}
-			SharedPreferences settings = getSharedPreferences("msettings",0);
-			SharedPreferences.Editor editor = settings.edit();
 			editor.putString("SERVERIPADDRESS", Address + ":" + Port);
-			editor.commit();
             textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
 			Toast.makeText(Settings.this, "Server IP Address is set to " + Address + ":" + Port, Toast.LENGTH_SHORT).show();
 		} else if (!inputMqttBrokerIp.equals("") && inputIpAddressPort.equals("")) {
             brokerAddress = inputMqttBrokerIp;
-            SharedPreferences settings = getSharedPreferences("msettings", 0);
-            SharedPreferences.Editor editor = settings.edit();
             editor.putString("MQTTBROKERADDRESS", brokerAddress);
-            editor.commit();
             textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
             Toast.makeText(Settings.this, "Mqtt Broker Address is set to " + brokerAddress, Toast.LENGTH_SHORT).show();
         } else if (inputIpAddressPort.equals("") || inputMqttBrokerIp.equals("")) {
@@ -167,11 +158,8 @@ public class Settings extends Connectivity {
                 Address = inputIpAddressPort;
             }
             brokerAddress = inputMqttBrokerIp;
-            SharedPreferences settings = getSharedPreferences("msettings",0);
-            SharedPreferences.Editor editor = settings.edit();
             editor.putString("SERVERIPADDRESS", Address + ":" + Port);
             editor.putString("MQTTBROKERADDRESS", brokerAddress);
-            editor.commit();
             textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
             Toast.makeText(Settings.this, "Server IP Address is set to " + Address + ":" + Port + "\n" + brokerAddress + ":1883", Toast.LENGTH_SHORT).show();
         }
@@ -195,4 +183,16 @@ public class Settings extends Connectivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+
+		editor.putBoolean("ENABLENAGLE", aSwitch.isChecked());
+		editor.putBoolean("ENABLEREUSEADDRESS", bSwitch.isChecked());
+		editor.putBoolean("ENABLEMQTT", cSwitch.isChecked());
+		editor.putBoolean("BACKGROUNDSERVICE", dSwitch.isChecked());
+		editor.commit();
+	}
+
 }
