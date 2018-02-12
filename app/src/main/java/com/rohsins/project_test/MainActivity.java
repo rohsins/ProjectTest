@@ -61,6 +61,8 @@ public class MainActivity extends Connectivity {
 		settings = getSharedPreferences("msettings", 0);
 		editor = settings.edit();
 
+		memWriteFlag = false;
+
         on_create_func();
     }
 
@@ -68,7 +70,9 @@ public class MainActivity extends Connectivity {
     protected void onDestroy() {
 
         super.onDestroy();
-        editor.commit();
+        if (memWriteFlag) {
+            editor.commit();
+        }
     }
 
     @Override

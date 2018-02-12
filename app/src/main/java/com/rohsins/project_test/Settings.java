@@ -65,6 +65,7 @@ public class Settings extends Connectivity {
 		aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				memWriteFlag = true;
 				aSwitch_value = aSwitch.isChecked();
 				aSwitch.setChecked(aSwitch_value);
 				if(!aSwitch_value) {
@@ -79,6 +80,7 @@ public class Settings extends Connectivity {
 		bSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				memWriteFlag = true;
 				bSwitch_value = bSwitch.isChecked();
 				bSwitch.setChecked(bSwitch_value);
 				if (!bSwitch_value) {
@@ -92,6 +94,7 @@ public class Settings extends Connectivity {
 		cSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				memWriteFlag = true;
 				cSwitch_value = cSwitch.isChecked();
 				cSwitch.setChecked(cSwitch_value);
 				if(!cSwitch_value) {
@@ -106,6 +109,7 @@ public class Settings extends Connectivity {
         dSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				memWriteFlag = true;
                 dSwitch_value = dSwitch.isChecked();
                 dSwitch.setChecked(dSwitch_value);
                 if(dSwitch_value && !AlwaysRunner.serviceIsAlive) {
@@ -136,11 +140,13 @@ public class Settings extends Connectivity {
 			else {
 				Address = inputIpAddressPort;
 			}
+			memWriteFlag = true;
 			editor.putString("SERVERIPADDRESS", Address + ":" + Port);
             textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
 			Toast.makeText(Settings.this, "Server IP Address is set to " + Address + ":" + Port, Toast.LENGTH_SHORT).show();
 		} else if (!inputMqttBrokerIp.equals("") && inputIpAddressPort.equals("")) {
             brokerAddress = inputMqttBrokerIp;
+			memWriteFlag = true;
             editor.putString("MQTTBROKERADDRESS", brokerAddress);
             textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
             Toast.makeText(Settings.this, "Mqtt Broker Address is set to " + brokerAddress, Toast.LENGTH_SHORT).show();
@@ -158,6 +164,7 @@ public class Settings extends Connectivity {
                 Address = inputIpAddressPort;
             }
             brokerAddress = inputMqttBrokerIp;
+			memWriteFlag = true;
             editor.putString("SERVERIPADDRESS", Address + ":" + Port);
             editor.putString("MQTTBROKERADDRESS", brokerAddress);
             textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
@@ -192,7 +199,10 @@ public class Settings extends Connectivity {
 		editor.putBoolean("ENABLEREUSEADDRESS", bSwitch.isChecked());
 		editor.putBoolean("ENABLEMQTT", cSwitch.isChecked());
 		editor.putBoolean("BACKGROUNDSERVICE", dSwitch.isChecked());
-		editor.commit();
+		if (memWriteFlag) {
+			editor.commit();
+			memWriteFlag = false;
+		}
 	}
 
 }

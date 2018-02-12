@@ -94,6 +94,7 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
+				memWriteFlag = true;
 				lightSwitch1_value = lightSwitch1.isChecked();
 				lightSeekBar1.setEnabled(lightSwitch1_value);
 				if(!lightSwitch1_value) {
@@ -111,6 +112,7 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
+				memWriteFlag = true;
 				lightSwitch2_value = lightSwitch2.isChecked();
 				lightSeekBar2.setEnabled(lightSwitch2_value);
 				if(!lightSwitch2_value) {
@@ -128,6 +130,7 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
+				memWriteFlag = true;
 				lightSwitch3_value = lightSwitch3.isChecked();
 				lightSeekBar3.setEnabled(lightSwitch3_value);
 				if(!lightSwitch3_value) {
@@ -145,6 +148,7 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
+				memWriteFlag = true;
 				lightSwitch4_value = lightSwitch4.isChecked();
 				lightSeekBar4.setEnabled(lightSwitch4_value);
 				if(!lightSwitch4_value) {
@@ -162,6 +166,7 @@ public class Lights extends Connectivity {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView,
 					boolean isChecked) {
+				memWriteFlag = true;
 				lightSwitch5_value = lightSwitch5.isChecked();
 				lightSeekBar5.setEnabled(lightSwitch5_value);
 				if(!lightSwitch5_value) {
@@ -190,6 +195,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar arg0) {
+			memWriteFlag = true;
 			exchangeData("LIGHTONE:" + String.valueOf(lightSeekBar1_value));
 		}
 		
@@ -211,6 +217,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
+			memWriteFlag = true;
 			exchangeData("LIGHTTWO:" + String.valueOf(lightSeekBar2_value));
 		}
 		
@@ -223,7 +230,6 @@ public class Lights extends Connectivity {
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
 			lightSeekBar3_value = lightSeekBar3.getProgress();
-
 		}
 
 		@Override
@@ -233,6 +239,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
+			memWriteFlag = true;
 			exchangeData("LIGHTTHREE:" + String.valueOf(lightSeekBar3_value));
 		}
 		
@@ -245,7 +252,6 @@ public class Lights extends Connectivity {
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
 			lightSeekBar4_value = lightSeekBar4.getProgress();
-
 		}
 
 		@Override
@@ -255,6 +261,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
+			memWriteFlag = true;
 			exchangeData("LIGHTFOUR:" + String.valueOf(lightSeekBar4_value));
 		}
 		
@@ -267,7 +274,6 @@ public class Lights extends Connectivity {
 		public void onProgressChanged(SeekBar seekBar, int progress,
 				boolean fromUser) {
 			lightSeekBar5_value = lightSeekBar5.getProgress();
-
 		}
 
 		@Override
@@ -277,6 +283,7 @@ public class Lights extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar seekBar) {
+			memWriteFlag = true;
 			exchangeData("LIGHTFIVE:" + String.valueOf(lightSeekBar5_value));
 		}
 		

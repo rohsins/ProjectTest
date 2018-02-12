@@ -45,6 +45,7 @@ public class Motor_Controls extends Connectivity {
 
 		@Override
 		public void onStopTrackingTouch(SeekBar arg0) {
+			memWriteFlag = true;
 			exchangeData("CURTAIN:" + motor_controlsSeekBar1_value);
 		}
 		

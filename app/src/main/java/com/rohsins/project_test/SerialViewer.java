@@ -96,6 +96,7 @@ public class SerialViewer extends Connectivity {
         sync.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
+                memWriteFlag = true;
                 sync_value = sync.isChecked();
                 editTextUpdateRate_value = Integer.parseInt(editTextUpdateRate.getText().toString());
 
