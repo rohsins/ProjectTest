@@ -1,33 +1,40 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '26.0.2'
-
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.rohsins.project_test"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 27
         multiDexEnabled true
     }
-
-    dexOptions {
-        javaMaxHeapSize "4g"
-    }
-
+//    dexOptions {
+//        javaMaxHeapSize "4g"
+//    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:support-v4:23.0.0'
-    compile files('libs/org.eclipse.paho.android.service-1.1.1-20160907.104533-5.jar')
-    compile files('libs/org.eclipse.paho.client.mqttv3-1.1.1-20161008.042128-48.jar')
-    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
-    compile files('libs/eventbus-3.0.0.jar')
+//    compile 'com.android.support:multidex:1.0.2'
+//    compile 'com.android.support:support-v4:27.0.2'
+//    compile 'com.google.firebase:firebase-appindexing:11.8.0'
+//    compile 'org.greenrobot:eventbus:3.1.1'
+//    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
+//    compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.0.2'
+//    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.android.support:support-v4:27.0.2'
+    implementation 'com.google.firebase:firebase-appindexing:11.8.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2aar'
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.0.2'
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3'
 }

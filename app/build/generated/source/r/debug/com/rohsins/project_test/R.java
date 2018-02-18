@@ -10,6 +10,11 @@ package com.rohsins.project_test;
 public final class R {
   public static final class attr {
     /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int allowShortcuts=0x7f010000;
+    /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -25,12 +30,12 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int buttonSize=0x7f010000;
+    public static final int buttonSize=0x7f010001;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int circleCrop=0x7f010001;
+    public static final int circleCrop=0x7f010002;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -47,11 +52,130 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int colorScheme=0x7f010002;
+    public static final int colorScheme=0x7f010003;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int contentProviderUri=0x7f010004;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int corpusId=0x7f010005;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int corpusVersion=0x7f010006;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int defaultIntentAction=0x7f010007;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int defaultIntentActivity=0x7f010008;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int defaultIntentData=0x7f010009;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int documentMaxAgeSecs=0x7f01000a;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>demote_common_words</td><td>2</td><td></td></tr>
+     * <tr><td>demote_rfc822_hostnames</td><td>3</td><td></td></tr>
+     * <tr><td>index_entity_types</td><td>6</td><td></td></tr>
+     * <tr><td>match_global_nicknames</td><td>1</td><td></td></tr>
+     * <tr><td>omnibox_title_section</td><td>5</td><td></td></tr>
+     * <tr><td>omnibox_url_section</td><td>4</td><td></td></tr>
+     * </table>
+     */
+    public static final int featureType=0x7f01000b;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int font=0x7f01000c;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderAuthority=0x7f01000d;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int fontProviderCerts=0x7f01000e;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontProviderFetchStrategy=0x7f01000f;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontProviderFetchTimeout=0x7f010010;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderPackage=0x7f010011;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderQuery=0x7f010012;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontStyle=0x7f010013;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int fontWeight=0x7f010014;
     /**
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int imageAspectRatio=0x7f010003;
+    public static final int imageAspectRatio=0x7f010015;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -64,7 +188,47 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int imageAspectRatioAdjust=0x7f010004;
+    public static final int imageAspectRatioAdjust=0x7f010016;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int indexPrefixes=0x7f010017;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int inputEnabled=0x7f010018;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int noIndex=0x7f010019;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int paramName=0x7f01001a;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int paramValue=0x7f01001b;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int perAccountTemplate=0x7f01001c;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int schemaOrgProperty=0x7f01001d;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int schemaOrgType=0x7f01001e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -73,298 +237,1093 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int scopeUris=0x7f010005;
+    public static final int scopeUris=0x7f01001f;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int searchEnabled=0x7f010020;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int searchLabel=0x7f010021;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int sectionContent=0x7f010022;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>date</td><td>4</td><td></td></tr>
+     * <tr><td>html</td><td>1</td><td></td></tr>
+     * <tr><td>plain</td><td>0</td><td></td></tr>
+     * <tr><td>rfc822</td><td>2</td><td></td></tr>
+     * <tr><td>url</td><td>3</td><td></td></tr>
+     * </table>
+     */
+    public static final int sectionFormat=0x7f010023;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int sectionId=0x7f010024;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>icon_uri</td><td>2</td><td></td></tr>
+     * <tr><td>intent_action</td><td>3</td><td></td></tr>
+     * <tr><td>intent_activity</td><td>8</td><td></td></tr>
+     * <tr><td>intent_data</td><td>4</td><td></td></tr>
+     * <tr><td>intent_data_id</td><td>5</td><td></td></tr>
+     * <tr><td>intent_extra_data</td><td>6</td><td></td></tr>
+     * <tr><td>large_icon_uri</td><td>7</td><td></td></tr>
+     * <tr><td>text1</td><td>0</td><td></td></tr>
+     * <tr><td>text2</td><td>1</td><td></td></tr>
+     * <tr><td>thing_proto</td><td>9</td><td></td></tr>
+     * </table>
+     */
+    public static final int sectionType=0x7f010025;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int sectionWeight=0x7f010026;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int semanticallySearchable=0x7f010027;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int settingsDescription=0x7f010028;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>contact</td><td>1</td><td></td></tr>
+     * <tr><td>email</td><td>0</td><td></td></tr>
+     * <tr><td>instant_message</td><td>2</td><td></td></tr>
+     * </table>
+     */
+    public static final int sourceClass=0x7f010029;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int subsectionSeparator=0x7f01002a;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int toAddressesSection=0x7f01002b;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int trimmable=0x7f01002c;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int userInputSection=0x7f01002d;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int userInputTag=0x7f01002e;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int userInputValue=0x7f01002f;
+  }
+  public static final class bool {
+    public static final int abc_action_bar_embed_tabs=0x7f020000;
   }
   public static final class color {
-    public static final int common_action_bar_splitter=0x7f020000;
-    public static final int common_google_signin_btn_text_dark=0x7f020001;
-    public static final int common_google_signin_btn_text_dark_default=0x7f020002;
-    public static final int common_google_signin_btn_text_dark_disabled=0x7f020003;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f020004;
-    public static final int common_google_signin_btn_text_dark_pressed=0x7f020005;
-    public static final int common_google_signin_btn_text_light=0x7f020006;
-    public static final int common_google_signin_btn_text_light_default=0x7f020007;
-    public static final int common_google_signin_btn_text_light_disabled=0x7f020008;
-    public static final int common_google_signin_btn_text_light_focused=0x7f020009;
-    public static final int common_google_signin_btn_text_light_pressed=0x7f02000a;
-    public static final int common_plus_signin_btn_text_dark=0x7f02000b;
-    public static final int common_plus_signin_btn_text_dark_default=0x7f02000c;
-    public static final int common_plus_signin_btn_text_dark_disabled=0x7f02000d;
-    public static final int common_plus_signin_btn_text_dark_focused=0x7f02000e;
-    public static final int common_plus_signin_btn_text_dark_pressed=0x7f02000f;
-    public static final int common_plus_signin_btn_text_light=0x7f020010;
-    public static final int common_plus_signin_btn_text_light_default=0x7f020011;
-    public static final int common_plus_signin_btn_text_light_disabled=0x7f020012;
-    public static final int common_plus_signin_btn_text_light_focused=0x7f020013;
-    public static final int common_plus_signin_btn_text_light_pressed=0x7f020014;
+    public static final int common_google_signin_btn_text_dark=0x7f030000;
+    public static final int common_google_signin_btn_text_dark_default=0x7f030001;
+    public static final int common_google_signin_btn_text_dark_disabled=0x7f030002;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f030003;
+    public static final int common_google_signin_btn_text_dark_pressed=0x7f030004;
+    public static final int common_google_signin_btn_text_light=0x7f030005;
+    public static final int common_google_signin_btn_text_light_default=0x7f030006;
+    public static final int common_google_signin_btn_text_light_disabled=0x7f030007;
+    public static final int common_google_signin_btn_text_light_focused=0x7f030008;
+    public static final int common_google_signin_btn_text_light_pressed=0x7f030009;
+    public static final int common_google_signin_btn_tint=0x7f03000a;
+    public static final int notification_action_color_filter=0x7f03000b;
+    public static final int notification_icon_bg_color=0x7f03000c;
+    public static final int notification_material_background_media_default_color=0x7f03000d;
+    public static final int primary_text_default_material_dark=0x7f03000e;
+    public static final int ripple_material_light=0x7f03000f;
+    public static final int secondary_text_default_material_dark=0x7f030010;
+    public static final int secondary_text_default_material_light=0x7f030011;
   }
   public static final class dimen {
-    public static final int activity_horizontal_margin=0x7f030000;
-    public static final int activity_vertical_margin=0x7f030001;
-    public static final int serialViewer_horizontal_margin=0x7f030002;
-    public static final int serialViewer_vertical_margin=0x7f030003;
+    public static final int activity_horizontal_margin=0x7f040000;
+    public static final int activity_vertical_margin=0x7f040001;
+    public static final int compat_button_inset_horizontal_material=0x7f040002;
+    public static final int compat_button_inset_vertical_material=0x7f040003;
+    public static final int compat_button_padding_horizontal_material=0x7f040004;
+    public static final int compat_button_padding_vertical_material=0x7f040005;
+    public static final int compat_control_corner_material=0x7f040006;
+    public static final int notification_action_icon_size=0x7f040007;
+    public static final int notification_action_text_size=0x7f040008;
+    public static final int notification_big_circle_margin=0x7f040009;
+    public static final int notification_content_margin_start=0x7f04000a;
+    public static final int notification_large_icon_height=0x7f04000b;
+    public static final int notification_large_icon_width=0x7f04000c;
+    public static final int notification_main_column_padding_top=0x7f04000d;
+    public static final int notification_media_narrow_margin=0x7f04000e;
+    public static final int notification_right_icon_size=0x7f04000f;
+    public static final int notification_right_side_padding_top=0x7f040010;
+    public static final int notification_small_icon_background_padding=0x7f040011;
+    public static final int notification_small_icon_size_as_large=0x7f040012;
+    public static final int notification_subtext_size=0x7f040013;
+    public static final int notification_top_pad=0x7f040014;
+    public static final int notification_top_pad_large_text=0x7f040015;
+    public static final int serialViewer_horizontal_margin=0x7f040016;
+    public static final int serialViewer_vertical_margin=0x7f040017;
   }
   public static final class drawable {
-    public static final int button_style=0x7f040000;
-    public static final int button_style2=0x7f040001;
-    public static final int button_style3=0x7f040002;
-    public static final int chrome=0x7f040003;
-    public static final int common_full_open_on_phone=0x7f040004;
-    public static final int common_google_signin_btn_icon_dark=0x7f040005;
-    public static final int common_google_signin_btn_icon_dark_disabled=0x7f040006;
-    public static final int common_google_signin_btn_icon_dark_focused=0x7f040007;
-    public static final int common_google_signin_btn_icon_dark_normal=0x7f040008;
-    public static final int common_google_signin_btn_icon_dark_pressed=0x7f040009;
-    public static final int common_google_signin_btn_icon_light=0x7f04000a;
-    public static final int common_google_signin_btn_icon_light_disabled=0x7f04000b;
-    public static final int common_google_signin_btn_icon_light_focused=0x7f04000c;
-    public static final int common_google_signin_btn_icon_light_normal=0x7f04000d;
-    public static final int common_google_signin_btn_icon_light_pressed=0x7f04000e;
-    public static final int common_google_signin_btn_text_dark=0x7f04000f;
-    public static final int common_google_signin_btn_text_dark_disabled=0x7f040010;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f040011;
-    public static final int common_google_signin_btn_text_dark_normal=0x7f040012;
-    public static final int common_google_signin_btn_text_dark_pressed=0x7f040013;
-    public static final int common_google_signin_btn_text_light=0x7f040014;
-    public static final int common_google_signin_btn_text_light_disabled=0x7f040015;
-    public static final int common_google_signin_btn_text_light_focused=0x7f040016;
-    public static final int common_google_signin_btn_text_light_normal=0x7f040017;
-    public static final int common_google_signin_btn_text_light_pressed=0x7f040018;
-    public static final int common_ic_googleplayservices=0x7f040019;
-    public static final int common_plus_signin_btn_icon_dark=0x7f04001a;
-    public static final int common_plus_signin_btn_icon_dark_disabled=0x7f04001b;
-    public static final int common_plus_signin_btn_icon_dark_focused=0x7f04001c;
-    public static final int common_plus_signin_btn_icon_dark_normal=0x7f04001d;
-    public static final int common_plus_signin_btn_icon_dark_pressed=0x7f04001e;
-    public static final int common_plus_signin_btn_icon_light=0x7f04001f;
-    public static final int common_plus_signin_btn_icon_light_disabled=0x7f040020;
-    public static final int common_plus_signin_btn_icon_light_focused=0x7f040021;
-    public static final int common_plus_signin_btn_icon_light_normal=0x7f040022;
-    public static final int common_plus_signin_btn_icon_light_pressed=0x7f040023;
-    public static final int common_plus_signin_btn_text_dark=0x7f040024;
-    public static final int common_plus_signin_btn_text_dark_disabled=0x7f040025;
-    public static final int common_plus_signin_btn_text_dark_focused=0x7f040026;
-    public static final int common_plus_signin_btn_text_dark_normal=0x7f040027;
-    public static final int common_plus_signin_btn_text_dark_pressed=0x7f040028;
-    public static final int common_plus_signin_btn_text_light=0x7f040029;
-    public static final int common_plus_signin_btn_text_light_disabled=0x7f04002a;
-    public static final int common_plus_signin_btn_text_light_focused=0x7f04002b;
-    public static final int common_plus_signin_btn_text_light_normal=0x7f04002c;
-    public static final int common_plus_signin_btn_text_light_pressed=0x7f04002d;
-    public static final int doors=0x7f04002e;
-    public static final int ic_launcher=0x7f04002f;
-    public static final int lights=0x7f040030;
-    public static final int motor_controls=0x7f040031;
-    public static final int seekswitchprofile=0x7f040032;
-    public static final int serialviewer=0x7f040033;
-    public static final int settings=0x7f040034;
-    public static final int shutdown=0x7f040035;
-    public static final int televisions=0x7f040036;
+    public static final int button_style=0x7f050000;
+    public static final int button_style2=0x7f050001;
+    public static final int button_style3=0x7f050002;
+    public static final int chrome=0x7f050003;
+    public static final int common_full_open_on_phone=0x7f050004;
+    public static final int common_google_signin_btn_icon_dark=0x7f050005;
+    public static final int common_google_signin_btn_icon_dark_focused=0x7f050006;
+    public static final int common_google_signin_btn_icon_dark_normal=0x7f050007;
+    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f050008;
+    public static final int common_google_signin_btn_icon_disabled=0x7f050009;
+    public static final int common_google_signin_btn_icon_light=0x7f05000a;
+    public static final int common_google_signin_btn_icon_light_focused=0x7f05000b;
+    public static final int common_google_signin_btn_icon_light_normal=0x7f05000c;
+    public static final int common_google_signin_btn_icon_light_normal_background=0x7f05000d;
+    public static final int common_google_signin_btn_text_dark=0x7f05000e;
+    public static final int common_google_signin_btn_text_dark_focused=0x7f05000f;
+    public static final int common_google_signin_btn_text_dark_normal=0x7f050010;
+    public static final int common_google_signin_btn_text_dark_normal_background=0x7f050011;
+    public static final int common_google_signin_btn_text_disabled=0x7f050012;
+    public static final int common_google_signin_btn_text_light=0x7f050013;
+    public static final int common_google_signin_btn_text_light_focused=0x7f050014;
+    public static final int common_google_signin_btn_text_light_normal=0x7f050015;
+    public static final int common_google_signin_btn_text_light_normal_background=0x7f050016;
+    public static final int doors=0x7f050017;
+    public static final int googleg_disabled_color_18=0x7f050018;
+    public static final int googleg_standard_color_18=0x7f050019;
+    public static final int ic_launcher=0x7f05001a;
+    public static final int lights=0x7f05001b;
+    public static final int motor_controls=0x7f05001c;
+    public static final int notification_action_background=0x7f05001d;
+    public static final int notification_bg=0x7f05001e;
+    public static final int notification_bg_low=0x7f05001f;
+    public static final int notification_bg_low_normal=0x7f050020;
+    public static final int notification_bg_low_pressed=0x7f050021;
+    public static final int notification_bg_normal=0x7f050022;
+    public static final int notification_bg_normal_pressed=0x7f050023;
+    public static final int notification_icon_background=0x7f050024;
+    public static final int notification_template_icon_bg=0x7f050025;
+    public static final int notification_template_icon_low_bg=0x7f050026;
+    public static final int notification_tile_bg=0x7f050027;
+    public static final int notify_panel_notification_icon_bg=0x7f050028;
+    public static final int seekswitchprofile=0x7f050029;
+    public static final int serialviewer=0x7f05002a;
+    public static final int settings=0x7f05002b;
+    public static final int shutdown=0x7f05002c;
+    public static final int televisions=0x7f05002d;
   }
   public static final class id {
-    public static final int action_password=0x7f050000;
-    public static final int action_settings=0x7f050001;
-    public static final int activity_chat=0x7f050002;
-    public static final int adjust_height=0x7f050003;
-    public static final int adjust_width=0x7f050004;
-    public static final int auto=0x7f050005;
-    public static final int chatButton=0x7f050006;
-    public static final int chatEditText=0x7f050007;
-    public static final int chatTextView2=0x7f050008;
-    public static final int dark=0x7f050009;
-    public static final int doorButton1=0x7f05000a;
-    public static final int editTextUpdateRate=0x7f05000b;
-    public static final int icon_only=0x7f05000c;
-    public static final int light=0x7f05000d;
-    public static final int lightSeekBar1=0x7f05000e;
-    public static final int lightSeekBar2=0x7f05000f;
-    public static final int lightSeekBar3=0x7f050010;
-    public static final int lightSeekBar4=0x7f050011;
-    public static final int lightSeekBar5=0x7f050012;
-    public static final int lightSwitch1=0x7f050013;
-    public static final int lightSwitch2=0x7f050014;
-    public static final int lightSwitch3=0x7f050015;
-    public static final int lightSwitch4=0x7f050016;
-    public static final int lightSwitch5=0x7f050017;
-    public static final int mainButton1=0x7f050018;
-    public static final int mainButton2=0x7f050019;
-    public static final int mainButton3=0x7f05001a;
-    public static final int mainButton4=0x7f05001b;
-    public static final int mainButton5=0x7f05001c;
-    public static final int mainButton6=0x7f05001d;
-    public static final int mainButton7=0x7f05001e;
-    public static final int mainButton8=0x7f05001f;
-    public static final int mainButton9=0x7f050020;
-    public static final int motor_controlsSeekBar1=0x7f050021;
-    public static final int motor_controlsTextView1=0x7f050022;
-    public static final int motor_controlsTextView2=0x7f050023;
-    public static final int mqttTextView01=0x7f050024;
-    public static final int mqttView=0x7f050025;
-    public static final int none=0x7f050026;
-    public static final int openSiteEditorButton01=0x7f050027;
-    public static final int openSiteEditorEdittext01=0x7f050028;
-    public static final int othersButton1=0x7f050029;
-    public static final int othersButton2=0x7f05002a;
-    public static final int othersButton3=0x7f05002b;
-    public static final int othersButton4=0x7f05002c;
-    public static final int othersButton5=0x7f05002d;
-    public static final int serialViewerTextView01=0x7f05002e;
-    public static final int settingsButton1=0x7f05002f;
-    public static final int settingsEditText1=0x7f050030;
-    public static final int settingsEditText2=0x7f050031;
-    public static final int settingsSwitch1=0x7f050032;
-    public static final int settingsSwitch2=0x7f050033;
-    public static final int settingsSwitch3=0x7f050034;
-    public static final int settingsSwitch4=0x7f050035;
-    public static final int settingsTextView3=0x7f050036;
-    public static final int settingsTextView4=0x7f050037;
-    public static final int settingstextView=0x7f050038;
-    public static final int shutDownButton01=0x7f050039;
-    public static final int shutDownButton02=0x7f05003a;
-    public static final int shutDownButton03=0x7f05003b;
-    public static final int shutDownButton04=0x7f05003c;
-    public static final int shutDownButton05=0x7f05003d;
-    public static final int shutDownEditText01=0x7f05003e;
-    public static final int shutDownTextView01=0x7f05003f;
-    public static final int standard=0x7f050040;
-    public static final int syncSwitch=0x7f050041;
-    public static final int textViewSync=0x7f050042;
-    public static final int textViewUnit=0x7f050043;
-    public static final int textViewUpdateRate=0x7f050044;
-    public static final int wide=0x7f050045;
+    public static final int action0=0x7f060000;
+    public static final int action_container=0x7f060001;
+    public static final int action_divider=0x7f060002;
+    public static final int action_image=0x7f060003;
+    public static final int action_password=0x7f060004;
+    public static final int action_settings=0x7f060005;
+    public static final int action_text=0x7f060006;
+    public static final int actions=0x7f060007;
+    public static final int activity_chat=0x7f060008;
+    public static final int adjust_height=0x7f060009;
+    public static final int adjust_width=0x7f06000a;
+    public static final int async=0x7f06000b;
+    public static final int auto=0x7f06000c;
+    public static final int blocking=0x7f06000d;
+    public static final int cancel_action=0x7f06000e;
+    public static final int chatButton=0x7f06000f;
+    public static final int chatEditText=0x7f060010;
+    public static final int chatTextView2=0x7f060011;
+    public static final int chronometer=0x7f060012;
+    public static final int contact=0x7f060013;
+    public static final int dark=0x7f060014;
+    public static final int date=0x7f060015;
+    public static final int demote_common_words=0x7f060016;
+    public static final int demote_rfc822_hostnames=0x7f060017;
+    public static final int doorButton1=0x7f060018;
+    public static final int editTextUpdateRate=0x7f060019;
+    public static final int email=0x7f06001a;
+    public static final int end_padder=0x7f06001b;
+    public static final int forever=0x7f06001c;
+    public static final int html=0x7f06001d;
+    public static final int icon=0x7f06001e;
+    public static final int icon_group=0x7f06001f;
+    public static final int icon_only=0x7f060020;
+    public static final int icon_uri=0x7f060021;
+    public static final int index_entity_types=0x7f060022;
+    public static final int info=0x7f060023;
+    public static final int instant_message=0x7f060024;
+    public static final int intent_action=0x7f060025;
+    public static final int intent_activity=0x7f060026;
+    public static final int intent_data=0x7f060027;
+    public static final int intent_data_id=0x7f060028;
+    public static final int intent_extra_data=0x7f060029;
+    public static final int italic=0x7f06002a;
+    public static final int large_icon_uri=0x7f06002b;
+    public static final int light=0x7f06002c;
+    public static final int lightSeekBar1=0x7f06002d;
+    public static final int lightSeekBar2=0x7f06002e;
+    public static final int lightSeekBar3=0x7f06002f;
+    public static final int lightSeekBar4=0x7f060030;
+    public static final int lightSeekBar5=0x7f060031;
+    public static final int lightSwitch1=0x7f060032;
+    public static final int lightSwitch2=0x7f060033;
+    public static final int lightSwitch3=0x7f060034;
+    public static final int lightSwitch4=0x7f060035;
+    public static final int lightSwitch5=0x7f060036;
+    public static final int line1=0x7f060037;
+    public static final int line3=0x7f060038;
+    public static final int mainButton1=0x7f060039;
+    public static final int mainButton2=0x7f06003a;
+    public static final int mainButton3=0x7f06003b;
+    public static final int mainButton4=0x7f06003c;
+    public static final int mainButton5=0x7f06003d;
+    public static final int mainButton6=0x7f06003e;
+    public static final int mainButton7=0x7f06003f;
+    public static final int mainButton8=0x7f060040;
+    public static final int mainButton9=0x7f060041;
+    public static final int match_global_nicknames=0x7f060042;
+    public static final int media_actions=0x7f060043;
+    public static final int motor_controlsSeekBar1=0x7f060044;
+    public static final int motor_controlsTextView1=0x7f060045;
+    public static final int motor_controlsTextView2=0x7f060046;
+    public static final int mqttTextView01=0x7f060047;
+    public static final int mqttView=0x7f060048;
+    public static final int none=0x7f060049;
+    public static final int normal=0x7f06004a;
+    public static final int notification_background=0x7f06004b;
+    public static final int notification_main_column=0x7f06004c;
+    public static final int notification_main_column_container=0x7f06004d;
+    public static final int omnibox_title_section=0x7f06004e;
+    public static final int omnibox_url_section=0x7f06004f;
+    public static final int openSiteEditorButton01=0x7f060050;
+    public static final int openSiteEditorEdittext01=0x7f060051;
+    public static final int othersButton1=0x7f060052;
+    public static final int othersButton2=0x7f060053;
+    public static final int othersButton3=0x7f060054;
+    public static final int othersButton4=0x7f060055;
+    public static final int othersButton5=0x7f060056;
+    public static final int plain=0x7f060057;
+    public static final int rfc822=0x7f060058;
+    public static final int right_icon=0x7f060059;
+    public static final int right_side=0x7f06005a;
+    public static final int serialViewerTextView01=0x7f06005b;
+    public static final int settingsButton1=0x7f06005c;
+    public static final int settingsEditText1=0x7f06005d;
+    public static final int settingsEditText2=0x7f06005e;
+    public static final int settingsSwitch1=0x7f06005f;
+    public static final int settingsSwitch2=0x7f060060;
+    public static final int settingsSwitch3=0x7f060061;
+    public static final int settingsSwitch4=0x7f060062;
+    public static final int settingsTextView3=0x7f060063;
+    public static final int settingsTextView4=0x7f060064;
+    public static final int settingstextView=0x7f060065;
+    public static final int shutDownButton01=0x7f060066;
+    public static final int shutDownButton02=0x7f060067;
+    public static final int shutDownButton03=0x7f060068;
+    public static final int shutDownButton04=0x7f060069;
+    public static final int shutDownButton05=0x7f06006a;
+    public static final int shutDownEditText01=0x7f06006b;
+    public static final int shutDownTextView01=0x7f06006c;
+    public static final int standard=0x7f06006d;
+    public static final int status_bar_latest_event_content=0x7f06006e;
+    public static final int syncSwitch=0x7f06006f;
+    public static final int tag_transition_group=0x7f060070;
+    public static final int text=0x7f060071;
+    public static final int text1=0x7f060072;
+    public static final int text2=0x7f060073;
+    public static final int textViewSync=0x7f060074;
+    public static final int textViewUnit=0x7f060075;
+    public static final int textViewUpdateRate=0x7f060076;
+    public static final int thing_proto=0x7f060077;
+    public static final int time=0x7f060078;
+    public static final int title=0x7f060079;
+    public static final int url=0x7f06007a;
+    public static final int wide=0x7f06007b;
   }
   public static final class integer {
-    public static final int google_play_services_version=0x7f060000;
+    public static final int cancel_button_image_alpha=0x7f070000;
+    public static final int google_play_services_version=0x7f070001;
+    public static final int status_bar_notification_info_maxnum=0x7f070002;
   }
   public static final class layout {
-    public static final int activity_chat=0x7f070000;
-    public static final int activity_doors=0x7f070001;
-    public static final int activity_lights=0x7f070002;
-    public static final int activity_main=0x7f070003;
-    public static final int activity_motor_controls=0x7f070004;
-    public static final int activity_mqtt=0x7f070005;
-    public static final int activity_open_site_editor=0x7f070006;
-    public static final int activity_others=0x7f070007;
-    public static final int activity_serial_viewer=0x7f070008;
-    public static final int activity_settings=0x7f070009;
-    public static final int activity_shut_down=0x7f07000a;
-    public static final int activity_televisions=0x7f07000b;
+    public static final int activity_chat=0x7f080000;
+    public static final int activity_doors=0x7f080001;
+    public static final int activity_lights=0x7f080002;
+    public static final int activity_main=0x7f080003;
+    public static final int activity_motor_controls=0x7f080004;
+    public static final int activity_mqtt=0x7f080005;
+    public static final int activity_open_site_editor=0x7f080006;
+    public static final int activity_others=0x7f080007;
+    public static final int activity_serial_viewer=0x7f080008;
+    public static final int activity_settings=0x7f080009;
+    public static final int activity_shut_down=0x7f08000a;
+    public static final int activity_televisions=0x7f08000b;
+    public static final int notification_action=0x7f08000c;
+    public static final int notification_action_tombstone=0x7f08000d;
+    public static final int notification_media_action=0x7f08000e;
+    public static final int notification_media_cancel_action=0x7f08000f;
+    public static final int notification_template_big_media=0x7f080010;
+    public static final int notification_template_big_media_custom=0x7f080011;
+    public static final int notification_template_big_media_narrow=0x7f080012;
+    public static final int notification_template_big_media_narrow_custom=0x7f080013;
+    public static final int notification_template_custom_big=0x7f080014;
+    public static final int notification_template_icon_group=0x7f080015;
+    public static final int notification_template_lines_media=0x7f080016;
+    public static final int notification_template_media=0x7f080017;
+    public static final int notification_template_media_custom=0x7f080018;
+    public static final int notification_template_part_chronometer=0x7f080019;
+    public static final int notification_template_part_time=0x7f08001a;
   }
   public static final class menu {
-    public static final int chat=0x7f080000;
-    public static final int doors=0x7f080001;
-    public static final int lights=0x7f080002;
-    public static final int main=0x7f080003;
-    public static final int menu_others=0x7f080004;
-    public static final int menu_serial_viewer=0x7f080005;
-    public static final int menu_shut_down=0x7f080006;
-    public static final int motor_controls=0x7f080007;
-    public static final int mqtt=0x7f080008;
-    public static final int open_site_editor=0x7f080009;
-    public static final int settings=0x7f08000a;
-    public static final int televisions=0x7f08000b;
+    public static final int chat=0x7f090000;
+    public static final int doors=0x7f090001;
+    public static final int lights=0x7f090002;
+    public static final int main=0x7f090003;
+    public static final int menu_others=0x7f090004;
+    public static final int menu_serial_viewer=0x7f090005;
+    public static final int menu_shut_down=0x7f090006;
+    public static final int motor_controls=0x7f090007;
+    public static final int mqtt=0x7f090008;
+    public static final int open_site_editor=0x7f090009;
+    public static final int settings=0x7f09000a;
+    public static final int televisions=0x7f09000b;
   }
   public static final class string {
-    public static final int Doors=0x7f090000;
-    public static final int Lights=0x7f090001;
-    public static final int Motor_Controls=0x7f090002;
-    public static final int Mqtt=0x7f090003;
-    public static final int SerialViewer=0x7f090004;
-    public static final int Settings=0x7f090005;
-    public static final int Televisions=0x7f090006;
-    public static final int action_password=0x7f090007;
-    public static final int action_settings=0x7f090008;
-    public static final int altium=0x7f090009;
-    public static final int app_name=0x7f09000a;
-    public static final int auth_google_play_services_client_facebook_display_name=0x7f09000b;
-    public static final int auth_google_play_services_client_google_display_name=0x7f09000c;
-    public static final int chat=0x7f09000d;
-    public static final int chatDefaultEditText=0x7f09000e;
-    public static final int chrome=0x7f09000f;
-    public static final int common_google_play_services_api_unavailable_text=0x7f090010;
-    public static final int common_google_play_services_enable_button=0x7f090011;
-    public static final int common_google_play_services_enable_text=0x7f090012;
-    public static final int common_google_play_services_enable_title=0x7f090013;
-    public static final int common_google_play_services_install_button=0x7f090014;
-    public static final int common_google_play_services_install_text_phone=0x7f090015;
-    public static final int common_google_play_services_install_text_tablet=0x7f090016;
-    public static final int common_google_play_services_install_title=0x7f090017;
-    public static final int common_google_play_services_invalid_account_text=0x7f090018;
-    public static final int common_google_play_services_invalid_account_title=0x7f090019;
-    public static final int common_google_play_services_network_error_text=0x7f09001a;
-    public static final int common_google_play_services_network_error_title=0x7f09001b;
-    public static final int common_google_play_services_notification_ticker=0x7f09001c;
-    public static final int common_google_play_services_restricted_profile_text=0x7f09001d;
-    public static final int common_google_play_services_restricted_profile_title=0x7f09001e;
-    public static final int common_google_play_services_sign_in_failed_text=0x7f09001f;
-    public static final int common_google_play_services_sign_in_failed_title=0x7f090020;
-    public static final int common_google_play_services_unknown_issue=0x7f090021;
-    public static final int common_google_play_services_unsupported_text=0x7f090022;
-    public static final int common_google_play_services_unsupported_title=0x7f090023;
-    public static final int common_google_play_services_update_button=0x7f090024;
-    public static final int common_google_play_services_update_text=0x7f090025;
-    public static final int common_google_play_services_update_title=0x7f090026;
-    public static final int common_google_play_services_updating_text=0x7f090027;
-    public static final int common_google_play_services_updating_title=0x7f090028;
-    public static final int common_google_play_services_wear_update_text=0x7f090029;
-    public static final int common_open_on_phone=0x7f09002a;
-    public static final int common_signin_button_text=0x7f09002b;
-    public static final int common_signin_button_text_long=0x7f09002c;
-    public static final int curtain=0x7f09002d;
-    public static final int defaultIp=0x7f09002e;
-    public static final int defaultMqttIp=0x7f09002f;
-    public static final int editTextdefault=0x7f090030;
-    public static final int hello_world=0x7f090031;
-    public static final int ipAddressSettings=0x7f090032;
-    public static final int lightSwitch1=0x7f090033;
-    public static final int lightSwitch2=0x7f090034;
-    public static final int lightSwitch3=0x7f090035;
-    public static final int lightSwitch4=0x7f090036;
-    public static final int lightSwitch5=0x7f090037;
-    public static final int mainEntranceDoor=0x7f090038;
-    public static final int mqttDefaultText=0x7f090039;
-    public static final int open=0x7f09003a;
-    public static final int openSiteEditor=0x7f09003b;
-    public static final int openSiteEditorButton01Text=0x7f09003c;
-    public static final int others=0x7f09003d;
-    public static final int serialViewerDefaultText=0x7f09003e;
-    public static final int settingsButton1=0x7f09003f;
-    public static final int settingsSwitch1=0x7f090040;
-    public static final int settingsSwitch2=0x7f090041;
-    public static final int settingsSwitch3=0x7f090042;
-    public static final int settingsSwitch4=0x7f090043;
-    public static final int settingsTextView4=0x7f090044;
-    public static final int showDesktop=0x7f090045;
-    public static final int shutDown=0x7f090046;
-    public static final int shutDownButton01=0x7f090047;
-    public static final int shutDownButton02=0x7f090048;
-    public static final int shutDownButton03=0x7f090049;
-    public static final int shutDownButton04=0x7f09004a;
-    public static final int shutDownButton05=0x7f09004b;
-    public static final int shutDownEditText01=0x7f09004c;
-    public static final int shutDownTextView01=0x7f09004d;
-    public static final int televisionMessage=0x7f09004e;
-    public static final int textViewSync=0x7f09004f;
-    public static final int textViewUnit=0x7f090050;
-    public static final int title_activity_chat=0x7f090051;
-    public static final int title_activity_doors=0x7f090052;
-    public static final int title_activity_lights=0x7f090053;
-    public static final int title_activity_motor__controls=0x7f090054;
-    public static final int title_activity_motor_controls=0x7f090055;
-    public static final int title_activity_mqtt=0x7f090056;
-    public static final int title_activity_open_site_editor=0x7f090057;
-    public static final int title_activity_others=0x7f090058;
-    public static final int title_activity_serial_viewer=0x7f090059;
-    public static final int title_activity_settings=0x7f09005a;
-    public static final int title_activity_shut_down=0x7f09005b;
-    public static final int title_activity_televisions=0x7f09005c;
-    public static final int updateRate=0x7f09005d;
+    public static final int Doors=0x7f0a0000;
+    public static final int Lights=0x7f0a0001;
+    public static final int Motor_Controls=0x7f0a0002;
+    public static final int Mqtt=0x7f0a0003;
+    public static final int SerialViewer=0x7f0a0004;
+    public static final int Settings=0x7f0a0005;
+    public static final int Televisions=0x7f0a0006;
+    public static final int action_password=0x7f0a0007;
+    public static final int action_settings=0x7f0a0008;
+    public static final int altium=0x7f0a0009;
+    public static final int app_name=0x7f0a000a;
+    public static final int chat=0x7f0a000b;
+    public static final int chatDefaultEditText=0x7f0a000c;
+    public static final int chrome=0x7f0a000d;
+    public static final int common_google_play_services_enable_button=0x7f0a000e;
+    public static final int common_google_play_services_enable_text=0x7f0a000f;
+    public static final int common_google_play_services_enable_title=0x7f0a0010;
+    public static final int common_google_play_services_install_button=0x7f0a0011;
+    public static final int common_google_play_services_install_text=0x7f0a0012;
+    public static final int common_google_play_services_install_title=0x7f0a0013;
+    public static final int common_google_play_services_notification_channel_name=0x7f0a0014;
+    public static final int common_google_play_services_notification_ticker=0x7f0a0015;
+    public static final int common_google_play_services_unknown_issue=0x7f0a0016;
+    public static final int common_google_play_services_unsupported_text=0x7f0a0017;
+    public static final int common_google_play_services_update_button=0x7f0a0018;
+    public static final int common_google_play_services_update_text=0x7f0a0019;
+    public static final int common_google_play_services_update_title=0x7f0a001a;
+    public static final int common_google_play_services_updating_text=0x7f0a001b;
+    public static final int common_google_play_services_wear_update_text=0x7f0a001c;
+    public static final int common_open_on_phone=0x7f0a001d;
+    public static final int common_signin_button_text=0x7f0a001e;
+    public static final int common_signin_button_text_long=0x7f0a001f;
+    public static final int curtain=0x7f0a0020;
+    public static final int defaultIp=0x7f0a0021;
+    public static final int defaultMqttIp=0x7f0a0022;
+    public static final int editTextdefault=0x7f0a0023;
+    public static final int hello_world=0x7f0a0024;
+    public static final int ipAddressSettings=0x7f0a0025;
+    public static final int lightSwitch1=0x7f0a0026;
+    public static final int lightSwitch2=0x7f0a0027;
+    public static final int lightSwitch3=0x7f0a0028;
+    public static final int lightSwitch4=0x7f0a0029;
+    public static final int lightSwitch5=0x7f0a002a;
+    public static final int mainEntranceDoor=0x7f0a002b;
+    public static final int mqttDefaultText=0x7f0a002c;
+    public static final int open=0x7f0a002d;
+    public static final int openSiteEditor=0x7f0a002e;
+    public static final int openSiteEditorButton01Text=0x7f0a002f;
+    public static final int others=0x7f0a0030;
+    public static final int serialViewerDefaultText=0x7f0a0031;
+    public static final int settingsButton1=0x7f0a0032;
+    public static final int settingsSwitch1=0x7f0a0033;
+    public static final int settingsSwitch2=0x7f0a0034;
+    public static final int settingsSwitch3=0x7f0a0035;
+    public static final int settingsSwitch4=0x7f0a0036;
+    public static final int settingsTextView4=0x7f0a0037;
+    public static final int showDesktop=0x7f0a0038;
+    public static final int shutDown=0x7f0a0039;
+    public static final int shutDownButton01=0x7f0a003a;
+    public static final int shutDownButton02=0x7f0a003b;
+    public static final int shutDownButton03=0x7f0a003c;
+    public static final int shutDownButton04=0x7f0a003d;
+    public static final int shutDownButton05=0x7f0a003e;
+    public static final int shutDownEditText01=0x7f0a003f;
+    public static final int shutDownTextView01=0x7f0a0040;
+    public static final int status_bar_notification_info_overflow=0x7f0a0041;
+    public static final int televisionMessage=0x7f0a0042;
+    public static final int textViewSync=0x7f0a0043;
+    public static final int textViewUnit=0x7f0a0044;
+    public static final int title_activity_chat=0x7f0a0045;
+    public static final int title_activity_doors=0x7f0a0046;
+    public static final int title_activity_lights=0x7f0a0047;
+    public static final int title_activity_motor__controls=0x7f0a0048;
+    public static final int title_activity_motor_controls=0x7f0a0049;
+    public static final int title_activity_mqtt=0x7f0a004a;
+    public static final int title_activity_open_site_editor=0x7f0a004b;
+    public static final int title_activity_others=0x7f0a004c;
+    public static final int title_activity_serial_viewer=0x7f0a004d;
+    public static final int title_activity_settings=0x7f0a004e;
+    public static final int title_activity_shut_down=0x7f0a004f;
+    public static final int title_activity_televisions=0x7f0a0050;
+    public static final int updateRate=0x7f0a0051;
   }
   public static final class style {
-    public static final int AppBaseTheme=0x7f0a0000;
-    public static final int AppTheme=0x7f0a0001;
+    public static final int AppBaseTheme=0x7f0b0000;
+    public static final int AppTheme=0x7f0b0001;
+    public static final int TextAppearance_Compat_Notification=0x7f0b0002;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0b0003;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0b0004;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0b0005;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0b0006;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0b0007;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0b0008;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0b0009;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0b000a;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0b000b;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0b000c;
+    public static final int Widget_Compat_NotificationActionText=0x7f0b000d;
   }
   public static final class styleable {
+    public static final int[] AppDataSearch={
+      };
+    /**
+     * Attributes that can be used with a Corpus.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Corpus_contentProviderUri com.rohsins.project_test:contentProviderUri}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_corpusId com.rohsins.project_test:corpusId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_corpusVersion com.rohsins.project_test:corpusVersion}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_documentMaxAgeSecs com.rohsins.project_test:documentMaxAgeSecs}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_perAccountTemplate com.rohsins.project_test:perAccountTemplate}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_schemaOrgType com.rohsins.project_test:schemaOrgType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_semanticallySearchable com.rohsins.project_test:semanticallySearchable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Corpus_trimmable com.rohsins.project_test:trimmable}</code></td><td></td></tr>
+     * </table>
+     * @see #Corpus_contentProviderUri
+     * @see #Corpus_corpusId
+     * @see #Corpus_corpusVersion
+     * @see #Corpus_documentMaxAgeSecs
+     * @see #Corpus_perAccountTemplate
+     * @see #Corpus_schemaOrgType
+     * @see #Corpus_semanticallySearchable
+     * @see #Corpus_trimmable
+     */
+    public static final int[] Corpus={
+        0x7f010004, 0x7f010005, 0x7f010006, 0x7f01000a, 
+        0x7f01001c, 0x7f01001e, 0x7f010027, 0x7f01002c
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#contentProviderUri}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:contentProviderUri
+     */
+    public static final int Corpus_contentProviderUri=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#corpusId}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:corpusId
+     */
+    public static final int Corpus_corpusId=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#corpusVersion}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:corpusVersion
+     */
+    public static final int Corpus_corpusVersion=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#documentMaxAgeSecs}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.rohsins.project_test:documentMaxAgeSecs
+     */
+    public static final int Corpus_documentMaxAgeSecs=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#perAccountTemplate}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:perAccountTemplate
+     */
+    public static final int Corpus_perAccountTemplate=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#schemaOrgType}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:schemaOrgType
+     */
+    public static final int Corpus_schemaOrgType=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#semanticallySearchable}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:semanticallySearchable
+     */
+    public static final int Corpus_semanticallySearchable=6;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#trimmable}
+     * attribute's value can be found in the {@link #Corpus} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:trimmable
+     */
+    public static final int Corpus_trimmable=7;
+    /**
+     * Attributes that can be used with a FeatureParam.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FeatureParam_paramName com.rohsins.project_test:paramName}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FeatureParam_paramValue com.rohsins.project_test:paramValue}</code></td><td></td></tr>
+     * </table>
+     * @see #FeatureParam_paramName
+     * @see #FeatureParam_paramValue
+     */
+    public static final int[] FeatureParam={
+        0x7f01001a, 0x7f01001b
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#paramName}
+     * attribute's value can be found in the {@link #FeatureParam} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:paramName
+     */
+    public static final int FeatureParam_paramName=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#paramValue}
+     * attribute's value can be found in the {@link #FeatureParam} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:paramValue
+     */
+    public static final int FeatureParam_paramValue=1;
+    /**
+     * Attributes that can be used with a FontFamily.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.rohsins.project_test:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.rohsins.project_test:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.rohsins.project_test:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.rohsins.project_test:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.rohsins.project_test:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.rohsins.project_test:fontProviderQuery}</code></td><td></td></tr>
+     * </table>
+     * @see #FontFamily_fontProviderAuthority
+     * @see #FontFamily_fontProviderCerts
+     * @see #FontFamily_fontProviderFetchStrategy
+     * @see #FontFamily_fontProviderFetchTimeout
+     * @see #FontFamily_fontProviderPackage
+     * @see #FontFamily_fontProviderQuery
+     */
+    public static final int[] FontFamily={
+        0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 
+        0x7f010011, 0x7f010012
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontProviderAuthority}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:fontProviderAuthority
+     */
+    public static final int FontFamily_fontProviderAuthority=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontProviderCerts}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.rohsins.project_test:fontProviderCerts
+     */
+    public static final int FontFamily_fontProviderCerts=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontProviderFetchStrategy}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:fontProviderFetchStrategy
+     */
+    public static final int FontFamily_fontProviderFetchStrategy=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontProviderFetchTimeout}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:fontProviderFetchTimeout
+     */
+    public static final int FontFamily_fontProviderFetchTimeout=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontProviderPackage}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:fontProviderPackage
+     */
+    public static final int FontFamily_fontProviderPackage=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontProviderQuery}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:fontProviderQuery
+     */
+    public static final int FontFamily_fontProviderQuery=5;
+    /**
+     * Attributes that can be used with a FontFamilyFont.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FontFamilyFont_android_font android:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_android_fontWeight android:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.rohsins.project_test:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.rohsins.project_test:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.rohsins.project_test:fontWeight}</code></td><td></td></tr>
+     * </table>
+     * @see #FontFamilyFont_android_font
+     * @see #FontFamilyFont_android_fontWeight
+     * @see #FontFamilyFont_android_fontStyle
+     * @see #FontFamilyFont_font
+     * @see #FontFamilyFont_fontStyle
+     * @see #FontFamilyFont_fontWeight
+     */
+    public static final int[] FontFamilyFont={
+        0x01010532, 0x01010533, 0x0101053f, 0x7f01000c, 
+        0x7f010013, 0x7f010014
+      };
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#font}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name android:font
+     */
+    public static final int FontFamilyFont_android_font=0;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#fontWeight}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name android:fontWeight
+     */
+    public static final int FontFamilyFont_android_fontWeight=1;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name android:fontStyle
+     */
+    public static final int FontFamilyFont_android_fontStyle=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#font}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.rohsins.project_test:font
+     */
+    public static final int FontFamilyFont_font=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:fontStyle
+     */
+    public static final int FontFamilyFont_fontStyle=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#fontWeight}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.rohsins.project_test:fontWeight
+     */
+    public static final int FontFamilyFont_fontWeight=5;
+    /**
+     * Attributes that can be used with a GlobalSearch.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #GlobalSearch_defaultIntentAction com.rohsins.project_test:defaultIntentAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GlobalSearch_defaultIntentActivity com.rohsins.project_test:defaultIntentActivity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GlobalSearch_defaultIntentData com.rohsins.project_test:defaultIntentData}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GlobalSearch_searchEnabled com.rohsins.project_test:searchEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GlobalSearch_searchLabel com.rohsins.project_test:searchLabel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GlobalSearch_settingsDescription com.rohsins.project_test:settingsDescription}</code></td><td></td></tr>
+     * </table>
+     * @see #GlobalSearch_defaultIntentAction
+     * @see #GlobalSearch_defaultIntentActivity
+     * @see #GlobalSearch_defaultIntentData
+     * @see #GlobalSearch_searchEnabled
+     * @see #GlobalSearch_searchLabel
+     * @see #GlobalSearch_settingsDescription
+     */
+    public static final int[] GlobalSearch={
+        0x7f010007, 0x7f010008, 0x7f010009, 0x7f010020, 
+        0x7f010021, 0x7f010028
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#defaultIntentAction}
+     * attribute's value can be found in the {@link #GlobalSearch} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:defaultIntentAction
+     */
+    public static final int GlobalSearch_defaultIntentAction=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#defaultIntentActivity}
+     * attribute's value can be found in the {@link #GlobalSearch} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:defaultIntentActivity
+     */
+    public static final int GlobalSearch_defaultIntentActivity=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#defaultIntentData}
+     * attribute's value can be found in the {@link #GlobalSearch} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:defaultIntentData
+     */
+    public static final int GlobalSearch_defaultIntentData=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#searchEnabled}
+     * attribute's value can be found in the {@link #GlobalSearch} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:searchEnabled
+     */
+    public static final int GlobalSearch_searchEnabled=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#searchLabel}
+     * attribute's value can be found in the {@link #GlobalSearch} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:searchLabel
+     */
+    public static final int GlobalSearch_searchLabel=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#settingsDescription}
+     * attribute's value can be found in the {@link #GlobalSearch} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:settingsDescription
+     */
+    public static final int GlobalSearch_settingsDescription=5;
+    /**
+     * Attributes that can be used with a GlobalSearchCorpus.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #GlobalSearchCorpus_allowShortcuts com.rohsins.project_test:allowShortcuts}</code></td><td></td></tr>
+     * </table>
+     * @see #GlobalSearchCorpus_allowShortcuts
+     */
+    public static final int[] GlobalSearchCorpus={
+        0x7f010000
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#allowShortcuts}
+     * attribute's value can be found in the {@link #GlobalSearchCorpus} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:allowShortcuts
+     */
+    public static final int GlobalSearchCorpus_allowShortcuts=0;
+    /**
+     * Attributes that can be used with a GlobalSearchSection.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #GlobalSearchSection_sectionContent com.rohsins.project_test:sectionContent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GlobalSearchSection_sectionType com.rohsins.project_test:sectionType}</code></td><td></td></tr>
+     * </table>
+     * @see #GlobalSearchSection_sectionContent
+     * @see #GlobalSearchSection_sectionType
+     */
+    public static final int[] GlobalSearchSection={
+        0x7f010022, 0x7f010025
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#sectionContent}
+     * attribute's value can be found in the {@link #GlobalSearchSection} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:sectionContent
+     */
+    public static final int GlobalSearchSection_sectionContent=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#sectionType}
+     * attribute's value can be found in the {@link #GlobalSearchSection} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>icon_uri</td><td>2</td><td></td></tr>
+     * <tr><td>intent_action</td><td>3</td><td></td></tr>
+     * <tr><td>intent_activity</td><td>8</td><td></td></tr>
+     * <tr><td>intent_data</td><td>4</td><td></td></tr>
+     * <tr><td>intent_data_id</td><td>5</td><td></td></tr>
+     * <tr><td>intent_extra_data</td><td>6</td><td></td></tr>
+     * <tr><td>large_icon_uri</td><td>7</td><td></td></tr>
+     * <tr><td>text1</td><td>0</td><td></td></tr>
+     * <tr><td>text2</td><td>1</td><td></td></tr>
+     * <tr><td>thing_proto</td><td>9</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:sectionType
+     */
+    public static final int GlobalSearchSection_sectionType=1;
+    /**
+     * Attributes that can be used with a IMECorpus.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #IMECorpus_inputEnabled com.rohsins.project_test:inputEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #IMECorpus_sourceClass com.rohsins.project_test:sourceClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #IMECorpus_toAddressesSection com.rohsins.project_test:toAddressesSection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #IMECorpus_userInputSection com.rohsins.project_test:userInputSection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #IMECorpus_userInputTag com.rohsins.project_test:userInputTag}</code></td><td></td></tr>
+     * <tr><td><code>{@link #IMECorpus_userInputValue com.rohsins.project_test:userInputValue}</code></td><td></td></tr>
+     * </table>
+     * @see #IMECorpus_inputEnabled
+     * @see #IMECorpus_sourceClass
+     * @see #IMECorpus_toAddressesSection
+     * @see #IMECorpus_userInputSection
+     * @see #IMECorpus_userInputTag
+     * @see #IMECorpus_userInputValue
+     */
+    public static final int[] IMECorpus={
+        0x7f010018, 0x7f010029, 0x7f01002b, 0x7f01002d, 
+        0x7f01002e, 0x7f01002f
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#inputEnabled}
+     * attribute's value can be found in the {@link #IMECorpus} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:inputEnabled
+     */
+    public static final int IMECorpus_inputEnabled=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#sourceClass}
+     * attribute's value can be found in the {@link #IMECorpus} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>contact</td><td>1</td><td></td></tr>
+     * <tr><td>email</td><td>0</td><td></td></tr>
+     * <tr><td>instant_message</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:sourceClass
+     */
+    public static final int IMECorpus_sourceClass=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#toAddressesSection}
+     * attribute's value can be found in the {@link #IMECorpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:toAddressesSection
+     */
+    public static final int IMECorpus_toAddressesSection=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#userInputSection}
+     * attribute's value can be found in the {@link #IMECorpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:userInputSection
+     */
+    public static final int IMECorpus_userInputSection=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#userInputTag}
+     * attribute's value can be found in the {@link #IMECorpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:userInputTag
+     */
+    public static final int IMECorpus_userInputTag=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#userInputValue}
+     * attribute's value can be found in the {@link #IMECorpus} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:userInputValue
+     */
+    public static final int IMECorpus_userInputValue=5;
     /**
      * Attributes that can be used with a LoadingImageView.
      * <p>Includes the following attributes:</p>
@@ -381,7 +1340,7 @@ public final class R {
      * @see #LoadingImageView_imageAspectRatioAdjust
      */
     public static final int[] LoadingImageView={
-        0x7f010001, 0x7f010003, 0x7f010004
+        0x7f010002, 0x7f010015, 0x7f010016
       };
     /**
      * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#circleCrop}
@@ -421,6 +1380,147 @@ public final class R {
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
+     * Attributes that can be used with a Section.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #Section_indexPrefixes com.rohsins.project_test:indexPrefixes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Section_noIndex com.rohsins.project_test:noIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Section_schemaOrgProperty com.rohsins.project_test:schemaOrgProperty}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Section_sectionFormat com.rohsins.project_test:sectionFormat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Section_sectionId com.rohsins.project_test:sectionId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Section_sectionWeight com.rohsins.project_test:sectionWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Section_subsectionSeparator com.rohsins.project_test:subsectionSeparator}</code></td><td></td></tr>
+     * </table>
+     * @see #Section_indexPrefixes
+     * @see #Section_noIndex
+     * @see #Section_schemaOrgProperty
+     * @see #Section_sectionFormat
+     * @see #Section_sectionId
+     * @see #Section_sectionWeight
+     * @see #Section_subsectionSeparator
+     */
+    public static final int[] Section={
+        0x7f010017, 0x7f010019, 0x7f01001d, 0x7f010023, 
+        0x7f010024, 0x7f010026, 0x7f01002a
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#indexPrefixes}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:indexPrefixes
+     */
+    public static final int Section_indexPrefixes=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#noIndex}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.rohsins.project_test:noIndex
+     */
+    public static final int Section_noIndex=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#schemaOrgProperty}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:schemaOrgProperty
+     */
+    public static final int Section_schemaOrgProperty=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#sectionFormat}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>date</td><td>4</td><td></td></tr>
+     * <tr><td>html</td><td>1</td><td></td></tr>
+     * <tr><td>plain</td><td>0</td><td></td></tr>
+     * <tr><td>rfc822</td><td>2</td><td></td></tr>
+     * <tr><td>url</td><td>3</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:sectionFormat
+     */
+    public static final int Section_sectionFormat=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#sectionId}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:sectionId
+     */
+    public static final int Section_sectionId=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#sectionWeight}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.rohsins.project_test:sectionWeight
+     */
+    public static final int Section_sectionWeight=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#subsectionSeparator}
+     * attribute's value can be found in the {@link #Section} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.rohsins.project_test:subsectionSeparator
+     */
+    public static final int Section_subsectionSeparator=6;
+    /**
+     * Attributes that can be used with a SectionFeature.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #SectionFeature_featureType com.rohsins.project_test:featureType}</code></td><td></td></tr>
+     * </table>
+     * @see #SectionFeature_featureType
+     */
+    public static final int[] SectionFeature={
+        0x7f01000b
+      };
+    /**
+     * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#featureType}
+     * attribute's value can be found in the {@link #SectionFeature} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>demote_common_words</td><td>2</td><td></td></tr>
+     * <tr><td>demote_rfc822_hostnames</td><td>3</td><td></td></tr>
+     * <tr><td>index_entity_types</td><td>6</td><td></td></tr>
+     * <tr><td>match_global_nicknames</td><td>1</td><td></td></tr>
+     * <tr><td>omnibox_title_section</td><td>5</td><td></td></tr>
+     * <tr><td>omnibox_url_section</td><td>4</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.rohsins.project_test:featureType
+     */
+    public static final int SectionFeature_featureType=0;
+    /**
      * Attributes that can be used with a SignInButton.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -436,7 +1536,7 @@ public final class R {
      * @see #SignInButton_scopeUris
      */
     public static final int[] SignInButton={
-        0x7f010000, 0x7f010002, 0x7f010005
+        0x7f010001, 0x7f010003, 0x7f01001f
       };
     /**
      * <p>This symbol is the offset where the {@link com.rohsins.project_test.R.attr#buttonSize}

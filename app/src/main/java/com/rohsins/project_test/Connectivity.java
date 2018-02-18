@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
+//import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
@@ -89,10 +89,10 @@ public class Connectivity extends Activity {
         byte[] will;
 
 		MyClientTask(byte[] payload) {
-            topic = "R&D/hardware/home";
-            qos = 2;
+            topic = "R&D/rhome";
+            qos = 0;
             broker = "tcp://" + brokerAddress + ":1883";
-            clientId = uniqueId;
+            clientId = "rohsins" + "c" + uniqueId;
 //            will = "rohsins's cell phone out".getBytes();
             retained = false;
             this.payload = payload;
@@ -100,8 +100,8 @@ public class Connectivity extends Activity {
             connOpts = new MqttConnectOptions();
             connOpts.setUserName("rtshardware");
             connOpts.setPassword("rtshardware".toCharArray());
-//            connOpts.setWill(topic, will, 1, retained);
-//            connOpts.setKeepAliveInterval(30000);
+            connOpts.setCleanSession(true);
+//            connOpts.setAutomaticReconnect(false);
 
 //            serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
 		}

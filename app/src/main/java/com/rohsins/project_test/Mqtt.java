@@ -98,7 +98,7 @@ public class Mqtt extends Connectivity {
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(AlwaysRunner.MessageEvent event) {
-        if (event.getMessageTopic().contains("RTSR&D/rozbor/sub/")) {
+        if (event.getMessageTopic().contains("RTSR&D/baanvak/sub/")) {
             try {
                 JSONObject jObject = new JSONObject(event.getMessageData());
                 mqttMessageTextView = jObject.getString("payload") + "\n";

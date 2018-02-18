@@ -178,7 +178,7 @@ public class Chat extends Connectivity {
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(AlwaysRunner.MessageEvent event) {
-        if (event.getMessageTopic().contains("RTSR&D/rozbor/chatpub")) {
+        if (event.getMessageTopic().contains("RTSR&D/baanvak/chat")) {
             try {
                 JSONObject jObject = new JSONObject(event.getMessageData());
 //                mqttMessageTextViewChat = event.getMessageData();
