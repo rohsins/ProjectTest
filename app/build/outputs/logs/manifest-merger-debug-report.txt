@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/38ef7e9499fe3db96efbdc07e1a699a7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:17:1-29:12
@@ -22,27 +22,27 @@ MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/ro
 MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/ed85a4116388bd1e754fa535195f7a89/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:2:1-6:12
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
 	package
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:3:11-45
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:3:11-45
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:5:11-36
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:5:11-36
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:4:11-34
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:4:11-34
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
 uses-sdk
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
 MERGED from [com.android.support:multidex:1.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/38ef7e9499fe3db96efbdc07e1a699a7/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/38ef7e9499fe3db96efbdc07e1a699a7/AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:20:5-44
@@ -79,42 +79,42 @@ MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/
 MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:4:5-43
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
-INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
+INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
 	android:targetSdkVersion
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:9:9-38
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:8:9-35
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:11:5-66
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:11:5-66
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:12:5-14:37
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:12:5-14:37
 	android:maxSdkVersion
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:14:9-35
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:13:9-65
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:13:9-65
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:15:5-74
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:15:5-74
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:15:22-72
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:15:22-72
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:16:5-18:37
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:16:5-18:37
 	android:maxSdkVersion
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:18:9-35
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:17:9-64
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:17:9-64
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:19:5-67
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:19:5-67
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:19:22-65
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:19:22-65
 application
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:21:5-136:19
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:21:5-136:19
 MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:22:5-27:19
@@ -136,155 +136,155 @@ MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:5:5-20
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:24:9-41
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:24:9-41
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:23:9-45
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:23:9-45
 	android:allowBackup
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:22:9-35
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:25:9-40
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:25:9-40
 service#org.eclipse.paho.android.service.MqttService
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:26:9-79
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:26:9-79
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:26:18-77
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:26:18-77
 service#com.rohsins.project_test.AlwaysRunner
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:27:9-49
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:27:9-49
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:27:18-46
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:27:18-46
 activity#com.rohsins.project_test.MainActivity
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:29:9-37:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:29:9-37:20
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:31:13-45
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:31:13-45
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:30:13-41
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:30:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:33:17-68
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:33:17-68
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:35:17-76
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:35:27-74
 activity#com.rohsins.project_test.Lights
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:38:9-46:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:38:9-46:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:42:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:42:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:41:13-58
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:41:13-58
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:40:13-44
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:40:13-44
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:39:13-35
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:39:13-35
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:43:13-45:72
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:43:13-45:72
 	android:value
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:45:17-70
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:45:17-70
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:44:17-63
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:44:17-63
 activity#com.rohsins.project_test.Doors
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:47:9-55:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:47:9-55:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:51:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:51:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:50:13-57
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:50:13-57
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:49:13-43
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:49:13-43
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:48:13-34
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:48:13-34
 activity#com.rohsins.project_test.Televisions
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:56:9-64:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:56:9-64:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:60:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:60:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:59:13-63
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:59:13-63
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:58:13-49
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:58:13-49
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:57:13-40
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:57:13-40
 activity#com.rohsins.project_test.Motor_Controls
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:65:9-73:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:65:9-73:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:69:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:69:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:68:13-66
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:68:13-66
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:67:13-52
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:67:13-52
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:66:13-43
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:66:13-43
 activity#com.rohsins.project_test.Settings
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:74:9-83:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:74:9-83:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:78:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:78:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:77:13-60
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:77:13-60
 	android:windowSoftInputMode
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:79:13-54
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:79:13-54
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:76:13-46
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:76:13-46
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:75:13-37
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:75:13-37
 activity#com.rohsins.project_test.Others
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:84:9-91:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:84:9-91:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:87:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:87:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:86:13-58
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:86:13-58
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:85:13-35
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:85:13-35
 activity#com.rohsins.project_test.ShutDown
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:92:9-100:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:92:9-100:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:96:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:96:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:95:13-61
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:95:13-61
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:94:13-46
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:94:13-46
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:93:13-37
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:93:13-37
 activity#com.rohsins.project_test.SerialViewer
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:101:9-109:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:101:9-109:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:105:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:105:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:104:13-65
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:104:13-65
 	android:icon
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:103:13-50
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:103:13-50
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:102:13-41
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:102:13-41
 activity#com.rohsins.project_test.OpenSiteEditor
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:110:9-117:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:110:9-117:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:113:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:113:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:112:13-68
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:112:13-68
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:111:13-43
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:111:13-43
 activity#com.rohsins.project_test.Mqtt
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:118:9-125:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:118:9-125:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:121:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:121:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:120:13-56
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:120:13-56
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:119:13-33
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:119:13-33
 meta-data#com.google.android.gms.version
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:127:9-129:68
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:127:9-129:68
 MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:129:13-66
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:129:13-66
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:128:13-58
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:128:13-58
 activity#com.rohsins.project_test.Chat
-ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:131:9-135:20
+ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:131:9-135:20
 	android:parentActivityName
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:134:13-55
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:134:13-55
 	android:label
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:133:13-56
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:133:13-56
 	android:name
-		ADDED from /Users/rohsins/Evoiklo/Programming/Android/AndroidStudioProjects/Project_Test/app/src/main/AndroidManifest.xml:132:13-33
+		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:132:13-33
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:23:9-26:75
 	android:exported

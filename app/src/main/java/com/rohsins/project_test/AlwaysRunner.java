@@ -8,13 +8,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Handler;
 import android.os.IBinder;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-import org.eclipse.paho.client.mqttv3.MqttCallback;
-//import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
+import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
@@ -27,7 +25,7 @@ import android.os.PowerManager;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
-public class AlwaysRunner extends Service implements MqttCallback {
+public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
     public volatile String globalLoadBrokerAddress;
     public static String globalUniqueId;
@@ -57,8 +55,10 @@ public class AlwaysRunner extends Service implements MqttCallback {
     Runnable globalNotificationRunnable = new Runnable() {
         @Override
         public void run() {
+            globalNotificationId = (int) (System.currentTimeMillis() % 1000);
             globalNotificationBuilder.setContentText(globalNotificationMessage);
             globalNotificationBuilder.setShowWhen(true);
+            globalNotificationBuilder.setWhen(System.currentTimeMillis());
             globalNotificationManager.notify(globalNotificationId, globalNotificationBuilder.build());
         }
     };
@@ -131,10 +131,10 @@ public class AlwaysRunner extends Service implements MqttCallback {
         globalClientId = "rohsins" + "g" + globalUniqueId;
         globalPersistence = new MemoryPersistence();
         globalConnectOptions = new MqttConnectOptions();
-//        globalConnectOptions.(true);
         globalConnectOptions.setCleanSession(false);
-//        globalConnectOptions.setKeepAliveInterval(30000);
-//        globalConnectOptions.setConnectionTimeout(15000);
+        globalConnectOptions.setAutomaticReconnect(true);
+        globalConnectOptions.setKeepAliveInterval(64800);
+        globalConnectOptions.setConnectionTimeout(15);
         globalConnectOptions.setUserName("rtshardware");
         globalConnectOptions.setPassword(("rtshardware").toCharArray());
         globalMqttRetained = false;
@@ -155,27 +155,26 @@ public class AlwaysRunner extends Service implements MqttCallback {
 //        wakeLock.acquire();
     }
 
-//    @Override
-//    public void connectComplete(boolean b, String s) {
-//        if (b) {
-//            try {
-//                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
-//                globalMqttClient.subscribe(globalChatTopic, globalQos);
-//            } catch (MqttException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
+    @Override
+    public void connectComplete(boolean b, String s) {
+        if (!b) {
+            try {
+                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
+                globalMqttClient.subscribe(globalChatTopic, globalQos);
+            } catch (MqttException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     @Override
     public void connectionLost(Throwable throwable) {
-        Toast.makeText(this, "Connection Lost", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Connection Lost", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
         JSONObject jsonMqttMessage = new JSONObject(mqttMessage.toString());
-
 
         if (!Mqtt.mqttViewerOn && !Chat.mqttChatOn && s.contains("RTSR&D/baanvak/chat")) {
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
@@ -190,15 +189,15 @@ public class AlwaysRunner extends Service implements MqttCallback {
             globalNotificationBuilder.setContentTitle("Chat Notification");
             globalNotificationHandler.post(globalNotificationRunnable);
 
-        } else if (!Chat.mqttChatOn && !Mqtt.mqttViewerOn && s.contains("RTSR&D/baanvak/sub/")){
+        } else if (!Chat.mqttChatOn && !Mqtt.mqttViewerOn && s.contains("RTSR&D/baanvak/sub/" + globalUniqueId)){
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
-            globalNotificationMessage = jsonMqttMessage.getString("payload");
+            globalNotificationMessage = jsonMqttMessage.getJSONObject("payload").getString("message");
 
             Intent notificationIntent = new Intent(this, Mqtt.class);
             notificationIntent.putExtra("tempMessage", globalNotificationMessage + "\n");
             PendingIntent notificationPendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             globalNotificationBuilder.setContentIntent(notificationPendingIntent);
-            globalNotificationBuilder.setContentTitle("Viewer Notification");
+            globalNotificationBuilder.setContentTitle("Sensor Notification");
             globalNotificationHandler.post(globalNotificationRunnable);
 
         } else if (Mqtt.mqttViewerOn && s.contains("RTSR&D/baanvak/chat")) {
@@ -212,15 +211,15 @@ public class AlwaysRunner extends Service implements MqttCallback {
             globalNotificationBuilder.setContentTitle("Chat Notification");
             globalNotificationHandler.post(globalNotificationRunnable);
 
-        } else if (Chat.mqttChatOn && s.contains("RTSR&D/baanvak/sub/")){
+        } else if (Chat.mqttChatOn && s.contains("RTSR&D/baanvak/sub/" + globalUniqueId)){
             EventBus.getDefault().post(new AlwaysRunner.MessageEvent(s, mqttMessage.toString()));
-            globalNotificationMessage = jsonMqttMessage.getString("payload");
+            globalNotificationMessage = jsonMqttMessage.getJSONObject("payload").getString("message");
 
             Intent notificationIntent = new Intent(this, Mqtt.class);
             notificationIntent.putExtra("tempMessage", globalNotificationMessage + "\n");
             PendingIntent notificationPendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             globalNotificationBuilder.setContentIntent(notificationPendingIntent);
-            globalNotificationBuilder.setContentTitle("Viewer Notification");
+            globalNotificationBuilder.setContentTitle("Sensor Notification");
             globalNotificationHandler.post(globalNotificationRunnable);
 
         } else {
