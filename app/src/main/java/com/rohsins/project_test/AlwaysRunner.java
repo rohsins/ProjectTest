@@ -1,6 +1,7 @@
 package com.rohsins.project_test;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -8,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 
@@ -22,6 +24,8 @@ import org.greenrobot.eventbus.EventBus;
 import org.json.JSONObject;
 
 import android.os.PowerManager;
+import android.provider.*;
+import android.provider.Settings;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
 
@@ -42,6 +46,9 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     public static Boolean globalMqttRetained;
 
     NotificationCompat.Builder globalNotificationBuilder;
+    NotificationCompat.Builder serviceNotificationBuilder;
+    NotificationChannel globalNotificationChannel;
+    NotificationChannel serviceNotificationChannel;
     static NotificationManager globalNotificationManager;
     public static int globalNotificationId = 0;
     public static String globalNotificationMessage;
@@ -66,6 +73,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     Runnable globalMqttLaunchRunnable = new Runnable() {
         @Override
         public void run() {
+            startForeground(1800, serviceNotificationBuilder.build());
             try {
                 globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
                 globalMqttClient.connect(globalConnectOptions);
@@ -81,6 +89,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     Runnable stopServiceRunnable = new Runnable() {
         @Override
         public void run() {
+            stopForeground(true);
             try {
                 globalMqttClient.unsubscribe(globalSubscribeTopic);
                 globalMqttClient.unsubscribe(globalChatTopic);
@@ -117,7 +126,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public void onCreate() {
 
-        globalUniqueId = android.provider.Settings.Secure.getString(this.getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
+        globalUniqueId = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
 
         SharedPreferences settings = getSharedPreferences("msettings", 0);
         globalLoadBrokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
@@ -139,14 +148,35 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalConnectOptions.setPassword(("rtshardware").toCharArray());
         globalMqttRetained = false;
 
-        globalNotificationBuilder = new NotificationCompat.Builder(this)
+        globalNotificationBuilder = new NotificationCompat.Builder(this, "my_channel_01")
                 .setSmallIcon(R.drawable.motor_controls)
                 .setContentTitle("Mqtt Notification")
                 .setLights(Color.YELLOW, 1000, 3000)
-                .setPriority(Notification.PRIORITY_HIGH)
+                .setAutoCancel(true)
+                .setPriority(Notification.PRIORITY_DEFAULT)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.FLAG_SHOW_LIGHTS);
 
+        serviceNotificationBuilder = new NotificationCompat.Builder(this, "my_channel_02")
+                .setSmallIcon(R.drawable.doors)
+                .setContentTitle("R service");
+
         globalNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            globalNotificationChannel = new NotificationChannel("my_channel_01", "channelF", NotificationManager.IMPORTANCE_HIGH);
+            globalNotificationChannel.setDescription("sensor channel");
+            globalNotificationChannel.enableLights(true);
+            globalNotificationChannel.setLightColor(Color.YELLOW);
+            globalNotificationChannel.enableVibration(false);
+            globalNotificationChannel.setShowBadge(true);
+            globalNotificationChannel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+//            globalNotificationChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+
+            globalNotificationChannel = new NotificationChannel("my_channel_02", "channelB", NotificationManager.IMPORTANCE_NONE);
+            globalNotificationChannel.setDescription("service channel");
+
+            globalNotificationManager.createNotificationChannel(globalNotificationChannel);
+        }
 
         globalMqttLaunchThread.start();
 
