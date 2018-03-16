@@ -220,6 +220,7 @@ public class Connectivity extends Activity {
                             break;
                         }
                         if (switchCheck[1].equals("java.net.SocketTimeoutException: Read timed out")) break;
+                        if (switchCheck[1].equals("java.net.SocketTimeoutException")) break;
                         Toast.makeText(Connectivity.this, "Error: " + switchCheck[1], Toast.LENGTH_SHORT).show();
                         break;
                     default:

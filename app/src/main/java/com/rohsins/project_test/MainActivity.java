@@ -53,6 +53,8 @@ public class MainActivity extends Connectivity {
         startActivity(intent);
     }
 
+    static public boolean firstStart = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

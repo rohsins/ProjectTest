@@ -11,30 +11,32 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Switch;
 
 public class Lights extends Connectivity {
-	
-	SeekBar lightSeekBar1;
-	SeekBar lightSeekBar2;
-	SeekBar lightSeekBar3;
-	SeekBar lightSeekBar4;
-	SeekBar lightSeekBar5;
 
-	private int lightSeekBar1_value;
-	private int lightSeekBar2_value;
-	private int lightSeekBar3_value;
-	private int lightSeekBar4_value;
-	private int lightSeekBar5_value;
+	static private boolean firstStart = true;
 	
-	Switch lightSwitch1;
-	Switch lightSwitch2;
-	Switch lightSwitch3;
-	Switch lightSwitch4;
-	Switch lightSwitch5;
+	static SeekBar lightSeekBar1;
+	static SeekBar lightSeekBar2;
+	static SeekBar lightSeekBar3;
+	static SeekBar lightSeekBar4;
+	static SeekBar lightSeekBar5;
 
-	private boolean lightSwitch1_value;
-	private boolean lightSwitch2_value;
-	private boolean lightSwitch3_value;
-	private boolean lightSwitch4_value;
-	private boolean lightSwitch5_value;
+	static private int lightSeekBar1_value;
+	static private int lightSeekBar2_value;
+	static private int lightSeekBar3_value;
+	static private int lightSeekBar4_value;
+	static private int lightSeekBar5_value;
+	
+	static Switch lightSwitch1;
+	static Switch lightSwitch2;
+	static Switch lightSwitch3;
+	static Switch lightSwitch4;
+	static Switch lightSwitch5;
+
+	static private boolean lightSwitch1_value;
+	static private boolean lightSwitch2_value;
+	static private boolean lightSwitch3_value;
+	static private boolean lightSwitch4_value;
+	static private boolean lightSwitch5_value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -54,27 +56,33 @@ public class Lights extends Connectivity {
 		lightSwitch5 = (Switch) findViewById(R.id.lightSwitch5);
 
 		on_create_func();
+
+		if (firstStart) {
+			lightSeekBar1_value = settings.getInt("LIGHTSEEKBAR1", 20);
+			lightSeekBar2_value = settings.getInt("LIGHTSEEKBAR2", 20);
+			lightSeekBar3_value = settings.getInt("LIGHTSEEKBAR3", 20);
+			lightSeekBar4_value = settings.getInt("LIGHTSEEKBAR4", 20);
+			lightSeekBar5_value = settings.getInt("LIGHTSEEKBAR5", 20);
+
+			lightSwitch1_value = settings.getBoolean("LIGHTSWITCH1", false);
+			lightSwitch2_value = settings.getBoolean("LIGHTSWITCH2", false);
+			lightSwitch3_value = settings.getBoolean("LIGHTSWITCH3", false);
+			lightSwitch4_value = settings.getBoolean("LIGHTSWITCH4", false);
+			lightSwitch5_value = settings.getBoolean("LIGHTSWITCH5", false);
+
+			firstStart = false;
+		}
 		
-		lightSeekBar1_value = settings.getInt("LIGHTSEEKBAR1", 20);
 		lightSeekBar1.setProgress(lightSeekBar1_value);
-		lightSeekBar2_value = settings.getInt("LIGHTSEEKBAR2", 20);
 		lightSeekBar2.setProgress(lightSeekBar2_value);
-		lightSeekBar3_value = settings.getInt("LIGHTSEEKBAR3", 20);
 		lightSeekBar3.setProgress(lightSeekBar3_value);
-		lightSeekBar4_value = settings.getInt("LIGHTSEEKBAR4", 20);
 		lightSeekBar4.setProgress(lightSeekBar4_value);
-		lightSeekBar5_value = settings.getInt("LIGHTSEEKBAR5", 20);
 		lightSeekBar5.setProgress(lightSeekBar5_value);
 
-		lightSwitch1_value = settings.getBoolean("LIGHTSWITCH1", false);
 		lightSwitch1.setChecked(lightSwitch1_value);
-		lightSwitch2_value = settings.getBoolean("LIGHTSWITCH2", false);
 		lightSwitch2.setChecked(lightSwitch2_value);
-		lightSwitch3_value = settings.getBoolean("LIGHTSWITCH3", false);
 		lightSwitch3.setChecked(lightSwitch3_value);
-		lightSwitch4_value = settings.getBoolean("LIGHTSWITCH4", false);
 		lightSwitch4.setChecked(lightSwitch4_value);
-		lightSwitch5_value = settings.getBoolean("LIGHTSWITCH5", false);
 		lightSwitch5.setChecked(lightSwitch5_value);
 
 		lightSeekBar1.setEnabled(lightSwitch1_value);

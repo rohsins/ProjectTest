@@ -142,7 +142,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalConnectOptions = new MqttConnectOptions();
         globalConnectOptions.setCleanSession(false);
         globalConnectOptions.setAutomaticReconnect(true);
-        globalConnectOptions.setKeepAliveInterval(64800);
+        globalConnectOptions.setKeepAliveInterval(60);
         globalConnectOptions.setConnectionTimeout(15);
         globalConnectOptions.setUserName("rtshardware");
         globalConnectOptions.setPassword(("rtshardware").toCharArray());

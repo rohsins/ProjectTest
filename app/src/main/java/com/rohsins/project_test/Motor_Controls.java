@@ -9,10 +9,12 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 public class Motor_Controls extends Connectivity {
+
+	static private boolean firstStart = true;
 	
-	SeekBar motor_controlsSeekBar1;
-	TextView motor_controlsTextView;
-	private int motor_controlsSeekBar1_value;
+	static SeekBar motor_controlsSeekBar1;
+	static TextView motor_controlsTextView;
+	static private int motor_controlsSeekBar1_value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,12 @@ public class Motor_Controls extends Connectivity {
 		motor_controlsTextView = (TextView)findViewById(R.id.motor_controlsTextView2);
 
 		on_create_func();
-		motor_controlsSeekBar1_value = settings.getInt("MOTORCONTROLSSEEKBAR1VALUE", 20);
+
+		if (firstStart) {
+			motor_controlsSeekBar1_value = settings.getInt("MOTORCONTROLSSEEKBAR1VALUE", 20);
+			firstStart = false;
+		}
+
 		motor_controlsSeekBar1.setProgress(motor_controlsSeekBar1_value);
 		motor_controlsTextView.setText(String.valueOf(motor_controlsSeekBar1_value));
 		motor_controlsSeekBar1.setOnSeekBarChangeListener(motor_controlsSeekBar1Listener);
