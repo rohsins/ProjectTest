@@ -4,24 +4,22 @@ ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
-MERGED from [com.android.support:multidex:1.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/38ef7e9499fe3db96efbdc07e1a699a7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:2:1-15:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/e1f430e1563b5f3cc1eae4c63208bd40/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2cec5b96db910046d024f535fd3bcf7e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/4e2f19469f5c745e1d245b4607436457/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2e5324755718215feb1fb0cd1d69e920/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/19fa56dd940abe78cc0e618cf25ab795/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/50c46cfa47bf174a9d65ea47996eae10/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f935559b57e5640075b9f59d8d50ac6d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-appindexing-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-11.8.0.aar/8e5998bd0c9f5b8a4320ccf9cedd76da/AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/82b37d9336ca65cad2b67317d9df250a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/5a3ff061998025fd862c588dcde7786f/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/ed85a4116388bd1e754fa535195f7a89/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:multidex:1.0.3] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/df381ee3ba86fd02750a5a74eef9be9d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-appindexing:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-15.0.1.aar/949d6a19cf788f95724f4d03628dc6ee/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/f665626df7d3f7d91d4f0849c36cbe4f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/779aae8064f67bdb59859b41daee1881/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/496bebdc50412a98ba948627ff472fb1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/41781dd7d86d84d79567089bb33ff6b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f65aa2e57daaa34f3944e7a4eaea9505/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7d8a71aa611e12808365acf974eb3299/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3225ab8ca84c6f16bbb51aec4d9da32/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6d26d0aabcb39ed44a9289b5bd9585b2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c0fd43fd1d3af56720304ec6ef6dd5cd/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/130b69a79350aca704a9a10b6a761dd5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dcb5954c48ed63c301d3e7e95b334129/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:2:1-138:12
@@ -43,42 +41,38 @@ uses-sdk
 ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:multidex:1.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/38ef7e9499fe3db96efbdc07e1a699a7/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/38ef7e9499fe3db96efbdc07e1a699a7/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/e1f430e1563b5f3cc1eae4c63208bd40/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/e1f430e1563b5f3cc1eae4c63208bd40/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2cec5b96db910046d024f535fd3bcf7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2cec5b96db910046d024f535fd3bcf7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/4e2f19469f5c745e1d245b4607436457/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/4e2f19469f5c745e1d245b4607436457/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2e5324755718215feb1fb0cd1d69e920/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2e5324755718215feb1fb0cd1d69e920/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/19fa56dd940abe78cc0e618cf25ab795/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/19fa56dd940abe78cc0e618cf25ab795/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/50c46cfa47bf174a9d65ea47996eae10/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/50c46cfa47bf174a9d65ea47996eae10/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f935559b57e5640075b9f59d8d50ac6d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f935559b57e5640075b9f59d8d50ac6d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-appindexing-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-11.8.0.aar/8e5998bd0c9f5b8a4320ccf9cedd76da/AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-appindexing-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-11.8.0.aar/8e5998bd0c9f5b8a4320ccf9cedd76da/AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/82b37d9336ca65cad2b67317d9df250a/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/82b37d9336ca65cad2b67317d9df250a/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/5a3ff061998025fd862c588dcde7786f/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/5a3ff061998025fd862c588dcde7786f/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/ed85a4116388bd1e754fa535195f7a89/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/ed85a4116388bd1e754fa535195f7a89/AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:multidex:1.0.3] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/df381ee3ba86fd02750a5a74eef9be9d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/df381ee3ba86fd02750a5a74eef9be9d/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-appindexing:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-15.0.1.aar/949d6a19cf788f95724f4d03628dc6ee/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appindexing:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-15.0.1.aar/949d6a19cf788f95724f4d03628dc6ee/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/f665626df7d3f7d91d4f0849c36cbe4f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/f665626df7d3f7d91d4f0849c36cbe4f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/779aae8064f67bdb59859b41daee1881/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/779aae8064f67bdb59859b41daee1881/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/496bebdc50412a98ba948627ff472fb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/496bebdc50412a98ba948627ff472fb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/41781dd7d86d84d79567089bb33ff6b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/41781dd7d86d84d79567089bb33ff6b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f65aa2e57daaa34f3944e7a4eaea9505/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/f65aa2e57daaa34f3944e7a4eaea9505/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7d8a71aa611e12808365acf974eb3299/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/7d8a71aa611e12808365acf974eb3299/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3225ab8ca84c6f16bbb51aec4d9da32/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e3225ab8ca84c6f16bbb51aec4d9da32/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6d26d0aabcb39ed44a9289b5bd9585b2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6d26d0aabcb39ed44a9289b5bd9585b2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c0fd43fd1d3af56720304ec6ef6dd5cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c0fd43fd1d3af56720304ec6ef6dd5cd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/130b69a79350aca704a9a10b6a761dd5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/130b69a79350aca704a9a10b6a761dd5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dcb5954c48ed63c301d3e7e95b334129/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/dcb5954c48ed63c301d3e7e95b334129/AndroidManifest.xml:20:5-44
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
 INJECTED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:7:5-9:40
 	android:targetSdkVersion
@@ -115,26 +109,16 @@ ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:19:22-65
 application
 ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:21:5-136:19
-MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-appindexing:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.8.0.aar/ae51f86b311b1d8bb063ccc3084aacd5/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:7:5-13:19
-MERGED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:7:5-13:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/e1f430e1563b5f3cc1eae4c63208bd40/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/e1f430e1563b5f3cc1eae4c63208bd40/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.firebase:firebase-appindexing-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-11.8.0.aar/8e5998bd0c9f5b8a4320ccf9cedd76da/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-appindexing-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-license-11.8.0.aar/8e5998bd0c9f5b8a4320ccf9cedd76da/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/5a3ff061998025fd862c588dcde7786f/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/5a3ff061998025fd862c588dcde7786f/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/ed85a4116388bd1e754fa535195f7a89/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/ed85a4116388bd1e754fa535195f7a89/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-common-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-license-11.8.0.aar/74072266c9442b8e8b10c89c3b179514/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/4a25e9f8d8a97df597c664f6f34d06f1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-appindexing:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-15.0.1.aar/949d6a19cf788f95724f4d03628dc6ee/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-appindexing:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-15.0.1.aar/949d6a19cf788f95724f4d03628dc6ee/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/f665626df7d3f7d91d4f0849c36cbe4f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/f665626df7d3f7d91d4f0849c36cbe4f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:22:5-26:19
 	android:label
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:24:9-41
 	android:icon
@@ -157,7 +141,7 @@ ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:31:13-45
 	android:name
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:30:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
 ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:33:17-68
@@ -271,8 +255,8 @@ ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:119:13-33
 meta-data#com.google.android.gms.version
 ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:127:9-129:68
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/12470915fc561e31516df7d33d60ebac/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/84c5d87769681a89f302683995e0cb88/AndroidManifest.xml:23:9-25:69
 	android:value
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:129:13-66
 	android:name
@@ -286,20 +270,20 @@ ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/
 	android:name
 		ADDED from /Users/rohsins/Evoiklo/Programming/Android/Projects/Project_Test/app/src/main/AndroidManifest.xml:132:13-33
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/dae4f95ac08ad8a58fa02d87c23148f3/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/22e48b769bb2b7e1cebfdb6d80be87b1/AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:8:9-12:39
+ADDED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:8:9-12:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:10:13-72
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:11:13-37
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:11:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:12:13-36
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:11.8.0] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-11.8.0.aar/036f7cc4e48e4ea6f70c2aa079a31615/AndroidManifest.xml:9:13-77
+		ADDED from [com.google.firebase:firebase-common:15.0.1] /Users/rohsins/.gradle/caches/transforms-1/files-1.1/firebase-common-15.0.1.aar/bd92000b4dc15c30d7fd2697d8589a2d/AndroidManifest.xml:9:13-77

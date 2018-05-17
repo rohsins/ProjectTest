@@ -148,13 +148,15 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalConnectOptions.setPassword(("rtshardware").toCharArray());
         globalMqttRetained = false;
 
-        globalNotificationBuilder = new NotificationCompat.Builder(this, "my_channel_01")
-                .setSmallIcon(R.drawable.motor_controls)
-                .setContentTitle("Mqtt Notification")
-                .setLights(Color.YELLOW, 1000, 3000)
-                .setAutoCancel(true)
-                .setPriority(Notification.PRIORITY_DEFAULT)
-                .setDefaults(Notification.DEFAULT_SOUND | Notification.FLAG_SHOW_LIGHTS);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            globalNotificationBuilder = new NotificationCompat.Builder(this, "my_channel_01")
+                    .setSmallIcon(R.drawable.motor_controls)
+                    .setContentTitle("Mqtt Notification")
+                    .setLights(Color.YELLOW, 1000, 3000)
+                    .setAutoCancel(true)
+                    .setPriority(Notification.PRIORITY_DEFAULT)
+                    .setDefaults(Notification.DEFAULT_SOUND | Notification.FLAG_SHOW_LIGHTS);
+        }
 
         serviceNotificationBuilder = new NotificationCompat.Builder(this, "my_channel_02")
                 .setSmallIcon(R.drawable.doors)
@@ -199,7 +201,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
     @Override
     public void connectionLost(Throwable throwable) {
-//        Toast.makeText(this, "Connection Lost", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Connection Lost", Toast.LENGTH_SHORT).show();
     }
 
     @Override
