@@ -134,6 +134,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalBrokerAddress = "tcp://" + globalLoadBrokerAddress + ":1883";
         globalPublishTopic = "RTSR&D/baanvak/pub/" + globalUniqueId;
         globalSubscribeTopic = "RTSR&D/baanvak/sub/" + globalUniqueId;
+//        globalSubscribeTopic = "RTSR&D/baanvak/sub/" + "00000001";
         globalChatTopic = "RTSR&D/baanvak/chat";
         globalQos = 2;
 //        globalClientId = MqttClient.generateClientId();
@@ -144,8 +145,8 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalConnectOptions.setAutomaticReconnect(true);
         globalConnectOptions.setKeepAliveInterval(60);
         globalConnectOptions.setConnectionTimeout(15);
-        globalConnectOptions.setUserName("rtshardware");
-        globalConnectOptions.setPassword(("rtshardware").toCharArray());
+        globalConnectOptions.setUserName("rohsins");
+        globalConnectOptions.setPassword(("escapecharacters").toCharArray());
         globalMqttRetained = false;
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -182,9 +183,9 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
         globalMqttLaunchThread.start();
 
-//        PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
-//        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLockUp");
-//        wakeLock.acquire();
+        PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
+        wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLockUp");
+        wakeLock.acquire();
     }
 
     @Override
