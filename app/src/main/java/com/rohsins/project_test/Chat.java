@@ -39,8 +39,8 @@ public class Chat extends Connectivity {
     Runnable uiRunnableChat = new Runnable() {
         @Override
         public void run() {
-            chatTextView.setGravity(Gravity.START);
-            chatTextView.append(mqttMessageTextViewChat.toString());
+            chatTextView.setGravity(Gravity.END);
+            chatTextView.append(mqttMessageTextViewChat);
 
             int totalLines = ((chatTextView.getHeight())/chatTextView.getLineHeight());
             if (chatTextView.getLineCount() >= totalLines) {
@@ -149,8 +149,8 @@ public class Chat extends Connectivity {
             jsonObjectChat.put("user", AlwaysRunner.globalUniqueId);
             jsonObjectChat.put("payload", chatEditText.getText().toString());
             chatPayload = jsonObjectChat.toString();
-            chatEditText.setText("");
             runUiChatSend.post(uiRunnableChatSend);
+            chatEditText.setText("");
         } catch (JSONException e) {
             e.printStackTrace();
         }
