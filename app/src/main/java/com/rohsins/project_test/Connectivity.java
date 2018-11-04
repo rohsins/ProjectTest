@@ -1,28 +1,20 @@
 package com.rohsins.project_test;
 
 import android.app.Activity;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.provider.Settings;
-import android.support.v4.app.NotificationCompat;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
-//import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
-import org.json.JSONObject;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -32,15 +24,15 @@ import java.net.UnknownHostException;
 
 public class Connectivity extends Activity {
 
-    public boolean initializeChecker = false;
+    public static boolean initializeChecker = false;
 
     public static String uniqueId;
-	public volatile String Address;
-    public volatile String brokerAddress;
-	public volatile int Port;
-    String ipAddressPort[];
-    String inputIpAddressPort;
-    String inputMqttBrokerIp;
+	public static String Address;
+    public static String brokerAddress;
+	public static int Port;
+    static String ipAddressPort[];
+    static String inputIpAddressPort;
+    static String inputMqttBrokerIp;
     TextView serialViewerTextView;
 	public static boolean nagleFlag = false;
 	public static boolean mqttFlag = false;
@@ -52,10 +44,29 @@ public class Connectivity extends Activity {
 	public static SharedPreferences settings;
 	public static SharedPreferences.Editor editor;
 
+    private static MqttClient mqttClient;
+
+    String dstAddress;
+    int dstPort;
+    String response = "";
+    String msgToServer;
+
+    static String topic;
+    static int qos;
+    static String broker;
+    static String clientId;
+    static MemoryPersistence persistence;
+    static MqttConnectOptions connOpts;
+    static Boolean retained;
+//    byte[] payload;
+//    byte[] will;
+
     public void on_create_func() {
         if (!initializeChecker) {
             initializeChecker = true;
-//            SharedPreferences settings = getSharedPreferences("msettings", 0);
+
+            SharedPreferences settings = getSharedPreferences("msettings", 0);
+
             if (settings.getString("SERVERIPADDRESS", "192,168.1.9:8080").contains(":")) {
                 ipAddressPort = settings.getString("SERVERIPADDRESS", "192.168.1.9:8080").split(":");
                 Address = ipAddressPort[0];
@@ -63,47 +74,78 @@ public class Connectivity extends Activity {
             } else {
                 Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
             }
-            brokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
+
+            brokerAddress = settings.getString("MQTTBROKERADDRESS", "hardware.wscada.net");
             nagleFlag = settings.getBoolean("ENABLENAGLE", false);
             reuseAddressFlag = settings.getBoolean("ENABLEREUSEADDRESS", false);
             mqttFlag = settings.getBoolean("ENABLEMQTT", false);
             uniqueId = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
-        }
-    }
 
-    public class MyClientTask extends AsyncTask<Void, Void, Void> {
 
-		String dstAddress;
-		int dstPort;
-		String response = "";
-		String msgToServer;
-
-		String topic;
-		int qos;
-		String broker;
-		String clientId;
-		MemoryPersistence persistence;
-		MqttConnectOptions connOpts;
-        Boolean retained;
-        byte[] payload;
-        byte[] will;
-
-		MyClientTask(byte[] payload) {
-            topic = "R&D/rhome";
+            topic = "RTSR&D/baanvak/sub/rhome";
             qos = 0;
             broker = "tcp://" + brokerAddress + ":1883";
             clientId = "rohsins" + "c" + uniqueId;
 //            will = "rohsins's cell phone out".getBytes();
             retained = false;
-            this.payload = payload;
             persistence = new MemoryPersistence();
             connOpts = new MqttConnectOptions();
-            connOpts.setUserName("rtshardware");
-            connOpts.setPassword("rtshardware".toCharArray());
+            connOpts.setUserName("rohsins");
+            connOpts.setPassword("escapecharacters".toCharArray());
             connOpts.setCleanSession(true);
-//            connOpts.setAutomaticReconnect(false);
+        }
+    }
 
-//            serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
+    static Runnable mConnectRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (mqttFlag && mqttClient == null) {
+//                Log.d("o/p", "connecting");
+                try {
+                    mqttClient = new MqttClient(broker, clientId, persistence);
+                    mqttClient.connect(connOpts);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
+
+    static Runnable mDisconnectRunnable = new Runnable() {
+        @Override
+        public void run() {
+            if (mqttFlag && mqttClient != null) {
+//                Log.d("o/p", "disconnecting");
+                try {
+                    mqttClient.disconnect();
+                    mqttClient.close();
+                    mqttClient = null;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
+
+    static Thread mConnectThread = new Thread(mConnectRunnable);
+    static Thread mDisConnectThread = new Thread(mDisconnectRunnable);
+
+    public static void mqttConnect() {
+//        mConnectThread.run();
+        mConnectRunnable.run();
+    }
+
+    public static void mqttDisconnet() {
+//        mDisConnectThread.run();
+        mDisconnectRunnable.run();
+    }
+
+
+    public class MyClientTask extends AsyncTask<Void, Void, Void> {
+        byte[] payload;
+
+		MyClientTask(byte[] payload) {
+            this.payload = payload;
 		}
 
 		MyClientTask(String addr, int port, String msgTo) {
@@ -111,26 +153,26 @@ public class Connectivity extends Activity {
 			dstPort = port;
 			msgToServer = msgTo;
 
-            serialViewerTextView = (TextView) findViewById(R.id.serialViewerTextView01);
+            serialViewerTextView = findViewById(R.id.serialViewerTextView01);
 		}
 
 		@Override
 		protected Void doInBackground(Void... arg0) {
 
-            if (mqttFlag == false) {
+            if (!mqttFlag) {
                 Socket socket = null;
                 DataOutputStream dataOutputStream = null;
                 DataInputStream dataInputStream = null;
 			    try {
                     socket = new Socket(dstAddress, dstPort);
-                    if (nagleFlag == false) {
+                    if (!nagleFlag) {
                         socket.setTcpNoDelay(true);
-                    } else if (nagleFlag == true) {
+                    } else if (nagleFlag) {
                         socket.setTcpNoDelay(false);
                     }
-                    if (reuseAddressFlag == false) {
+                    if (!reuseAddressFlag) {
                         socket.setReuseAddress(false);
-                    } else if (reuseAddressFlag == true) {
+                    } else if (reuseAddressFlag) {
                         socket.setReuseAddress(true);
                     }
                     socket.setSoTimeout(200);
@@ -176,13 +218,9 @@ public class Connectivity extends Activity {
                         }
                     }
                 }
-            } else if (mqttFlag == true) {
+            } else if (mqttFlag && mqttClient != null) {
                 try {
-                    MqttClient mqttClient = new MqttClient(broker, clientId, persistence);
-                    mqttClient.connect(connOpts);
                     mqttClient.publish(topic, payload, qos, retained);
-                    mqttClient.disconnect();
-                    mqttClient.close();
                 } catch (MqttException e) {
                     e.printStackTrace();
                 }
@@ -192,7 +230,7 @@ public class Connectivity extends Activity {
 		
 		@Override
 		protected void onPostExecute(Void result) {
-            if (mqttFlag == false) {
+            if (!mqttFlag) {
 //                editText.setText(response);
 //                if(!response.equals("IOException: java.io.EOFException")) {
 //                    Toast.makeText(Connectivity.this, response, Toast.LENGTH_SHORT).show();
@@ -234,10 +272,10 @@ public class Connectivity extends Activity {
 
 	public void exchangeData(String tMsg) {
         MyClientTask myClientTask = null;
-		if (mqttFlag == false) {
+		if (!mqttFlag) {
             myClientTask = new MyClientTask(Address, Port, tMsg);
 //        Toast.makeText(Connectivity.this, String.valueOf(nagleReplyFlag), Toast.LENGTH_SHORT).show();
-        } else if (mqttFlag == true) {
+        } else if (mqttFlag) {
             myClientTask = new MyClientTask(tMsg.getBytes());
         }
 		myClientTask.execute();

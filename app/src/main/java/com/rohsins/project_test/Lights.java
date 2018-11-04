@@ -1,6 +1,5 @@
 package com.rohsins.project_test;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,48 +13,50 @@ public class Lights extends Connectivity {
 
 	static private boolean firstStart = true;
 	
-	static SeekBar lightSeekBar1;
-	static SeekBar lightSeekBar2;
-	static SeekBar lightSeekBar3;
-	static SeekBar lightSeekBar4;
-	static SeekBar lightSeekBar5;
+	SeekBar lightSeekBar1;
+	SeekBar lightSeekBar2;
+	SeekBar lightSeekBar3;
+	SeekBar lightSeekBar4;
+	SeekBar lightSeekBar5;
 
-	static private int lightSeekBar1_value;
-	static private int lightSeekBar2_value;
-	static private int lightSeekBar3_value;
-	static private int lightSeekBar4_value;
-	static private int lightSeekBar5_value;
+	private static int lightSeekBar1_value;
+	private static int lightSeekBar2_value;
+	private static int lightSeekBar3_value;
+	private static int lightSeekBar4_value;
+	private static int lightSeekBar5_value;
 	
-	static Switch lightSwitch1;
-	static Switch lightSwitch2;
-	static Switch lightSwitch3;
-	static Switch lightSwitch4;
-	static Switch lightSwitch5;
+	Switch lightSwitch1;
+	Switch lightSwitch2;
+	Switch lightSwitch3;
+	Switch lightSwitch4;
+	Switch lightSwitch5;
 
-	static private boolean lightSwitch1_value;
-	static private boolean lightSwitch2_value;
-	static private boolean lightSwitch3_value;
-	static private boolean lightSwitch4_value;
-	static private boolean lightSwitch5_value;
+	private static boolean lightSwitch1_value;
+	private static boolean lightSwitch2_value;
+	private static boolean lightSwitch3_value;
+	private static boolean lightSwitch4_value;
+	private static boolean lightSwitch5_value;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lights);
 		
-		lightSeekBar1 = (SeekBar) findViewById(R.id.lightSeekBar1);
-		lightSeekBar2 = (SeekBar) findViewById(R.id.lightSeekBar2);
-		lightSeekBar3 = (SeekBar) findViewById(R.id.lightSeekBar3);
-		lightSeekBar4 = (SeekBar) findViewById(R.id.lightSeekBar4);
-		lightSeekBar5 = (SeekBar) findViewById(R.id.lightSeekBar5);
+		lightSeekBar1 = findViewById(R.id.lightSeekBar1);
+		lightSeekBar2 = findViewById(R.id.lightSeekBar2);
+		lightSeekBar3 = findViewById(R.id.lightSeekBar3);
+		lightSeekBar4 = findViewById(R.id.lightSeekBar4);
+		lightSeekBar5 = findViewById(R.id.lightSeekBar5);
 		
-		lightSwitch1 = (Switch) findViewById(R.id.lightSwitch1);
-		lightSwitch2 = (Switch) findViewById(R.id.lightSwitch2);
-		lightSwitch3 = (Switch) findViewById(R.id.lightSwitch3);
-		lightSwitch4 = (Switch) findViewById(R.id.lightSwitch4);
-		lightSwitch5 = (Switch) findViewById(R.id.lightSwitch5);
+		lightSwitch1 = findViewById(R.id.lightSwitch1);
+		lightSwitch2 = findViewById(R.id.lightSwitch2);
+		lightSwitch3 = findViewById(R.id.lightSwitch3);
+		lightSwitch4 = findViewById(R.id.lightSwitch4);
+		lightSwitch5 = findViewById(R.id.lightSwitch5);
 
 		on_create_func();
+
+		mqttConnect();
 
 		if (firstStart) {
 			lightSeekBar1_value = settings.getInt("LIGHTSEEKBAR1", 20);
@@ -319,6 +320,8 @@ public class Lights extends Connectivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+
+		mqttDisconnet();
 
 		editor.putBoolean("LIGHTSWITCH1", lightSwitch1.isChecked());
 		editor.putBoolean("LIGHTSWITCH2", lightSwitch2.isChecked());

@@ -33,14 +33,14 @@ public class Settings extends Connectivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_settings);
 
-		aSwitch = (Switch) findViewById(R.id.settingsSwitch1);
-		bSwitch = (Switch) findViewById(R.id.settingsSwitch2);
-		cSwitch = (Switch) findViewById(R.id.settingsSwitch3);
-        dSwitch = (Switch) findViewById(R.id.settingsSwitch4);
-		textView = (TextView) findViewById(R.id.settingsTextView3);
-		textView2 = (TextView) findViewById(R.id.settingsTextView4);
-		editText = (EditText) findViewById(R.id.settingsEditText1);
-		editText2 = (EditText) findViewById(R.id.settingsEditText2);
+		aSwitch = findViewById(R.id.settingsSwitch1);
+		bSwitch = findViewById(R.id.settingsSwitch2);
+		cSwitch = findViewById(R.id.settingsSwitch3);
+        dSwitch = findViewById(R.id.settingsSwitch4);
+		textView = findViewById(R.id.settingsTextView3);
+		textView2 = findViewById(R.id.settingsTextView4);
+		editText = findViewById(R.id.settingsEditText1);
+		editText2 = findViewById(R.id.settingsEditText2);
 
 		if(settings.getString("SERVERIPADDRESS", "192,168.1.9:8080").contains(":")) {
 			ipAddressPort = settings.getString("SERVERIPADDRESS", "192.168.1.9:8080").split(":");
@@ -49,7 +49,7 @@ public class Settings extends Connectivity {
 		} else {
 			Address = settings.getString("SERVERIPADDRESS", "192.168.1.9");
 		}
-        brokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
+        brokerAddress = settings.getString("MQTTBROKERADDRESS", "hardware.wscada.net");
 		textView.setText("Current Server Socket:\n" + Address + ":" + Port + "\n" + brokerAddress + ":1883");
 
 		aSwitch_value = settings.getBoolean("ENABLENAGLE", false);

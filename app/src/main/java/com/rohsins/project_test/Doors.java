@@ -17,6 +17,8 @@ public class Doors extends Connectivity {
 		setContentView(R.layout.activity_doors);
 
 		on_create_func();
+
+		mqttConnect();
 	}
 
 	@Override
@@ -36,5 +38,12 @@ public class Doors extends Connectivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+
+		mqttDisconnet();
 	}
 }
