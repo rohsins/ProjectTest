@@ -39,7 +39,7 @@ public class Connectivity extends Activity {
 //	public static boolean nagleReplyFlag = true;
 	public static boolean reuseAddressFlag = false;
 
-	public static boolean memWriteFlag = false;
+	public boolean memWriteFlag = false;
 
 	public static SharedPreferences settings;
 	public static SharedPreferences.Editor editor;
