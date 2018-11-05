@@ -150,7 +150,12 @@ public class Chat extends Connectivity {
             jsonObjectChat.put("payload", chatEditText.getText().toString());
             chatPayload = jsonObjectChat.toString();
             runUiChatSend.post(uiRunnableChatSend);
-            chatEditText.setText("");
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    chatEditText.setText("");
+                }
+            });
         } catch (JSONException e) {
             e.printStackTrace();
         }

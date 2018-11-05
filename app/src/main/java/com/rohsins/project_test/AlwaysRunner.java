@@ -57,7 +57,6 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     private static PowerManager.WakeLock wakeLock;
 
     Handler globalNotificationHandler = new Handler();
-    Handler executeService = new Handler();
 
     Runnable globalNotificationRunnable = new Runnable() {
         @Override
@@ -70,40 +69,32 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         }
     };
 
-    Runnable globalMqttLaunchRunnable = new Runnable() {
-        @Override
+    public class ServiceRunnable implements Runnable {
+        boolean start;
+
+        ServiceRunnable(boolean start) {
+            this.start = start;
+        }
+
         public void run() {
-            startForeground(1800, serviceNotificationBuilder.build());
             try {
-                globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
-                globalMqttClient.connect(globalConnectOptions);
-                globalMqttClient.setCallback(AlwaysRunner.this);
-                globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
-                globalMqttClient.subscribe(globalChatTopic, globalQos);
+                if (start) {
+                    globalMqttClient = new MqttClient(globalBrokerAddress, globalClientId, globalPersistence);
+                    globalMqttClient.connect(globalConnectOptions);
+                    globalMqttClient.setCallback(AlwaysRunner.this);
+                    globalMqttClient.subscribe(globalSubscribeTopic, globalQos);
+                    globalMqttClient.subscribe(globalChatTopic, globalQos);
+                } else if (!start) {
+                    globalMqttClient.unsubscribe(globalSubscribeTopic);
+                    globalMqttClient.unsubscribe(globalChatTopic);
+                    globalMqttClient.disconnect();
+                    globalMqttClient.close();
+                }
             } catch (MqttException e) {
                 e.printStackTrace();
             }
         }
     };
-
-    Runnable stopServiceRunnable = new Runnable() {
-        @Override
-        public void run() {
-            stopForeground(true);
-            try {
-                globalMqttClient.unsubscribe(globalSubscribeTopic);
-                globalMqttClient.unsubscribe(globalChatTopic);
-                globalMqttClient.disconnect();
-                globalMqttClient.close();
-            } catch (MqttException e) {
-                e.printStackTrace();
-            }
-            serviceIsAlive = false;
-            Toast.makeText(AlwaysRunner.this, "Killing Service", Toast.LENGTH_SHORT).show();
-        }
-    };
-
-    Thread globalMqttLaunchThread = new Thread(globalMqttLaunchRunnable);
 
     public static class MessageEvent {
         String messageData;
@@ -129,7 +120,7 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
         globalUniqueId = Settings.Secure.getString(this.getContentResolver(), Settings.Secure.ANDROID_ID);
 
         SharedPreferences settings = getSharedPreferences("msettings", 0);
-        globalLoadBrokerAddress = settings.getString("MQTTBROKERADDRESS", "m2m.eclipse.org");
+        globalLoadBrokerAddress = settings.getString("MQTTBROKERADDRESS", "hardware.wscada.net");
 
         globalBrokerAddress = "tcp://" + globalLoadBrokerAddress + ":1883";
         globalPublishTopic = "RTSR&D/baanvak/pub/" + globalUniqueId;
@@ -180,8 +171,6 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
             globalNotificationManager.createNotificationChannel(globalNotificationChannel);
         }
-
-        globalMqttLaunchThread.start();
 
         PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WakeLockUp");
@@ -268,7 +257,10 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         serviceIsAlive = true;
-        Toast.makeText(this, "Starting Service", Toast.LENGTH_SHORT).show();
+        ServiceRunnable startService = new ServiceRunnable(true);
+        new Thread(startService).start();
+        startForeground(1800, serviceNotificationBuilder.build());
+        Toast.makeText(AlwaysRunner.this, "Starting Service", Toast.LENGTH_SHORT).show();
         return START_STICKY;
     }
 
@@ -279,7 +271,11 @@ public class AlwaysRunner extends Service implements MqttCallbackExtended {
 
     @Override
     public void onDestroy() {
-        executeService.post(stopServiceRunnable);
+        ServiceRunnable stopService = new ServiceRunnable(false);
+        new Thread(stopService).start();
+        stopForeground(true);
+        serviceIsAlive = false;
+        Toast.makeText(AlwaysRunner.this, "Killing Service", Toast.LENGTH_SHORT).show();
 //        if (wakeLock != null) {
 //            wakeLock.release();
 //            wakeLock = null;
