@@ -96,50 +96,38 @@ public class Connectivity extends Activity {
         }
     }
 
-    static Runnable mConnectRunnable = new Runnable() {
-        @Override
-        public void run() {
-            if (mqttFlag && mqttClient == null) {
-//                Log.d("o/p", "connecting");
-                try {
-                    mqttClient = new MqttClient(broker, clientId, persistence);
-                    mqttClient.connect(connOpts);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    };
-
-    static Runnable mDisconnectRunnable = new Runnable() {
-        @Override
-        public void run() {
-            if (mqttFlag && mqttClient != null) {
-//                Log.d("o/p", "disconnecting");
-                try {
-                    mqttClient.disconnect();
-                    mqttClient.close();
-                    mqttClient = null;
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    };
-
-    static Thread mConnectThread = new Thread(mConnectRunnable);
-    static Thread mDisConnectThread = new Thread(mDisconnectRunnable);
-
     public static void mqttConnect() {
-//        mConnectThread.run();
-        mConnectRunnable.run();
+        mConnection mConnect = new mConnection(true);
+        new Thread(mConnect).start();
     }
 
     public static void mqttDisconnet() {
-//        mDisConnectThread.run();
-        mDisconnectRunnable.run();
+        mConnection mDisconnect = new mConnection(false);
+        new Thread(mDisconnect).start();
     }
 
+    public static class mConnection implements Runnable {
+        boolean connect;
+
+        mConnection(boolean connect) {
+            this.connect = connect;
+        }
+
+        public void run() {
+            try {
+                if (connect && mqttClient == null) {
+                    mqttClient = new MqttClient(broker, clientId, persistence);
+                    mqttClient.connect(connOpts);
+                } else if (!connect && mqttClient != null) {
+                    mqttClient.disconnect();
+                    mqttClient.close();
+                    mqttClient = null;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     public class MyClientTask extends AsyncTask<Void, Void, Void> {
         byte[] payload;
